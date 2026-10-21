@@ -1,0 +1,33 @@
+{
+  "version": "0.1.0",
+  "files": [
+    ".gitattributes",
+    ".github/workflows/pages.yml",
+    ".github/workflows/validate.yml",
+    ".gitignore",
+    "ARCHITECTURE.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "build_radar.py",
+    "companies.json",
+    "docs/frontier.json",
+    "docs/index.html",
+    "docs/preview.png",
+    "frontier.json",
+    "hierarchy-ui.js",
+    "hierarchy.css",
+    "hierarchy.json",
+    "page.html",
+    "presentation.json",
+    "release-files.json",
+    "snapshots/2026-10-21-d58d12d6e4c1.json",
+    "system-model.js",
+    "system-ui.js",
+    "system.css",
+    "system.json",
+    "system_core.py",
+    "test-system.cjs",
+    "test_system.py"
+  ]
+}

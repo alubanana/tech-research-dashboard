@@ -1,0 +1,810 @@
+{
+  "schema": 1,
+  "checkedAt": "2026-10-21",
+  "companies": [
+    {
+      "id": "world_labs",
+      "name": "World Labs",
+      "directions": [
+        "worlds"
+      ],
+      "domain": "数字体验",
+      "hq": "美国 · San Francisco",
+      "founders": "李飞飞、Justin Johnson、Ben Mildenhall、Christoph Lassner",
+      "founderContext": "视觉与三维研究团队；李飞飞为Stanford教授及公司CEO。",
+      "founderSource": "https://www.worldlabs.ai/about",
+      "capital": {
+        "status": "已签并购·待交割",
+        "event": "AMD全股票收购协议",
+        "date": "2026-09-28",
+        "amount": "约82亿美元对价",
+        "investors": "收购方AMD；2月融资含AMD、Autodesk、NVIDIA等",
+        "detail": "预计2026年底前交割，仍有审批条件。2026-02-18另宣布新增10亿美元融资；收购对价与融资额分别记录。",
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute"
+      },
+      "product": "Marble三维世界产品、Atlas空间模型",
+      "productUrl": "https://www.worldlabs.ai/blog/atlas",
+      "watch": "持久世界的实际使用、成本和交互；并购后产品方向与组织变化。",
+      "sources": [
+        {
+          "label": "2026-02融资",
+          "url": "https://www.worldlabs.ai/blog/funding-2026"
+        }
+      ],
+      "valuation": {
+        "amount": "未披露",
+        "basis": "融资估值",
+        "date": "2026-02-18",
+        "status": "未披露",
+        "detail": "9月并购协议约82亿美元为收购对价；2月融资公告未列投前或投后估值。",
+        "url": "https://www.worldlabs.ai/blog/funding-2026"
+      }
+    },
+    {
+      "id": "pi",
+      "name": "Physical Intelligence",
+      "directions": [
+        "robots"
+      ],
+      "domain": "机器人",
+      "hq": "美国 · San Francisco",
+      "founders": "Karol Hausman、Sergey Levine、Chelsea Finn等核心创始团队",
+      "founderContext": "团队还包括Brian Ichter、Quan Vuong、Lachy Groom、Adnan Esmail；机器人学习、强化学习与产品经营背景。Hausman任CEO。",
+      "founderSource": "https://capitalg.com/insights/physical-intelligence-bringing-general-purpose-ai-into-the-physical-world/",
+      "capital": {
+        "status": "非上市",
+        "event": "Series B · 最近确认轮次",
+        "date": "2025-11-20",
+        "amount": "6亿美元",
+        "investors": "CapitalG领投；Lux、Thrive、Jeff Bezos、Index、T. Rowe Price",
+        "detail": "CapitalG确认领投Series B；现有投资方Outset披露本轮6亿美元与56亿美元估值。2026年新轮次待官方确认。",
+        "url": "https://capitalg.com/insights/physical-intelligence-bringing-general-purpose-ai-into-the-physical-world/"
+      },
+      "product": "通用机器人模型、Pi API beta",
+      "productUrl": "https://www.pi.website/blog/api-beta",
+      "watch": "外部开发者微调、部署与数据闭环的实际成效；API beta仍有waitlist。",
+      "sources": [
+        {
+          "label": "投资方融资披露 · 2025-11",
+          "url": "https://outsetcapital.com/blog/physical-intelligence-series-b"
+        }
+      ],
+      "valuation": {
+        "amount": "56亿美元",
+        "basis": "投前／投后未说明",
+        "date": "2025-11",
+        "status": "投资方披露",
+        "detail": "现有投资方Outset披露2025年11月融资估值；后续轮次待核。",
+        "url": "https://outsetcapital.com/blog/physical-intelligence-series-b"
+      }
+    },
+    {
+      "id": "figure",
+      "name": "Figure",
+      "directions": [
+        "robots"
+      ],
+      "domain": "机器人",
+      "hq": "美国 · San Jose",
+      "founders": "Brett Adcock",
+      "founderContext": "创始人兼CEO；曾创办Archer与Vettery。",
+      "founderSource": "https://www.figure.ai/master-plan",
+      "capital": {
+        "status": "非上市",
+        "event": "Nscale战略投资",
+        "date": "2026-09-03",
+        "amount": "投资金额未披露",
+        "investors": "Nscale",
+        "detail": "2026-09-03官方公告战略投资，金额与新估值未披露；2025 C轮仍为最近已核定价轮次。35亿美元是算力承诺（有意扩至60亿美元），不是融资。",
+        "url": "https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership"
+      },
+      "product": "Figure 03人形机器人、Helix模型",
+      "productUrl": "https://www.figure.ai/news",
+      "watch": "工厂部署与家庭泛化分别看持续任务、干预率和量产；演示不等于家庭规模使用。",
+      "valuation": {
+        "amount": "390亿美元",
+        "basis": "2025 C轮投后估值",
+        "date": "2025-09-16",
+        "status": "公司披露",
+        "detail": "390亿美元为2025年C轮估值；2026年Nscale战略投资未披露新估值。",
+        "url": "https://www.figure.ai/news/series-c"
+      },
+      "investors": [
+        {
+          "name": "Nscale",
+          "role": "战略投资方",
+          "date": "2026-09-03",
+          "amount": "未披露",
+          "status": "公司公告",
+          "url": "https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership"
+        }
+      ],
+      "financing": [
+        {
+          "status": "非上市",
+          "event": "Series C · 已承诺资本",
+          "date": "2025-09-16",
+          "amount": "超过10亿美元",
+          "investors": "Parkway领投；Brookfield、NVIDIA、Macquarie、Intel等",
+          "detail": "2025年C轮已承诺资本超过10亿美元，投后390亿美元；保留历史轮次。",
+          "url": "https://www.figure.ai/news/series-c",
+          "title": "Series C · 已承诺资本"
+        },
+        {
+          "status": "非上市",
+          "event": "Nscale战略投资",
+          "date": "2026-09-03",
+          "amount": "投资金额未披露",
+          "investors": "Nscale",
+          "detail": "2026-09-03官方公告战略投资，金额与新估值未披露；2025 C轮仍为最近已核定价轮次。35亿美元是算力承诺（有意扩至60亿美元），不是融资。",
+          "url": "https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership",
+          "title": "Nscale战略投资"
+        }
+      ]
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "directions": [
+        "spatial"
+      ],
+      "domain": "人机交互",
+      "hq": "美国／多地 · 具体团队待核",
+      "founders": "Mark Zuckerberg等历史创始团队",
+      "founderContext": "2004年创立Facebook；Zuckerberg现任董事长兼CEO。完整历史名单待核。",
+      "founderSource": "https://investor.atmeta.com/leadership-and-governance/default.aspx",
+      "capital": {
+        "status": "上市",
+        "event": "上市公司",
+        "date": null,
+        "amount": "Nasdaq: META",
+        "investors": "公开市场股东",
+        "detail": "成熟社交广告、AI与Reality Labs并行；眼镜团队经费和岗位归属需另核。",
+        "url": "https://investor.atmeta.com/home/default.aspx"
+      },
+      "product": "AI眼镜、VR与成熟社交广告平台",
+      "productUrl": "https://about.fb.com/news/2026/09/introducing-ray-ban-meta-audio-glasses-new-styles-plus-muse/",
+      "watch": "硬件持续使用与应用生态；已宣布和已交付产品分开。",
+      "valuation": {
+        "amount": "市值未接入",
+        "basis": "上市公司",
+        "date": null,
+        "status": "上市",
+        "detail": "市值随股价变化，当前未接入行情。",
+        "url": "https://investor.atmeta.com/home/default.aspx"
+      }
+    },
+    {
+      "id": "snap",
+      "name": "Snap／Specs",
+      "directions": [
+        "spatial"
+      ],
+      "domain": "人机交互",
+      "hq": "美国 · 多城市",
+      "founders": "Evan Spiegel、Bobby Murphy（现行管理页列示）",
+      "founderContext": "Spiegel任CEO、Murphy任CTO；分别为Stanford产品设计及数学计算科学背景。完整历史名单待核。",
+      "founderSource": "https://investor.snap.com/governance/leadership-team/default.aspx",
+      "capital": {
+        "status": "上市",
+        "event": "Specs设为全资子公司",
+        "date": "2026-01-28",
+        "amount": "NYSE: SNAP",
+        "investors": "母公司公开市场资本",
+        "detail": "公告仅称Specs未来可引入少数股权投资；未确认其已经完成独立融资。",
+        "url": "https://newsroom.snap.com/introducing-specs-inc"
+      },
+      "product": "Snapchat与Specs AR计算平台",
+      "productUrl": "https://investor.snap.com/news/news-details/2026/SPECS-Make-Computing-More-Human-with-New-Experiences-Partnerships-and-SPECS-Intelligence/default.aspx",
+      "watch": "AR开发体验与留存；Snap Growth岗位是否与Specs关联需要另核。",
+      "valuation": {
+        "amount": "市值未接入",
+        "basis": "SNAP 母公司",
+        "date": null,
+        "status": "上市",
+        "detail": "Specs未披露独立融资估值；Snap市值未接入。",
+        "url": "https://newsroom.snap.com/introducing-specs-inc"
+      }
+    },
+    {
+      "id": "neuralink",
+      "name": "Neuralink",
+      "directions": [
+        "bci"
+      ],
+      "domain": "人机交互",
+      "hq": "美国 · 具体岗位待核",
+      "founders": "Elon Musk等共同创始人",
+      "founderContext": "官方招聘页确认Musk为共同创始人；完整创始团队与现任CEO待核。",
+      "founderSource": "https://neuralink.com/careers/",
+      "capital": {
+        "status": "非上市",
+        "event": "Series E · 最近确认轮次",
+        "date": "2025-06-02",
+        "amount": "6.5亿美元",
+        "investors": "ARK、Founders Fund、G42、QIA、Sequoia、Thrive等",
+        "detail": "官方公告列多位投资者，未指定单一领投；核查Updates至2026-10-01，未见更晚融资公告。",
+        "url": "https://neuralink.com/updates/neuralink-raises-650m-series-e/"
+      },
+      "product": "N1植入物、R1手术机器人与临床应用",
+      "productUrl": "https://neuralink.com/updates/",
+      "watch": "长期人体安全、稳定沟通与日常使用；目前仍在临床研究。",
+      "valuation": {
+        "amount": "未披露",
+        "basis": "所核资本披露",
+        "date": "2025-06-02",
+        "status": "未披露",
+        "detail": "当前所核来源未列估值。",
+        "url": "https://neuralink.com/updates/neuralink-raises-650m-series-e/"
+      }
+    },
+    {
+      "id": "paradromics",
+      "name": "Paradromics",
+      "directions": [
+        "bci"
+      ],
+      "domain": "人机交互",
+      "hq": "美国 · Austin／Oakland",
+      "founders": "Matt Angle",
+      "founderContext": "创始人兼CEO；神经科学与神经记录研究背景。",
+      "founderSource": "https://paradromics.com/company/",
+      "capital": {
+        "status": "非上市",
+        "event": "战略投资",
+        "date": "2025-02-12",
+        "amount": "金额未披露",
+        "investors": "NEOM Investment Fund",
+        "detail": "官方投资及合作公告未披露金额或标准轮次；与较早2023年3300万美元融资、科研资金分开。",
+        "url": "https://spa.gov.sa/en/N2260420"
+      },
+      "product": "Connexus植入式沟通接口 · 早期临床",
+      "productUrl": "https://paradromics.com/news/paradromics-achieves-real-time-speech-connexus-brain-computer-interface/",
+      "watch": "人体长期沟通与安全；新增临床影像流程合作，完整方案及效果待验证。",
+      "sources": [
+        {
+          "label": "动物耐久性数据 · 2026-10-08",
+          "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/"
+        },
+        {
+          "label": "影像流程合作公告",
+          "url": "https://paradromics.com/news/paradromics-siemens-healthineers-launch-strategic-initiative-build-advanced-imaging-foundation-for-the-future-of-brain-computer-interfaces/"
+        }
+      ],
+      "valuation": {
+        "amount": "未披露",
+        "basis": "所核资本披露",
+        "date": "2025-02-12",
+        "status": "未披露",
+        "detail": "当前所核来源未列估值。",
+        "url": "https://spa.gov.sa/en/N2260420"
+      },
+      "cases": [
+        {
+          "title": "脑机接口临床影像流程",
+          "use": "患者评估、植入定位、手术规划及植入后评估。",
+          "mechanism": "计划结合结构/功能MRI、血管影像与CT，比较术前影像与植入记录。",
+          "evidence": "10/19 Paradromics公告与Siemens Healthineers合作；现有扫描协议已使用。",
+          "limit": "端到端优化包仍待开发；没有披露病例效果比较、样本、审批或资本金额。",
+          "url": "https://paradromics.com/news/paradromics-siemens-healthineers-launch-strategic-initiative-build-advanced-imaging-foundation-for-the-future-of-brain-computer-interfaces/",
+          "checkedAt": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": "periodic",
+      "name": "Periodic Labs",
+      "directions": [
+        "labs"
+      ],
+      "domain": "科学发现",
+      "hq": "美国 · Menlo Park；另有Montreal团队线索",
+      "founders": "William (Liam) Fedus、Ekin Dogus Cubuk",
+      "founderContext": "Fedus有OpenAI／ChatGPT研究经历；Cubuk来自DeepMind材料AI研究。",
+      "founderSource": "https://periodic.com/news/introducing-periodic-labs",
+      "capital": {
+        "status": "非上市",
+        "event": "创立发布融资",
+        "date": "2025-09-30",
+        "amount": "3亿美元",
+        "investors": "a16z领投；Felicis、DST、NVentures、Accel等",
+        "detail": "金额由创始人一手社交公告确认；官网列投资方，未标标准轮次。未查到更晚的官方融资公告。",
+        "url": "https://www.linkedin.com/posts/ekin-dogus-cubuk-9148b8114_i-am-excited-to-announce-what-william-liam-activity-7378825457921785857-YfW2"
+      },
+      "product": "AI科学家与自主物理实验室",
+      "productUrl": "https://periodic.com/news/building-labs-that-learn",
+      "watch": "实验结果分析与闭环发现分别验证；实验吞吐、复现和真实科学成果。",
+      "valuation": {
+        "amount": "未披露",
+        "basis": "所核资本披露",
+        "date": "2025-09-30",
+        "status": "未披露",
+        "detail": "当前所核来源未列估值。",
+        "url": "https://www.linkedin.com/posts/ekin-dogus-cubuk-9148b8114_i-am-excited-to-announce-what-william-liam-activity-7378825457921785857-YfW2"
+      }
+    },
+    {
+      "id": "beam",
+      "name": "Beam Therapeutics",
+      "directions": [
+        "editing"
+      ],
+      "domain": "生命科学",
+      "hq": "美国 · Cambridge, MA",
+      "founders": "David R. Liu、J. Keith Joung、Feng Zhang",
+      "founderContext": "科学创始团队；现任CEO为John Evans。",
+      "founderSource": "https://beamtx.com/about-us/",
+      "capital": {
+        "status": "上市",
+        "event": "承销公开发行 · 最近确认融资",
+        "date": "2025-03-10",
+        "amount": "毛额5亿美元",
+        "investors": "认购方未列名；承销商不作投资方",
+        "detail": "2026年Q2 10-Q确认完成，净额4.705亿美元；历史ATM累计额另计，不重复合并。Nasdaq: BEAM。",
+        "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-announces-pricing-underwritten-offering"
+      },
+      "product": "碱基编辑疗法 · 临床阶段",
+      "productUrl": "https://investors.beamtx.com/",
+      "watch": "临床有效性、安全与给药；未确认获批商业产品。",
+      "sources": [
+        {
+          "label": "2026年Q2 10-Q",
+          "url": "https://investors.beamtx.com/node/10941/ixbrl-viewer"
+        }
+      ],
+      "valuation": {
+        "amount": "市值未接入",
+        "basis": "上市公司",
+        "date": null,
+        "status": "上市",
+        "detail": "市值随股价变化，当前未接入行情。",
+        "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-announces-pricing-underwritten-offering"
+      }
+    },
+    {
+      "id": "egenesis",
+      "name": "eGenesis",
+      "directions": [
+        "organs"
+      ],
+      "domain": "生命科学",
+      "hq": "美国 · Cambridge, MA",
+      "founders": "George Church、Luhan Yang",
+      "founderContext": "2015年创立，基因编辑与异种移植研究背景；现任CEO为Mike Curtis。",
+      "founderSource": "https://otd.harvard.edu/news/pig-organs-for-human-patients-a-challenge-fit-for-crispr/",
+      "capital": {
+        "status": "非上市",
+        "event": "Series D · 最近确认轮次",
+        "date": "2024-09-04",
+        "amount": "1.91亿美元",
+        "investors": "Lux领投；ARCH、Khosla、Farallon、Leaps by Bayer、DaVita等",
+        "detail": "2026年第三方融资线索未取得对应官方公告，暂不更新金额或轮次。",
+        "url": "https://egenesisbio.com/news-media/press-releases/egenesis-raises-191-million-series-d-financing-to-advance-lead-program-for-kidney-transplant"
+      },
+      "product": "基因工程猪肾 · 临床与Expanded Access研究",
+      "productUrl": "https://egenesisbio.com/news-media/press-releases",
+      "watch": "移植物存活、感染、排异与长期人体结果；目前不是常规器官供应业务。",
+      "valuation": {
+        "amount": "未披露",
+        "basis": "所核资本披露",
+        "date": "2024-09-04",
+        "status": "未披露",
+        "detail": "当前所核来源未列估值。",
+        "url": "https://egenesisbio.com/news-media/press-releases/egenesis-raises-191-million-series-d-financing-to-advance-lead-program-for-kidney-transplant"
+      }
+    },
+    {
+      "id": "oxford_pv",
+      "name": "Oxford PV",
+      "directions": [
+        "tandem"
+      ],
+      "domain": "能源",
+      "hq": "英国／德国 · Oxford／Brandenburg",
+      "founders": "Henry Snaith、Kevin Arthur",
+      "founderContext": "Oxford光伏研究衍生公司；现任CEO为David Ward。",
+      "founderSource": "https://www.pv-magazine.com/press-releases/oxford-pv-co-founder-elected-a-fellow-of-royal-society_100019397/",
+      "capital": {
+        "status": "非上市",
+        "event": "外部投资累计口径",
+        "date": "2025-02-11",
+        "amount": "约1亿英镑支持",
+        "investors": "该UKRI页面未列具体机构",
+        "detail": "UKRI披露累计外部投资约1亿英镑。2019年Series D原公告无法读取，后续融资待核。",
+        "url": "https://www.ukri.org/who-we-are/how-we-are-doing/research-outcomes-and-impact/epsrc/the-sun-rises-on-oxford-solar-spin-out/"
+      },
+      "product": "钙钛矿／硅叠层光伏 · 初期出货与授权",
+      "productUrl": "https://www.oxfordpv.com/press-releases/first-solar-oxford-pv-enter-into-patent-licensing-agreement-for-us-markets",
+      "watch": "效率之外的寿命、良率与大规模成本；2026年美国专利许可与吉瓦扩产分开看。",
+      "valuation": {
+        "amount": "未披露",
+        "basis": "所核资本披露",
+        "date": "2025-02-11",
+        "status": "未披露",
+        "detail": "当前所核来源未列估值。",
+        "url": "https://www.ukri.org/who-we-are/how-we-are-doing/research-outcomes-and-impact/epsrc/the-sun-rises-on-oxford-solar-spin-out/"
+      }
+    },
+    {
+      "id": "form_energy",
+      "name": "Form Energy",
+      "directions": [
+        "storage"
+      ],
+      "domain": "能源",
+      "hq": "美国 · Weirton等地",
+      "founders": "Mateo Jaramillo、Ted Wiley、Billy Woodford、Yet-Ming Chiang、Marco Ferrara",
+      "founderContext": "储能产业、电池与电网研究团队；Jaramillo任CEO。",
+      "founderSource": "https://formenergy.com/about/",
+      "capital": {
+        "status": "非上市",
+        "event": "Series G",
+        "date": "2026-08-12",
+        "amount": "7.5亿美元股权",
+        "investors": "T. Rowe Price领投；Sequoia、Janus Henderson、Franklin Templeton等",
+        "detail": "累计股权超过20亿美元。2026-09-21另有2.7亿美元信贷安排，可扩至10亿美元；扩展上限与已借款不同。约80GWh为订单储备，实际交付规模另核。",
+        "url": "https://formenergy.com/form-energy-secures-750m-in-series-g-financing/"
+      },
+      "product": "100小时铁空气电池 · 制造与商业部署",
+      "productUrl": "https://formenergy.com/",
+      "watch": "补核企业并网与100小时测试自报；客户GRE规划尚待模块并预计2026年底COD，下一步核实际投运、可用率和全成本。",
+      "sources": [
+        {
+          "label": "独立信贷安排",
+          "url": "https://formenergy.com/form-energy-announces-closing-of-270m-credit-facility/"
+        }
+      ],
+      "valuation": {
+        "amount": "未披露",
+        "basis": "所核资本披露",
+        "date": "2026-08-12",
+        "status": "未披露",
+        "detail": "当前所核来源未列估值。",
+        "url": "https://formenergy.com/form-energy-secures-750m-in-series-g-financing/"
+      },
+      "cases": [
+        {
+          "title": "并网测试与商业运行进度",
+          "use": "验证铁空气电池的长时运行与电网应用。",
+          "mechanism": "铁空气电池pack并网测试，逐步扩展到客户试点。",
+          "evidence": "Form官网2026条目自报170模块、10+并网pack测试及连续100小时；GRE 2026 IRP仍预计年底商业运行。",
+          "limit": "公司年表未给具体披露日；IRP是旧规划预期。测试、已交付模块、COD和长期商业成本分别核查。",
+          "url": "https://formenergy.com/about/",
+          "checkedAt": "2026-10-17",
+          "sources": [
+            {
+              "label": "客户IRP项目段（PDF第16页）",
+              "url": "https://greatriverenergy.com/wp-content/uploads/2026/05/2026-2040-GRE-IRP-FINAL-4-24-2026.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cfs",
+      "name": "Commonwealth Fusion Systems",
+      "directions": [
+        "fusion"
+      ],
+      "domain": "能源",
+      "hq": "美国 · Devens, MA",
+      "founders": "Bob Mumgaard、Brandon Sorbom、Dan Brunner、Dennis Whyte、Martin Greenwald、Zach Hartwig",
+      "founderContext": "MIT聚变团队衍生；Bob Mumgaard任CEO。",
+      "founderSource": "https://ilp.mit.edu/sites/default/files/2020-01/Engine.2018.RD_.pdf",
+      "capital": {
+        "status": "非上市",
+        "event": "10亿美元融资 · 参投披露",
+        "date": "2026-09-10",
+        "amount": "10亿美元",
+        "investors": "现代汽车集团（本轮已确认）；其他具体机构待核",
+        "detail": "7月30日公布10亿美元融资，9月10日确认现代汽车参投；单家金额未披露，属于原轮次。累计资本40亿美元。电力购买协议另计，商业供电仍在计划中。",
+        "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-hyundai-motor-group/"
+      },
+      "product": "SPARC示范装置、ARC商业电站计划",
+      "productUrl": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/",
+      "watch": "装配、等离子体和全系统经济性逐项验证；商业供电仍属未来目标。",
+      "sources": [
+        {
+          "label": "2026-07-30原融资公告",
+          "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/"
+        }
+      ],
+      "valuation": {
+        "amount": "未披露",
+        "basis": "所核资本披露",
+        "date": "2026-09-10",
+        "status": "未披露",
+        "detail": "当前所核来源未列估值。",
+        "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-hyundai-motor-group/"
+      }
+    },
+    {
+      "id": "helion",
+      "name": "Helion",
+      "directions": [
+        "fusion"
+      ],
+      "domain": "能源",
+      "hq": "美国 · Washington州",
+      "founders": "David Kirtley、Chris Pihl、John Slough、George Votroubek",
+      "founderContext": "官网2013时间线列上述四人；领导页另将Anthony Pancotti列为Co-founder，口径保留。Kirtley任CEO。",
+      "founderSource": "https://www.helionenergy.com/about",
+      "capital": {
+        "status": "非上市",
+        "event": "Series G · 9月追加完成",
+        "date": "2026-06-04",
+        "amount": "最终5亿美元",
+        "investors": "Thrive领投；Alta Park、Lux、Peak XV、Lightspeed等",
+        "detail": "本轮6月初始4.65亿美元，9月追加后合计5亿美元。初始投后估值155亿美元；追加后估值与具体完成日未披露。",
+        "url": "https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power"
+      },
+      "product": "Polaris原型实验、Orion电站建设",
+      "productUrl": "https://www.helionenergy.com/",
+      "watch": "Omega电容线制造与全厂净电分别核查：约2模块/小时为配置目标，持续产能、寿命和电网收支待验证。",
+      "valuation": {
+        "amount": "155亿美元",
+        "basis": "初始交割投后",
+        "date": "2026-06-04",
+        "status": "公司披露",
+        "detail": "6月初始交割口径；9月追加后估值未披露。",
+        "url": "https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power"
+      }
+    },
+    {
+      "id": "qwen",
+      "name": "阿里巴巴 · 千问",
+      "directions": [],
+      "domain": "当前职业参照",
+      "hq": "中国 · 团队地点待核",
+      "founders": "马云等18位联合创始人（阿里集团）",
+      "founderContext": "集团1999年创立；千问为集团内部业务。",
+      "founderSource": "https://www.alibabagroup.com/en-US/faqs-corporate-information",
+      "capital": {
+        "status": "上市集团业务",
+        "event": "集团内部投入",
+        "date": null,
+        "amount": "无独立创业轮次",
+        "investors": "集团资本配置",
+        "detail": "千问为集团内部业务，未披露独立融资轮次。",
+        "url": "https://www.alibabagroup.com/en-US/about-alibaba"
+      },
+      "product": "模型、云服务与面向消费者的AI产品",
+      "productUrl": "https://www.alibabagroup.com/en-US/about-alibaba",
+      "watch": "用户增长能否转为持续使用与付费；数据团队是否直接参与产品实验。",
+      "sources": [
+        {
+          "label": "淘宝／天猫购物助手官方公告",
+          "url": "https://home.alibabagroup.com/en-US/document-2047546975867371520"
+        }
+      ],
+      "valuation": {
+        "amount": "无独立估值",
+        "basis": "阿里集团业务",
+        "date": null,
+        "status": "集团业务",
+        "detail": "千问未披露独立融资或估值。",
+        "url": "https://www.alibabagroup.com/en-US/about-alibaba"
+      },
+      "cases": [
+        {
+          "title": "淘宝／天猫购物助手",
+          "use": "商品比较、虚拟试穿与优惠选择。",
+          "mechanism": "千问App连接淘宝和天猫商品目录。",
+          "evidence": "10/15阿里官方公告回述5月已连接商品目录并上线购物助手。",
+          "limit": "本轮核公司公告，未实测；任务成功率、留存、订单转化与购物用户覆盖未披露。",
+          "url": "https://home.alibabagroup.com/en-US/document-2047546975867371520",
+          "checkedAt": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "id": "unitree",
+      "name": "宇树科技",
+      "directions": [
+        "robots"
+      ],
+      "domain": "机器人",
+      "hq": "中国 · 杭州",
+      "founders": "王兴兴",
+      "founderContext": "2016年创立；从足式机器人、电机与运动控制延伸至人形机器人。",
+      "founderSource": "https://www.unitree.com/operate/robot/",
+      "capital": {
+        "status": "上市",
+        "event": "科创板上市",
+        "date": "2026-08-19",
+        "amount": "688836",
+        "investors": "历史B2：美团、金石投资、源码资本等",
+        "detail": "2026-08-19科创板上市。官网另披露2024-02的B2融资约10亿元。",
+        "url": "https://www.sse.com.cn/disclosure/announcement/listing/ipo/c/c_20260818_10829204.shtml"
+      },
+      "product": "四足、人形机器人与数据采集平台",
+      "productUrl": "https://www.unitree.com/",
+      "watch": "机器人数据质量与评估是否进入持续迭代；量产与真实任务表现。",
+      "sources": [
+        {
+          "label": "历史B2融资",
+          "url": "https://www.unitree.com/operate/company/"
+        }
+      ],
+      "valuation": {
+        "amount": "市值未接入",
+        "basis": "上市公司",
+        "date": null,
+        "status": "上市",
+        "detail": "市值随股价变化，当前未接入行情。",
+        "url": "https://www.sse.com.cn/disclosure/announcement/listing/ipo/c/c_20260818_10829204.shtml"
+      }
+    },
+    {
+      "id": "rokid",
+      "name": "Rokid 乐奇",
+      "directions": [
+        "spatial"
+      ],
+      "domain": "人机交互",
+      "hq": "中国 · 杭州",
+      "founders": "祝铭明（Misa Zhu）",
+      "founderContext": "2014年创立；前猛犸科技创始人、阿里巴巴M工作室负责人。",
+      "founderSource": "https://www.rokid.com/zh-CN/about",
+      "capital": {
+        "status": "非上市",
+        "event": "战略投资披露",
+        "date": "2026-03-31",
+        "amount": "康耐特拟投1.8亿元",
+        "investors": "上海康耐特光学",
+        "detail": "投资方年报公告披露以内部资金认购灵伴科技普通股，完成后不超过5%；仅为单一投资方金额，非整轮总额。后续轮次及完成状态待核。",
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033100565.pdf"
+      },
+      "product": "AI／AR眼镜、YodaOS与开发者生态",
+      "productUrl": "https://www.rokid.com/zh-CN/about",
+      "watch": "持续使用场景、开发者生态与硬件之外的软件收入。",
+      "sources": [
+        {
+          "label": "语音打车演示发布",
+          "url": "https://www.bilibili.com/video/BV1wwJ96gEy8"
+        }
+      ],
+      "valuation": {
+        "amount": "未披露",
+        "basis": "所核资本披露",
+        "date": "2026-03-31",
+        "status": "未披露",
+        "detail": "当前所核来源未列估值。",
+        "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033100565.pdf"
+      },
+      "cases": [
+        {
+          "title": "语音打车演示",
+          "use": "通过眼镜语音发起出行需求。",
+          "mechanism": "Rokid与腾讯打车合作；具体接口和支付/异常处理流程待核。",
+          "evidence": "10/16企业认证账号发布42秒演示投稿。",
+          "limit": "本轮仅核演示发布信息；未观看及实机验证，机型、开放范围和订单成功率待核。",
+          "url": "https://www.bilibili.com/video/BV1wwJ96gEy8",
+          "checkedAt": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "brainco",
+      "name": "BrainCo 强脑科技",
+      "directions": [
+        "bci"
+      ],
+      "domain": "人机交互",
+      "hq": "中国／美国 · 具体岗位地点待核",
+      "founders": "韩璧丞（Bicheng Han）",
+      "founderContext": "2015年创立；神经科学与非侵入式人机接口背景。",
+      "founderSource": "https://news.cste.org.cn/site/content/3010.html",
+      "capital": {
+        "status": "非上市",
+        "event": "Pre-B · 单家投资已交割",
+        "date": "2025-10-30",
+        "amount": "3000万美元",
+        "investors": "道氏技术旗下香港佳纳；三七互娱另有投资披露",
+        "detail": "香港佳纳单家投资额，非整轮总额。道氏2025年年报（2026-04-15披露，第97页）确认已交割；持股比例和成交估值未披露。",
+        "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-15/789d582d-b38b-4d15-b1b4-4cea7c3c7d6d.PDF"
+      },
+      "product": "非侵入式接口、仿生义肢与神经反馈产品",
+      "productUrl": "https://www.brainco.cn/en-US/about",
+      "watch": "按EEG、肌电与具体产品分别看有效性、重复使用和医疗证据。",
+      "sources": [
+        {
+          "label": "Pre-B签约公告",
+          "url": "https://static.cninfo.com.cn/finalpage/2025-09-02/1224634610.PDF"
+        },
+        {
+          "label": "三七互娱投资披露",
+          "url": "https://zhaopin.37.com/37wannet/responsibility_detail.html?from=2&id=138&title=%E6%8E%A2%E7%B4%A2%E5%88%9B%E6%96%B0%E6%8A%80%E6%9C%AF%E5%BA%94%E7%94%A8"
+        },
+        {
+          "label": "累计研发资金自述",
+          "url": "https://www.brainco.cn/en-US/about"
+        }
+      ],
+      "valuation": {
+        "amount": "超13亿美元",
+        "basis": "融资洽谈报价",
+        "date": "2025-08-05",
+        "status": "媒体报道·未确认成交",
+        "detail": "彭博引述知情人士报道；投前／投后未说明，未核实成交。道氏投资公告与年报未列成交估值。",
+        "url": "https://news.bloomberglaw.com/private-equity/china-neuralink-rival-seeks-pre-ipo-funds-at-1-3-billion-value"
+      },
+      "investors": [
+        {
+          "name": "香港佳纳（道氏技术控股子公司）",
+          "role": "Pre-B 投资方",
+          "amount": "3000万美元",
+          "date": "2025-10-30",
+          "status": "已交割",
+          "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-15/789d582d-b38b-4d15-b1b4-4cea7c3c7d6d.PDF"
+        },
+        {
+          "name": "三七互娱",
+          "role": "投资方",
+          "amount": "金额未核实",
+          "date": null,
+          "status": "投资方官网确认；轮次未列",
+          "url": "https://zhaopin.37.com/37wannet/responsibility_detail.html?from=2&id=138&title=%E6%8E%A2%E7%B4%A2%E5%88%9B%E6%96%B0%E6%8A%80%E6%9C%AF%E5%BA%94%E7%94%A8"
+        }
+      ],
+      "financing": [
+        {
+          "title": "Pre-B 投资交割",
+          "amount": "3000万美元",
+          "date": "2025-10-30",
+          "status": "已交割",
+          "detail": "香港佳纳单家认购金额；2026-04-15年报确认完成。",
+          "url": "https://disc.static.szse.cn/download/disc/disk03/finalpage/2026-04-15/789d582d-b38b-4d15-b1b4-4cea7c3c7d6d.PDF"
+        },
+        {
+          "title": "Pre-B 认购协议",
+          "amount": "3000万美元",
+          "date": "2025-09-02",
+          "status": "同一笔投资",
+          "detail": "签约披露，非新增一轮；当时尚待交割。",
+          "url": "https://static.cninfo.com.cn/finalpage/2025-09-02/1224634610.PDF"
+        },
+        {
+          "title": "累计研发资金",
+          "amount": "官网称5亿美元",
+          "date": null,
+          "status": "公司自述",
+          "detail": "官网未列日期与轮次；不与单家投资额相加。",
+          "url": "https://www.brainco.cn/en-US/about"
+        }
+      ],
+      "cases": [
+        {
+          "title": "智能仿生手",
+          "use": "上肢缺失者使用义肢抓握、持笔和拿取物品。",
+          "mechanism": "采集神经与肌肉信号、识别动作意图，再驱动仿生手。",
+          "evidence": "官方产品页列出握笔、圆柱抓握等控制模式；官方介绍记录广东省人民医院、郑大三附院公益安装项目。",
+          "limit": "现有核读为产品与项目自报；长期独立使用率、故障率和比较效果待核。",
+          "url": "https://www.brainco.cn/en-US/products/brain-robotics",
+          "sources": [
+            {
+              "label": "安装项目",
+              "url": "https://www.brainco.cn/zh-TW/about"
+            }
+          ],
+          "checkedAt": "2026-10-16"
+        },
+        {
+          "title": "Easleep 安睡仪",
+          "use": "在家佩戴设备，监测睡眠状态并提供助眠干预。",
+          "mechanism": "EEG检测结合微电流与声音干预；X-Brain应用提供睡眠记录。",
+          "evidence": "公司应用隐私政策明确描述设备、脑电采集与配套应用；官方售后政策列有在售型号。",
+          "limit": "产品可用性与临床有效性分别核查；本次未核读独立对照试验。",
+          "url": "https://bc-api.brainco.cn/rsc/api/html/XBRAIN_PRIVACY.html",
+          "sources": [
+            {
+              "label": "产品与售后",
+              "url": "https://www.brainco.cn/en-US/support/policy"
+            }
+          ],
+          "checkedAt": "2026-10-16"
+        }
+      ]
+    }
+  ]
+}

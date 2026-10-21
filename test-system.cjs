@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict'),M=require('./system-model.js');
+assert.equal(M.probability([0,0,0,0,0]),.2);
+assert(M.probability([1,0,0,0,0])>M.probability([0,0,0,0,0]));
+assert.throws(()=>M.assertCutoff([{date:'2023-01-01'}],'2015-12-31'),/lookahead/);
+assert.throws(()=>M.assertCutoff([{date:'2015-01-01',sources:[{date:'2023-01-01'}]}],'2015-12-31'),/lookahead/);
+assert.equal(M.brier(.8,1),(.8-1)**2);
+const edges=[{id:1,recordedAt:'2026-10-16',validTo:null},{id:2,recordedAt:'2025-01-01',validTo:'2026-01-01'}];
+assert.deepEqual(M.edgesAt(edges,'2025-06-01').map(x=>x.id),[2]);
+assert.deepEqual(M.edgesAt(edges,'2026-10-16').map(x=>x.id),[1]);
+console.log('JS model checks passed');

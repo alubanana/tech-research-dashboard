@@ -1,0 +1,911 @@
+{
+  "schema": 1,
+  "asOf": "2026-10-21",
+  "checkedAt": "2026-10-15",
+  "directions": [
+    {
+      "id": "worlds",
+      "name": "生成世界",
+      "domain": "数字体验",
+      "stage": "早期产品",
+      "impact": "游戏、教学和设计中的场景，可能从预先制作变为按需生成、持续修改。",
+      "mechanism": "动作条件视频模型与显式三维表示结合，让生成结果具备空间结构、控制接口和状态一致性。",
+      "companies": [
+        {
+          "name": "World Labs",
+          "role": "Marble / Atlas，生成与重建三维空间",
+          "url": "https://www.worldlabs.ai/blog/atlas",
+          "companyId": "world_labs"
+        },
+        {
+          "name": "Google DeepMind",
+          "role": "Genie，动作驱动的动态环境",
+          "url": "https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/"
+        }
+      ],
+      "proven": "已有可体验的短时动态世界和可导出的三维场景；两条路线的能力不同。",
+      "unproven": "长期状态、多玩家一致性、可靠物理交互，以及用户愿意持续付费的完整体验。",
+      "bottleneck": "从可观看、可走动，跨到可持续操作且规则稳定。",
+      "trigger": "独立团队用这些模型做出持续数小时、有重复用户的产品，并披露成本与留存。",
+      "counter": "新鲜感后使用流失，或一致性与计算成本始终限制核心玩法。",
+      "oldCategory": "视频生成 / 三维素材工具",
+      "newCategory": "可编程的体验与仿真环境",
+      "nextReview": "2026-10-22",
+      "signals": [
+        {
+          "date": "2026-09-01",
+          "title": "World Labs 发布 Atlas",
+          "kind": "企业技术发布",
+          "evidence": "企业宣称",
+          "summary": "将图像、视频、深度和相机姿态放进统一空间上下文；仍需申请早期访问。",
+          "why": "空间重建和动态生成开始合流，尚不能据此推断通用物理仿真已解决。",
+          "url": "https://www.worldlabs.ai/blog/atlas"
+        },
+        {
+          "date": "2026-01-29",
+          "title": "Project Genie 向部分订阅用户开放",
+          "kind": "产品原型",
+          "evidence": "官方产品说明",
+          "summary": "用户能生成并探索动态环境；发布版单次体验限制60秒。",
+          "why": "消费者能接触原型，但与持久世界、完整游戏仍有明显距离。",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/"
+        },
+        {
+          "date": "2026-10-16",
+          "publishedAt": "2026-10-16T14:37:13Z",
+          "title": "MIST区分视频世界模型动作执行与状态记忆",
+          "kind": "评估方法与反证",
+          "evidence": "预印本·受控生成实验",
+          "summary": "43例三段5秒基线中41例未打开容器；隐藏状态未显露时，低分无法直接归因于遗忘。",
+          "why": "评估需拆分动作、状态可见和状态正确；提示含目标与评分器择优的增益不能当独立记忆能力验证。",
+          "url": "https://arxiv.org/abs/2610.23542",
+          "checkedAt": "2026-10-20",
+          "readScope": "摘要、方法/实验§3–5/7、讨论§8、表2/12/13及相关附录C/D定向核读；内部43例Wan TI2V-5B三段5秒，另WRBench40/MBench-T30。结果依赖目标提示与同评分器择优，盲选未显著胜基线；无43例人工标签或真实外部预测验证。未运行代码/观看原视频。10/16原始提交，10/20延迟发现。"
+        },
+        {
+          "date": "2026-10-19",
+          "publishedAt": "2026-10-19T02:12:39Z",
+          "checkedAt": "2026-10-21",
+          "title": "Fréchet Forcing改善4001帧生成稳定性",
+          "kind": "长程生成研究",
+          "evidence": "预印本·长程生成",
+          "summary": "短片微调MiniWorld-1B后生成4001帧；Sekai第3581帧分叉97%转向正确，实际转角只达指令49%。",
+          "why": "支持长程画面稳定性进展；动作幅度、局部物体和重访一致性仍需分别验证，未证明真实闭环可用。",
+          "url": "https://arxiv.org/abs/2610.25666",
+          "readScope": "定向核读§4实验/基线、表2/3、96段DROID人工视频检查与§6局限；MiniWorld-1B、两域各32段评估。DROID参考为回放，评估片段曾参与预训练；无真实机器人闭环验证。未独立复现。10/19提交，10/21延迟发现。"
+        }
+      ],
+      "papers": [
+        {
+          "date": "2026-04-23",
+          "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+          "type": "预印本",
+          "contribution": "在统一场景和动作下比较交互视频模型，检验控制与世界一致性。",
+          "limit": "基准表现不能替代真实产品留存；本轮核读摘要与元数据。",
+          "url": "https://arxiv.org/abs/2604.21686"
+        },
+        {
+          "date": "2026-10-15",
+          "publishedAt": "2026-10-15T17:50:20Z",
+          "title": "Velox: Spatial Memory Makes World Models Efficient",
+          "type": "预印本",
+          "contribution": "通过空间记忆路由降低特定导航世界模型推理耗时。",
+          "limit": "定向核读实验与局限；单一骨干/导航基准，视角一致性和深度漂移仍有限，未证明小时级持久世界或真实用户成本。 UTC10月15日提交，上海10月16日；未独立复现。",
+          "url": "https://arxiv.org/abs/2610.22311"
+        },
+        {
+          "date": "2026-10-16",
+          "publishedAt": "2026-10-16T14:37:13Z",
+          "checkedAt": "2026-10-20",
+          "title": "Execution Before Memory: Diagnosing Memory Failures in Video World Models",
+          "type": "预印本·评估方法",
+          "contribution": "分开检查场景、动作执行、状态暴露和结果正确性。43例Wan三段5秒、WRBench40例及MBench-T30例定位评估瓶颈。",
+          "limit": "定向核读§3–5/7/8、表2/12/13及相关附录。43例无人工标签；改写可含目标答案，同评分器择优有收益、盲选未显著超过基线；无真实外部预测验证，MiniMax-H3不同协议分开。10/16提交，10/20延迟发现。",
+          "url": "https://arxiv.org/abs/2610.23542"
+        },
+        {
+          "date": "2026-10-19",
+          "publishedAt": "2026-10-19T02:12:39Z",
+          "checkedAt": "2026-10-21",
+          "title": "Fréchet Forcing: Training Long-Horizon Streaming World Models from Short Clips",
+          "type": "预印本·长程生成",
+          "contribution": "DROID/Sekai各32段评估，对比原模型及相同数据FM-only；另人工检查96段DROID视频，减少长程画面漂移。",
+          "limit": "仅两个域、一个模型尺度。两个分叉时点转角达指令49%–60%；4000帧约20%DROID视频有局部伪影。参考为回放、评估片段曾参与预训练，重访不保证一致，无实机闭环验证。 本轮定向章节核读；原始日期与延迟发现日分开。",
+          "url": "https://arxiv.org/abs/2610.25666"
+        }
+      ]
+    },
+    {
+      "id": "spatial",
+      "name": "空间计算",
+      "domain": "人机交互",
+      "stage": "早期产品",
+      "impact": "导航、翻译、协作和操作提示，可能直接落在所见环境中。",
+      "mechanism": "透视显示、空间定位、低功耗视觉与腕部肌电输入结合，减少手持屏幕操作。",
+      "companies": [
+        {
+          "name": "Snap / Specs",
+          "role": "透视AR眼镜、Snap OS和开发工具",
+          "url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses",
+          "companyId": "snap"
+        },
+        {
+          "name": "Meta",
+          "role": "显示眼镜、腕部肌电交互与相关研究",
+          "url": "https://about.fb.com/news/2026/05/which-meta-ai-glasses-are-right-for-you/",
+          "companyId": "meta"
+        },
+        {
+          "name": "Qualcomm",
+          "role": "为Specs等设备提供XR计算平台",
+          "url": "https://newsroom.snap.com/snap-qualcomm-strategic-collaboration-specs-2026"
+        }
+      ],
+      "proven": "显示眼镜已有具体产品；腕部肌电已有通用交互研究。",
+      "unproven": "全天佩戴的舒适与续航、跨场景稳定交互，以及超过手机的高频用途。",
+      "bottleneck": "显示、重量、功耗和可用交互必须同时过关。",
+      "trigger": "连续数月的独立佩戴数据和高频应用，而非仅发布会演示或出货目标。",
+      "counter": "多数人仍只用它拍摄、听音频，空间显示应用无法形成持续使用。",
+      "oldCategory": "穿戴设备 / 手机配件",
+      "newCategory": "随身空间界面",
+      "nextReview": "2026-10-22",
+      "signals": [
+        {
+          "date": "2026-06-16",
+          "title": "Snap 发布 SPECS AR 眼镜",
+          "kind": "产品发布",
+          "evidence": "官方产品说明",
+          "summary": "展示透视空间交互及开发工具；发布本身不等于广泛交付或形成日常习惯。",
+          "why": "基础平台逐步可用，接下来应看真实体验和开发者活动。",
+          "url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses"
+        },
+        {
+          "date": "2026-04-10",
+          "title": "Snap 与 Qualcomm 扩展 Specs 合作",
+          "kind": "工程合作",
+          "evidence": "企业宣称",
+          "summary": "双方公布多年XR平台合作。",
+          "why": "证明芯片与产品路线正在配套，不能替代功耗、良率和需求证据。",
+          "url": "https://newsroom.snap.com/snap-qualcomm-strategic-collaboration-specs-2026"
+        },
+        {
+          "date": "2026-10-16",
+          "title": "Rokid发布与腾讯的语音打车演示",
+          "kind": "应用案例·演示发布",
+          "evidence": "企业认证投稿·元数据已核",
+          "summary": "Rokid企业认证账号发布42秒语音打车演示；覆盖机型、地域与全量开放范围待核。",
+          "why": "增加眼镜连接出行服务的应用线索；下一步核实际订单成功率、手机接管次数和重复使用。",
+          "url": "https://www.bilibili.com/video/BV1wwJ96gEy8",
+          "checkedAt": "2026-10-18",
+          "readScope": "公开API核到投稿标题、作者、UTC发布时间与42秒时长；另核企业认证为杭州灵伴科技有限公司。简介为空，视频正文未观看/逐帧核验，未实机测试。媒体转述仅作发现线索；覆盖机型、城市、固件、支付/异常处理、成功率与留存未确认。"
+        }
+      ],
+      "papers": [
+        {
+          "date": "2025-07-23",
+          "title": "A generic non-invasive neuromotor interface for human-computer interaction",
+          "type": "同行评审",
+          "contribution": "以腕部表面肌电研究通用人机输入；信号来自肌肉活动。",
+          "limit": "不是读取任意思想，也不能直接推断全天消费体验；本轮核读元数据与公开摘要。",
+          "url": "https://www.nature.com/articles/s41586-025-09255-w"
+        }
+      ]
+    },
+    {
+      "id": "labs",
+      "name": "自主实验",
+      "domain": "科学基础",
+      "stage": "技术验证",
+      "impact": "新材料、器件和药物的试验周期可能缩短，变化通过产品成本与性能进入日常生活。",
+      "mechanism": "模型提出候选，机器人实验和测量，再把真实结果反馈给下一轮设计。",
+      "companies": [
+        {
+          "name": "Periodic Labs",
+          "role": "AI模型与自主科学实验室",
+          "url": "https://periodic.com/",
+          "companyId": "periodic"
+        }
+      ],
+      "proven": "特定材料闭环优化已有研究；VERID验证染料液处理状态与故障恢复，适配体反馈由人执行湿实验。",
+      "unproven": "跨领域发现效率、独立复现、设备利用率与最终量产收益；不能把学术成果归给公司。",
+      "bottleneck": "高质量真实实验数据与可信测量，仍是模型之外的硬约束。",
+      "trigger": "多个独立实验室复现结果，材料进入外部客户的合格产品，并披露总实验成本。",
+      "counter": "测量伪信号会误导优化；缺匹配预算对照或独立复现，发现改善也可能无法转为量产收益。",
+      "oldCategory": "实验室自动化 / 科研软件",
+      "newCategory": "发现与制造相连的实验基础设施",
+      "nextReview": "2026-10-22",
+      "signals": [
+        {
+          "date": "2026-09-15",
+          "title": "Periodic 发布实验数据驱动的模型研究",
+          "kind": "企业技术发布",
+          "evidence": "企业宣称",
+          "summary": "研究将自主实验数据与X射线衍射分析模型结合。",
+          "why": "重点在新增真实测量是否提高发现能力，而非模型回答科研问题的流畅度。",
+          "url": "https://periodic.com/news/nature-is-our-learning-environment"
+        },
+        {
+          "date": "2026-04-14",
+          "title": "闭环系统联合优化钙钛矿材料与制备",
+          "kind": "原始研究",
+          "evidence": "同行评审",
+          "summary": "论文报告小电池、微型组件及指定条件下的稳定性结果。",
+          "why": "显示发现与制造可以连成反馈回路；实验尺度距长期量产仍有距离。",
+          "url": "https://www.nature.com/articles/s41586-026-10482-y"
+        },
+        {
+          "date": "2026-10-16",
+          "title": "Google披露湿实验闭环与机器人实验基础设施",
+          "kind": "原始研究与官方技术披露",
+          "evidence": "研究团队自报；原稿定向核读",
+          "summary": "VERID在染料任务验证机器人状态与故障处理；适配体三轮反馈的湿实验由人执行，蛋白设计采用人机协作。",
+          "why": "新增闭环可行性与测量伪信号反证；尚需独立复现、匹配预算对照和跨领域验证。",
+          "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/"
+        }
+      ],
+      "papers": [
+        {
+          "date": "2026-04-14",
+          "title": "Autonomous closed-loop framework for reproducible perovskite solar cells",
+          "type": "同行评审",
+          "contribution": "把机器学习选材、自动制备和测量组成迭代闭环。",
+          "limit": "本轮核读公开摘要和数据说明；特定材料与小尺寸结果不等于通用AI科学家。",
+          "url": "https://www.nature.com/articles/s41586-026-10482-y"
+        },
+        {
+          "date": "2026-10-16",
+          "title": "Semantic Representation for Agentic Self-Play in Automated Laboratories",
+          "type": "原始技术稿",
+          "contribution": "在水/染料液处理案例中验证语义实验状态、安全检查、故障恢复与迭代。",
+          "limit": "定向核读原稿p1-2、p4-10；未核全部附录或独立复现。不是蛋白发现的一体化无人平台。",
+          "url": "https://www.gstatic.com/science-ai/verid_semantic_lab.pdf"
+        },
+        {
+          "date": "2026-10-12",
+          "title": "Aptamers as a sandbox for lab-in-the-loop agentic molecular discovery",
+          "type": "原始技术稿",
+          "contribution": "三轮实验反馈用于适配体设计，并暴露非特异黏附造成的错误优化。",
+          "limit": "定向核读摘要、p10-13限制/人工湿实验、p15/18/19方法与数据段；未核全部补充表，缺匹配预算无反馈对照。",
+          "url": "https://www.gstatic.com/science-ai/agentic_aptamer_sandbox.pdf"
+        },
+        {
+          "date": "2026-10-14",
+          "title": "Agent-guided epitope excision enables economical de novo binder design",
+          "type": "原始技术稿",
+          "contribution": "人机协作通过表位裁剪降低结构预测计算量，并以FAP结合物进行湿实验验证。",
+          "limit": "定向核读p1-3及p10-12；计算命中与少量湿实验克隆不是同一指标，未独立复现。",
+          "url": "https://www.gstatic.com/science-ai/epitope_excision.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bci",
+      "name": "脑机接口与交流辅助",
+      "domain": "人机交互",
+      "stage": "早期临床",
+      "impact": "失语或瘫痪者可能更独立地说话和操作设备；健康人增强须另行验证。",
+      "mechanism": "植入电极记录皮层活动，用解码模型将运动或发音意图转为文字、声音和控制。",
+      "companies": [
+        {
+          "name": "Neuralink",
+          "role": "植入式运动与语言接口研究",
+          "url": "https://neuralink.com/updates/",
+          "companyId": "neuralink"
+        },
+        {
+          "name": "Paradromics",
+          "role": "Connexus，高带宽植入式语言接口",
+          "url": "https://paradromics.com/news/paradromics-achieves-real-time-speech-connexus-brain-computer-interface/",
+          "companyId": "paradromics"
+        }
+      ],
+      "proven": "少数研究参与者已实现神经信号驱动交流；学术团队展示实时语音及语调控制。",
+      "unproven": "跨患者多年稳定性、低维护家庭使用、医疗支付，以及健康消费者采用。",
+      "bottleneck": "长期信号稳定、手术与维护成本、日常独立使用。",
+      "trigger": "多患者长期家庭使用数据，包含校准频次、误触发、并发症和支持成本。",
+      "counter": "长期解码漂移、家庭支持负担或手术风险使可用人群持续受限。",
+      "oldCategory": "神经外科研究设备",
+      "newCategory": "恢复交流与控制能力的医疗平台",
+      "nextReview": "2026-10-22",
+      "signals": [
+        {
+          "date": "2026-10-08",
+          "title": "Paradromics 披露羊实验长期记录数据",
+          "kind": "临床前耐久性实验",
+          "evidence": "企业动物实验披露",
+          "summary": "公司称2只羊的皮层模块记录与解码稳定超过4年；另6只羊的完整系统信号近2年保持稳定。",
+          "why": "为电极耐久性提供线索；样本小、为企业自报，仍需独立复核和人体长期数据。",
+          "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+          "checkedAt": "2026-10-16"
+        },
+        {
+          "date": "2026-10-01",
+          "title": "Neuralink 公布脑数据预训练研究",
+          "kind": "企业技术发布",
+          "evidence": "企业宣称",
+          "summary": "官方更新讨论用50,000小时无标签脑数据做预训练。",
+          "why": "数据规模化出现新路径；不能直接当作临床效果或长期可靠性证明。",
+          "url": "https://neuralink.com/updates/pretraining-on-50000-hours/"
+        },
+        {
+          "date": "2026-09-14",
+          "title": "Paradromics 披露首位参与者实时交流",
+          "kind": "首例临床披露",
+          "evidence": "企业宣称",
+          "summary": "公司称首位Connexus植入参与者可选择词语并交流。",
+          "why": "人体可用性的早期信号；需要跨患者、长期家庭数据。",
+          "url": "https://paradromics.com/news/paradromics-achieves-real-time-speech-connexus-brain-computer-interface/"
+        },
+        {
+          "date": "2026-10-19",
+          "title": "Paradromics与Siemens Healthineers合作开发临床影像流程",
+          "kind": "临床集成合作",
+          "evidence": "企业公告·开发计划",
+          "summary": "拟整合结构/功能MRI、血管影像及CT，支持评估、定位、手术规划和植入后评估；初期聚焦言语运动功能。",
+          "why": "增加临床流程集成证据；完整方案仍待开发，未披露病例结果、比较效果或审批。",
+          "url": "https://paradromics.com/news/paradromics-siemens-healthineers-launch-strategic-initiative-build-advanced-imaging-foundation-for-the-future-of-brain-computer-interfaces/",
+          "checkedAt": "2026-10-20",
+          "readScope": "核读Paradromics公告正文和研究用途限制：现有标准扫描协议已用，拟开发完整多模态影像流程；未披露样本/比较结果、审批或资本金额。Siemens一方未找到同文；web正文可读，直接HTTP403保留。"
+        }
+      ],
+      "papers": [
+        {
+          "date": "2025-06-12",
+          "title": "An instantaneous voice-synthesis neuroprosthesis",
+          "type": "同行评审",
+          "contribution": "单位参与者研究展示实时合成语音与语调控制。",
+          "limit": "学术研究，不归属于上述公司；固定解码器表现随时间下降，跨人和长期效果待验证。",
+          "url": "https://www.nature.com/articles/s41586-025-09127-3"
+        },
+        {
+          "date": "2026-10-15",
+          "title": "Connect-One 临床登记 NCT07357428",
+          "type": "临床登记",
+          "contribution": "跟踪参与者范围、主要终点与研究状态。",
+          "limit": "日期为本轮核查日；登记与公司首例披露均不等于设备上市批准。",
+          "url": "https://clinicaltrials.gov/study/NCT07357428"
+        }
+      ]
+    },
+    {
+      "id": "editing",
+      "name": "体内基因编辑",
+      "domain": "健康",
+      "stage": "早期临床",
+      "impact": "部分遗传病可能从长期控制转向直接处理病因，并逐步覆盖更多罕见变体。",
+      "mechanism": "用脂质纳米颗粒等递送编辑材料，在体内关闭目标基因或纠正特定突变。",
+      "companies": [
+        {
+          "name": "Beam Therapeutics",
+          "role": "碱基编辑；BEAM-301等肝脏项目",
+          "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301",
+          "companyId": "beam"
+        },
+        {
+          "name": "Intellia Therapeutics",
+          "role": "体内CRISPR项目；nex-z等",
+          "url": "https://ir.intelliatx.com/node/12526/html"
+        }
+      ],
+      "proven": "已有小样本人体病因编辑结果；CHOP/Penn曾为单个婴儿开发定制治疗。",
+      "unproven": "跨组织递送、长期安全与疗效、跨变体复用流程，以及可负担的制造支付。",
+      "bottleneck": "递送与安全性，加上每个变体的验证成本。",
+      "trigger": "更多受试者和长期随访；同一平台处理多个变体时真实降低开发周期和成本。",
+      "counter": "严重不良事件抵消获益，或每次换靶点仍需近乎重新开发一款药物。",
+      "oldCategory": "按单个病种开发的药物",
+      "newCategory": "可复用的编辑与递送流程",
+      "nextReview": "2026-10-30",
+      "signals": [
+        {
+          "date": "2026-10-13",
+          "title": "BEAM-301 首批6人数据同时出现效果与风险",
+          "kind": "早期临床披露",
+          "evidence": "企业宣称",
+          "summary": "部分受试者空腹耐受改善；6人均有相关不良事件，报告5次严重不良事件并已缓解。",
+          "why": "不能只取效果指标；小样本、无对照和安全性共同决定下一步。",
+          "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301"
+        },
+        {
+          "date": "2026-03-02",
+          "title": "nex-z 的 MAGNITUDE 临床暂停解除",
+          "kind": "监管状态披露",
+          "evidence": "公司监管文件",
+          "summary": "此前肝脏安全事件导致暂停；该研究在增加安全措施后获准恢复。",
+          "why": "历史安全反证保留；当前状态须更新为暂停已解除。",
+          "url": "https://ir.intelliatx.com/node/12526/html"
+        }
+      ],
+      "papers": [
+        {
+          "date": "2025-05-15",
+          "title": "Patient-Specific In Vivo Gene Editing to Treat a Rare Genetic Disease",
+          "type": "同行评审",
+          "contribution": "CHOP/Penn团队的单个CPS1缺陷婴儿定制肝脏编辑案例。",
+          "limit": "初始随访短，不能推断普遍治愈；该学术案例不归给Beam或Intellia。",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12713542/"
+        },
+        {
+          "date": "2026-10-15",
+          "title": "BEAM-301 临床登记 NCT06735755",
+          "type": "临床登记",
+          "contribution": "核对研究设计与主要安全终点。",
+          "limit": "日期为核查日，临床登记不等于结果已获独立验证。",
+          "url": "https://clinicaltrials.gov/study/NCT06735755"
+        },
+        {
+          "date": "2026-10-16",
+          "title": "Translating base editors: a decade of progress from the bench to the clinic",
+          "type": "综述·摘要核读",
+          "contribution": "梳理碱基编辑从基础研究到临床转化的进展。",
+          "limit": "仅核标题、作者、发布日期及摘要；正文付费，未作为新增临床疗效或安全证据。",
+          "url": "https://www.nature.com/articles/s41573-026-01548-7"
+        }
+      ]
+    },
+    {
+      "id": "organs",
+      "name": "异种器官移植",
+      "domain": "健康",
+      "stage": "早期临床",
+      "impact": "肾衰患者可能减少透析与供肾等待；关键是能否提供多年稳定替代。",
+      "mechanism": "多重基因编辑猪器官，降低免疫不相容与感染风险，再配合移植及免疫管理。",
+      "companies": [
+        {
+          "name": "eGenesis",
+          "role": "EGEN-2784编辑猪肾与临床开发",
+          "url": "https://egenesisbio.com/news-media/press-releases/egenesis-announces-clinical-update-in-ongoing-expanded-access-study-of-egen-2784-in-patients-with-kidney-failure",
+          "companyId": "egenesis"
+        },
+        {
+          "name": "United Therapeutics / Revivicor",
+          "role": "UKidney及EXPAND研究",
+          "url": "https://pipeline.unither.com/"
+        }
+      ],
+      "proven": "部分活体受者已获得数月免透析；也出现排斥、移植物取出和后续人肾移植。",
+      "unproven": "多年器官与受者存活、免疫抑制负担、感染监测和规模化供给。",
+      "bottleneck": "从数月桥接跨到多年安全、可负担的替代。",
+      "trigger": "多受者完整6—12个月结局，统一披露移植物取出、感染与免疫抑制负担。",
+      "counter": "多年仍只能短期桥接，或免疫与感染代价抵消免透析收益。",
+      "oldCategory": "特殊个案移植",
+      "newCategory": "可计划生产的器官供给",
+      "nextReview": "2026-11-15",
+      "signals": [
+        {
+          "date": "2026-09-03",
+          "title": "eGenesis 更新5名扩展使用受者",
+          "kind": "早期临床披露",
+          "evidence": "企业宣称",
+          "summary": "公司称3名受者免透析超过8个月，2名后来转入人肾移植；33人RESTORE试验预计2027年第一季度启动。",
+          "why": "区分桥接获益和永久替代；计划入组尚未发生。",
+          "url": "https://egenesisbio.com/news-media/press-releases/egenesis-announces-clinical-update-in-ongoing-expanded-access-study-of-egen-2784-in-patients-with-kidney-failure"
+        },
+        {
+          "date": "2026-01-08",
+          "title": "猪肾受者免疫图谱揭示早期排斥",
+          "kind": "原始研究",
+          "evidence": "同行评审",
+          "summary": "单受者研究观察到早期T细胞排斥，经强化免疫抑制逆转。",
+          "why": "生理可行性与免疫负担必须一起记录。",
+          "url": "https://www.nature.com/articles/s41591-025-04053-3"
+        }
+      ],
+      "papers": [
+        {
+          "date": "2026-01-08",
+          "title": "猪肾活体受者的纵向免疫图谱研究",
+          "type": "同行评审",
+          "contribution": "核查排斥与免疫抑制在人体中的机制。",
+          "limit": "单受者数据，无法外推整体长期生存率；中文为主题译名。",
+          "url": "https://www.nature.com/articles/s41591-025-04053-3"
+        },
+        {
+          "date": "2026-10-15",
+          "title": "EXPAND 临床登记 NCT06878560",
+          "type": "临床登记",
+          "contribution": "跟踪UKidney正式临床研究。",
+          "limit": "日期为核查日；试验许可不是上市批准。",
+          "url": "https://clinicaltrials.gov/study/NCT06878560"
+        }
+      ]
+    },
+    {
+      "id": "robots",
+      "name": "通用机器人",
+      "domain": "实体自动化",
+      "stage": "局部采用",
+      "impact": "实体服务与部分家务可能按需完成，不必为每项工作重新编程。",
+      "mechanism": "视觉—语言—动作模型配合跨场景数据，学习技能并迁移到新物体与环境。",
+      "companies": [
+        {
+          "name": "Figure",
+          "role": "Helix与人形机器人泛化研究",
+          "url": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization",
+          "companyId": "figure"
+        },
+        {
+          "name": "Physical Intelligence",
+          "role": "机器人基础模型与API",
+          "url": "https://www.pi.website/blog/api-beta",
+          "companyId": "pi"
+        },
+        {
+          "name": "Agility Robotics",
+          "role": "Digit限定流程物流部署",
+          "url": "https://www.agilityrobotics.com/content/digit-moves-over-100k-totes"
+        }
+      ],
+      "proven": "物流窄场景已运行；公司研究显示部分陌生家庭任务能迁移。",
+      "unproven": "家庭长任务可靠性、低接管率，以及包含维修和后台人员的经济性。",
+      "bottleneck": "异常恢复、软物体操作和长任务的可靠性。",
+      "trigger": "独立客户披露人工接管次数、整班有效劳动与含维修总成本。",
+      "counter": "每扩场地仍大量调试；后台人工成为主要成本，专用设备长期更经济。",
+      "oldCategory": "专用自动化设备",
+      "newCategory": "可迁移的实体劳动能力",
+      "nextReview": "2026-10-22",
+      "signals": [
+        {
+          "date": "2026-10-13",
+          "title": "Google 发布 Argon 机器人开发案例",
+          "kind": "开发案例",
+          "evidence": "企业演示",
+          "summary": "案例包括机器人控制、场景到MuJoCo仿真、视频标注与仿真数据生成，使用预设动作接口和校准信息。",
+          "why": "提供数据、仿真与评测工具的使用线索；示例不能证明跨家庭长任务可靠性。",
+          "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+          "checkedAt": "2026-10-16"
+        },
+        {
+          "date": "2026-10-13",
+          "title": "Physical Intelligence 开放模型 API beta",
+          "kind": "产品测试",
+          "evidence": "企业宣称",
+          "summary": "提供机器人模型接口，应用部署仍需示范数据、微调与失败反馈。",
+          "why": "出现开发接口不等于通用机器人开箱即用。",
+          "url": "https://www.pi.website/blog/api-beta"
+        },
+        {
+          "date": "2026-09-17",
+          "title": "Figure 报告30个陌生家庭任务测试",
+          "kind": "企业实验",
+          "evidence": "企业宣称",
+          "summary": "3类任务完整成功率56%，采用公司盲测口径。",
+          "why": "可量化的泛化苗头；失败比例也说明距离可靠家政仍有门槛。",
+          "url": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization"
+        },
+        {
+          "date": "2026-10-15",
+          "publishedAt": "2026-10-15T16:34:06Z",
+          "title": "REKI公开短时记忆机器人模型",
+          "kind": "机器人控制研究",
+          "evidence": "预印本·受控实机实验",
+          "summary": "公开数据训练的2.4B模型在单UR5、5项桌面任务验证；每任务10次测试，长序列任务相对无记忆版本计分提高12–17.5个百分点。",
+          "why": "提供可复核的记忆消融及开放训练路径；小样本任务计分含部分完成，权重非商业许可，长期自主运行仍待验证。",
+          "url": "https://arxiv.org/abs/2610.22178",
+          "checkedAt": "2026-10-19",
+          "readScope": "核读摘要、§7–8及附录E：单UR5平台、5任务、每任务50训练与10测试episode；结果包含部分子任务计分，非纯完整成功率。核官方仓库README许可，代码MIT、权重CC-BY-NC-SA 4.0；未运行代码/独立复现。UTC10/15提交，上海10/16。"
+        },
+        {
+          "date": "2026-10-15",
+          "publishedAt": "2026-10-15T16:40:48Z",
+          "title": "G1全身接触控制实机实验",
+          "kind": "机器人控制研究",
+          "evidence": "预印本·受控实机实验",
+          "summary": "第三方G1实验合计45/50次完成，完整货架搬运为7/10；由1名熟练操作者持续给动作指引。",
+          "why": "支持多接触操作控制进展；90%合计数含身体往返任务，不能作为自主家务成功率或Unitree商业部署数据。",
+          "url": "https://arxiv.org/abs/2610.22184",
+          "checkedAt": "2026-10-19",
+          "readScope": "核读摘要、§IV-C、表I/II及结论；G1、篮球/15cm纸箱、1名训练8小时以上操作者。50次合计45成功含40次身体往返，完整货架搬运7/10；人工持续提供动作与切换权重。未全文复核全部仿真附录、观看完整视频或独立复现。UTC10/15提交，上海10/16。"
+        },
+        {
+          "date": "2026-10-17",
+          "publishedAt": "2026-10-17T07:12:36Z",
+          "checkedAt": "2026-10-21",
+          "title": "ContactBench检验机器人接触操作与行为适应",
+          "kind": "基准与反证",
+          "evidence": "预印本·真实机器人基准",
+          "summary": "单臂6任务中，π0.5插充电器6/30、拧内六角17/30、开门30/30；开门转角要求60°增至80°时降为3/30。",
+          "why": "显示接触对齐、力控制与行为适应仍是门槛；触觉RDP在80°为16/30，反馈架构和传感覆盖影响收益。",
+          "url": "https://arxiv.org/abs/2610.24512",
+          "readScope": "定向核读任务、实验设置、表III–V、行为泛化与讨论；UR5e/WSG50，6任务各100示范，各被评策略每任务30次。单任务微调、物体固定；触觉仅4任务，另2任务未评触觉。未运行代码/观看视频。10/17提交，10/21延迟发现。"
+        }
+      ],
+      "papers": [
+        {
+          "date": "2025-04-22",
+          "title": "π0.5: A VLA with Open-World Generalization",
+          "type": "技术报告",
+          "contribution": "研究跨环境机器人技能泛化，官方页面提供原始报告入口。",
+          "limit": "研究任务分布与家庭全场景不同，尚需独立长期运行数据。",
+          "url": "https://www.pi.website/blog/pi05"
+        },
+        {
+          "date": "2026-10-15",
+          "publishedAt": "2026-10-15T16:44:18Z",
+          "title": "MOSS: Mode-Oriented Source Shaping for Robot Flow Matching Policies",
+          "type": "预印本",
+          "contribution": "预定义离散模式下改善机器人策略的模式可控性，含6个仿真和3个真实短任务。",
+          "limit": "定向核读实验、局限与部分附录；模式在训练前固定，短任务结果未验证全班次或长期家庭可靠性。 UTC10月15日提交，上海10月16日；未独立复现。",
+          "url": "https://arxiv.org/abs/2610.22193"
+        },
+        {
+          "date": "2026-10-15",
+          "publishedAt": "2026-10-15T16:34:06Z",
+          "title": "REKI: Registering Knowledge in VLAs",
+          "type": "预印本",
+          "contribution": "用动作专家寄存token保存短时上下文，开放数据整理、训练及评测管线；实机5任务，每任务50训练/10测试episode。",
+          "limit": "定向核读§7–8、附录E及仓库README。图8为完整成功加部分子任务计分，不能把百分点改善当纯任务成功率；单平台、小样本，长期记忆与跨场景独立复现待核。代码MIT，权重CC-BY-NC-SA 4.0。 UTC10/15提交，上海10/16。",
+          "url": "https://arxiv.org/abs/2610.22178",
+          "checkedAt": "2026-10-19"
+        },
+        {
+          "date": "2026-10-15",
+          "publishedAt": "2026-10-15T16:40:48Z",
+          "title": "Whole-Body Dexterity",
+          "type": "预印本",
+          "contribution": "将手臂和躯干作为接触面；实机3类任务合计45/50，对照GMR 9/50、SONIC 2/50。",
+          "limit": "核读§IV-C、表I/II与结论。40次身体往返加10次货架搬运，后者完整7/10；1名训练8小时以上操作者、篮球及15cm纸箱，人工持续指引并切换权重。单平台，未独立复现。 UTC10/15提交，上海10/16。",
+          "url": "https://arxiv.org/abs/2610.22184",
+          "checkedAt": "2026-10-19"
+        },
+        {
+          "date": "2026-10-17",
+          "publishedAt": "2026-10-17T07:12:36Z",
+          "checkedAt": "2026-10-21",
+          "title": "ContactBench 1.0: A Benchmark for Everyday Contact-Rich Robotic Manipulation",
+          "type": "预印本·真实机器人基准",
+          "contribution": "6项真实单臂接触任务，各100示范和每策略30次配对评估；对比DP、π0.5及RDP/FTP-1触觉策略。",
+          "limit": "UR5e/WSG50、单任务微调与固定物体。触觉只评4任务；另2任务不适合该传感器。门把直径60→55mm时各策略0/10。结果限所测装置与策略，未独立复现。 本轮定向章节核读；原始日期与延迟发现日分开。",
+          "url": "https://arxiv.org/abs/2610.24512"
+        }
+      ]
+    },
+    {
+      "id": "tandem",
+      "name": "叠层光伏",
+      "domain": "能源",
+      "stage": "早期产品",
+      "impact": "相同屋顶或土地可发出更多电；需与电网、储能共同改变用电成本。",
+      "mechanism": "钙钛矿与硅吸收不同能段的光，叠层提升转换效率。",
+      "companies": [
+        {
+          "name": "Oxford PV",
+          "role": "钙钛矿—硅叠层电池与早期交付",
+          "url": "https://www.oxfordpv.com/press-releases/oxford-pv-solar-technology-patent",
+          "companyId": "oxford_pv"
+        },
+        {
+          "name": "LONGi 隆基",
+          "role": "晶硅—钙钛矿叠层研发",
+          "url": "https://www.longi.com/en/news/crystalline-silicon-perovskite-tandem-solar-cell-new-world-efficiency-2026/"
+        }
+      ],
+      "proven": "研发电池的效率优势和早期商业发货已存在。",
+      "unproven": "大面积组件多年户外寿命、量产良率与可兑现的成本优势。",
+      "bottleneck": "寿命、遮阴失效与量产成本，须同时过关。",
+      "trigger": "多年户外数据、批次良率与总成本；跟踪目录正式修订及生产技术出口登记实施。",
+      "counter": "效率收益被封装与衰减吞没，成熟硅技术降价持续压低竞争空间。",
+      "oldCategory": "高效率实验电池",
+      "newCategory": "规模化发电组件",
+      "nextReview": "2026-11-15",
+      "signals": [
+        {
+          "date": "2026-07-14",
+          "title": "LONGi 宣布叠层研发电池35.5%效率",
+          "kind": "认证研发结果",
+          "evidence": "企业披露认证",
+          "summary": "公司称经ESTI认证；官网公告发表于7月15日。",
+          "why": "研发效率与量产组件是两个尺度，不直接推出电价变化。",
+          "url": "https://www.longi.com/en/news/crystalline-silicon-perovskite-tandem-solar-cell-new-world-efficiency-2026/"
+        },
+        {
+          "date": "2026-06-25",
+          "title": "叠层电池研究针对局部遮阴失效",
+          "kind": "原始研究",
+          "evidence": "同行评审",
+          "summary": "研究渐变介电层与反偏损伤，同时测试效率和稳定性。",
+          "why": "耐久性失效机制的解决比孤立效率纪录更接近工程门槛。",
+          "url": "https://www.nature.com/articles/s41560-026-02067-w"
+        },
+        {
+          "date": "2026-10-16",
+          "title": "叠层电池生产技术出口启动临时登记，目录拟修订",
+          "kind": "政策与产业扩散",
+          "evidence": "官方公告与答问",
+          "summary": "目录征求意见至11月15日，拟纳入钙钛矿及叠层组件生产技术；现行措施是技术出口前临时登记。相关技术制成的产品不在此次管理范围。",
+          "why": "关注工艺授权、境外技术转移及列明核心设备；对全球组件采用净影响待核，维持技术阶段。",
+          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_0a31a3c9ac404f7a9b0e917ce3412997.html"
+        }
+      ],
+      "papers": [
+        {
+          "date": "2026-06-25",
+          "title": "叠层太阳能电池的反偏与遮阴稳定性研究",
+          "type": "同行评审",
+          "contribution": "研究工程使用中的局部遮阴与反偏损伤。",
+          "limit": "实验稳定性测试不替代多年户外寿命；中文为主题译名。",
+          "url": "https://www.nature.com/articles/s41560-026-02067-w"
+        }
+      ]
+    },
+    {
+      "id": "storage",
+      "name": "多日储能",
+      "domain": "能源",
+      "stage": "工程试点",
+      "impact": "无风少日照时也能稳定供电，让电气化更少受天气限制。",
+      "mechanism": "铁空气等长时技术以较低材料成本换取数十至上百小时储能。",
+      "companies": [
+        {
+          "name": "Form Energy",
+          "role": "100小时级铁空气储能系统",
+          "url": "https://formenergy.com/form-energy-and-futurenergy-ireland-announce-agreement-to-deploy-first-iron-air-battery-storage-project-in-ireland/",
+          "companyId": "form_energy"
+        }
+      ],
+      "proven": "外部报告验证过千瓦级原型；Form官网另自报170模块、10+并网pack测试及连续100小时，仍需独立商业运行验证。",
+      "unproven": "大型商业运行的可用率、循环损耗、实测成本与维护；GRE 2026 IRP仍预计年底COD，尚待剩余模块。",
+      "bottleneck": "从模块走到并网系统，并找到能补偿可靠性价值的市场。",
+      "trigger": "商业项目完成长时放电，并披露可用率、效率与全生命周期成本。",
+      "counter": "大型项目延期，或成熟电源与其他储能组合在系统层面更便宜。",
+      "oldCategory": "长时储能原型",
+      "newCategory": "跨天气周期的电力可靠性资源",
+      "nextReview": "2026-11-15",
+      "signals": [
+        {
+          "date": "2026-03-17",
+          "title": "Form Energy 签署爱尔兰1000MWh项目协议",
+          "kind": "项目合同",
+          "evidence": "企业宣称",
+          "summary": "10MW/1000MWh项目计划2029年上线。",
+          "why": "是客户与建设信号，尚非该项目已投运。",
+          "url": "https://formenergy.com/form-energy-and-futurenergy-ireland-announce-agreement-to-deploy-first-iron-air-battery-storage-project-in-ireland/"
+        },
+        {
+          "date": "2025-11-19",
+          "title": "加州能源委员会披露空气储能验证报告",
+          "kind": "工程验证",
+          "evidence": "官方技术报告",
+          "summary": "报告涉及千瓦级原型模块的性能与功能测试。",
+          "why": "有外部验证，但规模边界必须保留。",
+          "url": "https://www.energy.ca.gov/publications/2025/demonstrating-aqueous-air-breathing-energy-storage-system-multi-day-resiliency"
+        },
+        {
+          "date": "2026-04-24",
+          "title": "GRE规划仍待储能模块交付，预计2026年底商业运行",
+          "kind": "项目进度·历史补核",
+          "evidence": "客户IRP项目段",
+          "summary": "1.5MW、设计100小时试点尚待剩余模块，计划2026年底COD；较旧项目页的2025年底预期已推后。",
+          "why": "保留延期与投运前验证条件；交付、并网测试、商业运行和一年成本记录分别观察。",
+          "url": "https://greatriverenergy.com/wp-content/uploads/2026/05/2026-2040-GRE-IRP-FINAL-4-24-2026.pdf"
+        }
+      ],
+      "papers": [
+        {
+          "date": "2025-11-19",
+          "title": "Demonstrating an Aqueous Air-Breathing Energy Storage System for Multi-Day Resiliency",
+          "type": "工程报告",
+          "contribution": "记录原型模块验证与系统工程问题。",
+          "limit": "千瓦级模块不等于电网级系统经济性已证实。",
+          "url": "https://www.energy.ca.gov/publications/2025/demonstrating-aqueous-air-breathing-energy-storage-system-multi-day-resiliency"
+        },
+        {
+          "date": "2026-04-24",
+          "title": "Great River Energy 2026—2040 IRP",
+          "type": "客户工程规划",
+          "contribution": "提供Cambridge 1.5MW/100小时试点的剩余模块与预计投运进度。",
+          "limit": "只核封函及PDF第16页项目段；这是历史规划中的预期，未据此确认当前已实现COD。",
+          "url": "https://greatriverenergy.com/wp-content/uploads/2026/05/2026-2040-GRE-IRP-FINAL-4-24-2026.pdf"
+        }
+      ]
+    },
+    {
+      "id": "fusion",
+      "name": "聚变发电",
+      "domain": "能源",
+      "stage": "远期观察",
+      "impact": "若全厂净电与经济性成立，可增加稳定低碳电源；2036也可能仍处示范阶段。",
+      "mechanism": "高温超导磁约束或脉冲场反位形等路线，尝试把聚变能量转成可用电力。",
+      "companies": [
+        {
+          "name": "Commonwealth Fusion Systems",
+          "role": "SPARC高磁场托卡马克及ARC电站设计",
+          "url": "https://www.cfs.energy/technology/sparc/",
+          "companyId": "cfs"
+        },
+        {
+          "name": "Helion",
+          "role": "脉冲聚变与直接能量回收",
+          "url": "https://www.helionenergy.com/newsroom/helion-achieves-new-fusion-energy-milestones",
+          "companyId": "helion"
+        }
+      ],
+      "proven": "磁体、装置与等离子体实验持续推进；仍未在本轮来源中证明商业全厂净发电。",
+      "unproven": "燃料循环、材料寿命、整厂净电、维护周期与有竞争力电价。",
+      "bottleneck": "等离子体能量增益与全厂净电之间的工程距离。",
+      "trigger": "公开可复核全厂能量收支，再看重复运行、维护与并网数据。",
+      "counter": "实验指标提升而整机收支长期不过关，或维护与建设成本无法竞争。",
+      "oldCategory": "高能物理装置",
+      "newCategory": "可复制的稳定电源",
+      "nextReview": "2026-11-15",
+      "signals": [
+        {
+          "date": "2026-09-30",
+          "title": "CFS 签订大规模高温超导带材采购",
+          "kind": "供应链投入",
+          "evidence": "企业宣称",
+          "summary": "采购承诺说明制造链开始投入，SPARC的能量增益仍待实验。",
+          "why": "工程配套信号，不是净电已实现。",
+          "url": "https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-places-largest-single-/"
+        },
+        {
+          "date": "2026-02-13",
+          "title": "Helion 公布 Polaris 聚变实验节点",
+          "kind": "企业实验",
+          "evidence": "企业宣称",
+          "summary": "公布D-T聚变和温度结果，未在该公告中证明净发电。",
+          "why": "温度、产额、等离子体增益与电站净电需分别核对。",
+          "url": "https://www.helionenergy.com/newsroom/helion-achieves-new-fusion-energy-milestones"
+        },
+        {
+          "date": "2026-10-16",
+          "title": "Helion披露Omega电容制造线配置",
+          "kind": "部件工程",
+          "evidence": "企业工程自报",
+          "summary": "新线正在上线配置，目标约每小时2个电容模块，为原速率4倍；属于脉冲供电部件制造。",
+          "why": "补充供应链与制造证据；不改变全厂净电、长期可靠性和电价仍待验证的判断。",
+          "url": "https://www.helionenergy.com/blog/inside-helions-capacitor-manufacturing-line"
+        }
+      ],
+      "papers": [
+        {
+          "date": "2026-06-04",
+          "title": "ARC Fusion Power Plant Physics Basis",
+          "type": "设计论文集",
+          "contribution": "跟踪电站物理预测与模型分歧，等待SPARC实验降低不确定性。",
+          "limit": "设计与模型预测不是电站运行结果。",
+          "url": "https://www.cambridge.org/core/journals/journal-of-plasma-physics/collections/arc-fusion-power-plant-physics-basis"
+        }
+      ]
+    }
+  ],
+  "registryChecks": [
+    {
+      "nct": "NCT07357428",
+      "checkedAt": "2026-10-21",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT07357428",
+      "status": "RECRUITING",
+      "lastUpdate": "2026-04-14",
+      "hasResults": false,
+      "scope": "官方API识别、状态、研究设计与申办方；登记状态不替代结果或当前研究中心确认。"
+    },
+    {
+      "nct": "NCT06735755",
+      "checkedAt": "2026-10-21",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT06735755",
+      "status": "RECRUITING",
+      "lastUpdate": "2025-12-15",
+      "hasResults": false,
+      "scope": "官方API识别、状态、研究设计与申办方；登记状态不替代结果或当前研究中心确认。"
+    },
+    {
+      "nct": "NCT06878560",
+      "checkedAt": "2026-10-21",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT06878560",
+      "status": "RECRUITING",
+      "lastUpdate": "2026-03-27",
+      "hasResults": false,
+      "scope": "官方API识别、状态、研究设计与申办方；登记状态不替代结果或当前研究中心确认。"
+    },
+    {
+      "nct": "NCT06128629",
+      "checkedAt": "2026-10-21",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT06128629",
+      "status": "RECRUITING",
+      "lastUpdate": "2026-03-27",
+      "hasResults": false,
+      "scope": "官方API识别、状态、研究设计与申办方；登记状态不替代结果或当前研究中心确认。"
+    }
+  ],
+  "title": "AI辅助科技研究与可视化分析",
+  "schedule": "研究样本 · 2026-10-21"
+}

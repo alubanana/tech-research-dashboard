@@ -1,0 +1,275 @@
+{
+  "schema": 1,
+  "reviewedAt": "2026-10-17",
+  "kind": "research_hypothesis",
+  "themes": [
+    {
+      "id": "daily-ai",
+      "name": "随身AI与新交互",
+      "kind": "生活与工作",
+      "change": "导航、翻译和协作从打开应用，转向随身设备中的持续交互。",
+      "question": "随身AI能否成为手机之外的日常入口？",
+      "adoption": "AI眼镜已有销售规模；AI功能留存仍待披露",
+      "next": "90日AI功能留存、每日使用频次、持续付费",
+      "primaryDirections": [
+        "spatial"
+      ],
+      "directions": [
+        "spatial"
+      ],
+      "evidence": [
+        {
+          "label": "2025年AI眼镜销量超过700万副",
+          "date": "2026-02-11",
+          "kind": "公司业绩披露",
+          "sourceId": "essilor_fy2025"
+        },
+        {
+          "label": "Rokid发布腾讯语音打车演示；开放范围待核",
+          "date": "2026-10-16",
+          "kind": "企业演示发布",
+          "sourceId": "rokid_tencent_demo_1016"
+        }
+      ],
+      "products": [
+        "ai-glasses",
+        "spatial-interface"
+      ]
+    },
+    {
+      "id": "physical-work",
+      "name": "现实任务自动化",
+      "kind": "生活与工作",
+      "change": "机器承担更多物流、生产、实验和日常服务任务，人的工作转向监督、维护与流程设计。",
+      "question": "机器能否持续完成真实任务，并降低全流程成本？",
+      "adoption": "窄场景已运行；跨任务与长期独立运行仍待验证",
+      "next": "客户付费、全年人工接管率、单位任务全成本",
+      "primaryDirections": [
+        "robots",
+        "labs"
+      ],
+      "directions": [
+        "robots",
+        "labs"
+      ],
+      "evidence": [
+        {
+          "label": "Figure公布30个陌生家庭的跨任务测试",
+          "date": "2026-09-17",
+          "kind": "公司测试披露",
+          "direction": "robots"
+        },
+        {
+          "label": "闭环实验已在特定材料任务中验证",
+          "date": "2026-04-14",
+          "kind": "同行评审",
+          "direction": "labs"
+        },
+        {
+          "label": "Google湿实验闭环研究：分任务验证，适配体实验由人执行",
+          "date": "2026-10-16",
+          "kind": "研究团队披露",
+          "sourceId": "google_wetlabs_blog"
+        }
+      ],
+      "products": [
+        "robot-services",
+        "autonomous-labs"
+      ]
+    },
+    {
+      "id": "digital-spaces",
+      "name": "数字空间与体验",
+      "kind": "生活与工作",
+      "change": "游戏、教学和设计中的场景可以按需生成、修改，并与现实环境连接。",
+      "question": "可生成的空间能否形成持续活动与付费？",
+      "adoption": "已有生成与交互产品；长期使用与付费待核",
+      "next": "持续状态、创作复用、付费用户与留存",
+      "primaryDirections": [
+        "worlds"
+      ],
+      "directions": [
+        "worlds",
+        "spatial"
+      ],
+      "evidence": [
+        {
+          "label": "Atlas已提供三维生成与重建产品",
+          "date": "2026-09-01",
+          "kind": "官方产品说明",
+          "direction": "worlds"
+        }
+      ],
+      "products": [
+        "generated-worlds",
+        "spatial-interface"
+      ]
+    },
+    {
+      "id": "health-restoration",
+      "name": "治疗与功能恢复",
+      "kind": "生活与工作",
+      "change": "部分患者获得病因治疗、替代器官，以及恢复交流和操作设备的能力。",
+      "question": "早期人体结果能否变成更多患者可获得的长期治疗？",
+      "adoption": "人体早期试验与辅助交流案例；覆盖和随访仍有限",
+      "next": "正式批准、实际治疗人数、长期安全、支付与家庭独立使用",
+      "primaryDirections": [
+        "editing",
+        "organs",
+        "bci"
+      ],
+      "directions": [
+        "editing",
+        "organs",
+        "bci"
+      ],
+      "evidence": [
+        {
+          "label": "体内编辑已有小样本人体结果",
+          "date": "2026-10-13",
+          "kind": "企业临床披露",
+          "direction": "editing"
+        },
+        {
+          "label": "器官替代已有早期人体使用",
+          "date": "2026-09-03",
+          "kind": "既有临床与研究记录",
+          "direction": "organs"
+        },
+        {
+          "label": "少数研究参与者已实现神经信号驱动交流",
+          "date": "2026-09-14",
+          "kind": "公司人体研究披露",
+          "direction": "bci"
+        }
+      ],
+      "products": [
+        "causal-treatments",
+        "organ-replacement",
+        "assistive-communication"
+      ]
+    },
+    {
+      "id": "electricity",
+      "name": "电力供给",
+      "kind": "基础设施",
+      "change": "更多稳定、可负担的电力支撑计算、制造、交通与家庭用电。",
+      "question": "新供电技术能否改善实际电价、可靠性与建设规模？",
+      "adoption": "不同路线处于发货、项目协议和实验验证阶段",
+      "next": "实际发电与供电量、全成本、寿命和电网运行",
+      "primaryDirections": [
+        "tandem",
+        "storage",
+        "fusion"
+      ],
+      "directions": [
+        "tandem",
+        "storage",
+        "fusion"
+      ],
+      "evidence": [
+        {
+          "label": "叠层研发电池效率纪录已披露，商业寿命待验证",
+          "date": "2026-07-14",
+          "kind": "既有技术记录",
+          "direction": "tandem"
+        },
+        {
+          "label": "Form Energy签署1000MWh项目协议",
+          "date": "2026-03-17",
+          "kind": "既有项目与实验记录",
+          "direction": "storage"
+        },
+        {
+          "label": "叠层生产技术出口临时登记已实施，禁限目录仍征求意见",
+          "date": "2026-10-16",
+          "kind": "官方政策",
+          "sourceId": "mofcom_48"
+        }
+      ],
+      "products": [
+        "power-generation",
+        "firm-power"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "ai-glasses",
+      "name": "AI眼镜",
+      "directions": [
+        "spatial"
+      ]
+    },
+    {
+      "id": "spatial-interface",
+      "name": "空间显示与交互",
+      "directions": [
+        "spatial"
+      ]
+    },
+    {
+      "id": "robot-services",
+      "name": "机器人与实体服务",
+      "directions": [
+        "robots"
+      ]
+    },
+    {
+      "id": "autonomous-labs",
+      "name": "自主实验平台",
+      "directions": [
+        "labs"
+      ]
+    },
+    {
+      "id": "generated-worlds",
+      "name": "生成式游戏、教学与设计空间",
+      "directions": [
+        "worlds"
+      ]
+    },
+    {
+      "id": "causal-treatments",
+      "name": "病因治疗",
+      "directions": [
+        "editing"
+      ]
+    },
+    {
+      "id": "organ-replacement",
+      "name": "器官替代",
+      "directions": [
+        "organs"
+      ]
+    },
+    {
+      "id": "assistive-communication",
+      "name": "交流与行动辅助",
+      "directions": [
+        "bci"
+      ]
+    },
+    {
+      "id": "power-generation",
+      "name": "发电",
+      "directions": [
+        "tandem",
+        "fusion"
+      ]
+    },
+    {
+      "id": "firm-power",
+      "name": "储能与稳定供电",
+      "directions": [
+        "storage"
+      ]
+    }
+  ],
+  "policy": {
+    "themeProbability": "主题不汇总子技术概率；百分比对应具体应用事件。",
+    "membership": "主线和产品连接为研究归类；事实来源仍保留在技术、公司与岗位条目。",
+    "expansion": "新增主线需说明生活或工作变化、采用机制、公司生态和岗位任务；不以融资、名气或单项性能纪录升级。",
+    "evidenceAsOf": "2026-10-17增量复核；各事实保留原日期，完整技术核查与本轮目录/论文增量范围分开。"
+  }
+}

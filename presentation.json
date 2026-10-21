@@ -1,0 +1,213 @@
+{
+  "updated": "2026-10-21",
+  "directions": {
+    "worlds": {
+      "short": "生成世界",
+      "priority": true,
+      "checkpoint": 2,
+      "gate": "持久状态 · 可玩性 · 成本",
+      "tag": "数字体验"
+    },
+    "robots": {
+      "short": "泛化机器人",
+      "priority": true,
+      "checkpoint": 2,
+      "gate": "低接管率 · 长任务可靠性",
+      "tag": "实体劳动"
+    },
+    "editing": {
+      "short": "体内基因编辑",
+      "priority": true,
+      "checkpoint": 1,
+      "gate": "递送 · 长期安全 · 平台复用",
+      "tag": "健康"
+    },
+    "spatial": {
+      "short": "空间计算",
+      "checkpoint": 2,
+      "gate": "全天佩戴 · 续航 · 高频用途",
+      "tag": "人机界面"
+    },
+    "bci": {
+      "short": "神经交互",
+      "checkpoint": 1,
+      "gate": "多年稳定性 · 独立家庭使用",
+      "tag": "人机界面"
+    },
+    "organs": {
+      "short": "替代器官",
+      "checkpoint": 1,
+      "gate": "长期存活 · 排异控制",
+      "tag": "健康"
+    },
+    "labs": {
+      "short": "自主实验",
+      "checkpoint": 1,
+      "gate": "可信测量 · 独立复现 · 量产",
+      "tag": "科学发现"
+    },
+    "tandem": {
+      "short": "叠层光伏",
+      "checkpoint": 2,
+      "gate": "户外寿命 · 良率 · 组件成本",
+      "tag": "能源"
+    },
+    "storage": {
+      "short": "多日储能",
+      "checkpoint": 1,
+      "gate": "大型项目运行 · 系统经济性",
+      "tag": "能源"
+    },
+    "fusion": {
+      "short": "聚变发电",
+      "checkpoint": 0,
+      "gate": "全厂净电 · 材料寿命 · 电价",
+      "tag": "能源"
+    }
+  },
+  "readings": [
+    {
+      "direction": "robots",
+      "value": "6/30",
+      "unit": "次",
+      "label": "π0.5插充电器成功",
+      "context": "ContactBench · UR5e · 单任务微调",
+      "interpretation": "接触对齐与力控制仍受限",
+      "date": "2026-10-17",
+      "kind": "受控实机实验",
+      "tone": "amber"
+    },
+    {
+      "direction": "worlds",
+      "value": "49–60",
+      "unit": "%",
+      "label": "生成转角／指令转角",
+      "context": "Sekai · 第893/3581帧分叉",
+      "interpretation": "画面更稳，动作幅度仍偏小",
+      "date": "2026-10-19",
+      "kind": "预印本",
+      "tone": "blue"
+    },
+    {
+      "direction": "editing",
+      "value": "6",
+      "unit": "人",
+      "label": "BEAM-301 初批临床样本",
+      "context": "5次严重不良事件，均已缓解",
+      "interpretation": "长期疗效与安全待验证",
+      "date": "2026-10-13",
+      "kind": "企业临床披露",
+      "tone": "amber"
+    }
+  ],
+  "companies": {
+    "world_labs": {
+      "founders": "李飞飞、Justin Johnson 等",
+      "round": "并购协议",
+      "investors": "AMD、Autodesk、NVIDIA 等",
+      "investorNote": "融资方；AMD另拟收购",
+      "roundNote": "已签约·待交割"
+    },
+    "pi": {
+      "founders": "Karol Hausman、Sergey Levine、Chelsea Finn 等",
+      "round": "Series B",
+      "investors": "CapitalG 领投",
+      "investorNote": "Lux、Thrive、Jeff Bezos 等"
+    },
+    "figure": {
+      "founders": "Brett Adcock",
+      "round": "战略投资",
+      "investors": "Nscale",
+      "investorNote": "最新战略投资；历史C轮另列",
+      "roundNote": "金额未披露",
+      "dateLabel": "2026-09-03"
+    },
+    "meta": {
+      "founders": "Mark Zuckerberg 等",
+      "round": "上市公司",
+      "investors": "公开市场股东"
+    },
+    "snap": {
+      "founders": "Evan Spiegel、Bobby Murphy",
+      "round": "Specs设为全资子公司",
+      "investors": "母公司公开市场股东",
+      "investorNote": "Specs独立融资未确认"
+    },
+    "neuralink": {
+      "founders": "Elon Musk 等",
+      "round": "Series E",
+      "investors": "ARK、Founders Fund、G42、QIA 等",
+      "investorNote": "公告未指定单一领投"
+    },
+    "paradromics": {
+      "founders": "Matt Angle",
+      "round": "战略投资",
+      "investors": "NEOM Investment Fund"
+    },
+    "periodic": {
+      "founders": "Liam Fedus、Ekin Dogus Cubuk",
+      "round": "创立融资",
+      "investors": "a16z 领投",
+      "investorNote": "Felicis、DST、NVentures 等"
+    },
+    "beam": {
+      "founders": "David Liu、Keith Joung、Feng Zhang",
+      "round": "公开增发",
+      "investors": "认购方未披露"
+    },
+    "egenesis": {
+      "founders": "George Church、Luhan Yang",
+      "round": "Series D",
+      "investors": "Lux 领投",
+      "investorNote": "ARCH、Khosla、Farallon 等"
+    },
+    "oxford_pv": {
+      "founders": "Henry Snaith、Kevin Arthur",
+      "round": "累计外部投资",
+      "investors": "本次来源未列名"
+    },
+    "form_energy": {
+      "founders": "Mateo Jaramillo、Yet-Ming Chiang 等",
+      "round": "Series G",
+      "investors": "T. Rowe Price 领投",
+      "investorNote": "Sequoia、Janus Henderson 等"
+    },
+    "cfs": {
+      "founders": "Bob Mumgaard、Brandon Sorbom 等",
+      "round": "融资（轮次未列）",
+      "investors": "现代汽车集团",
+      "investorNote": "本轮已确认；其他机构待核"
+    },
+    "helion": {
+      "founders": "David Kirtley、Chris Pihl 等",
+      "round": "Series G",
+      "investors": "Thrive 领投",
+      "investorNote": "Alta Park、Lux、Peak XV 等",
+      "roundNote": "9月追加后合计",
+      "dateLabel": "2026-09（追加）"
+    },
+    "qwen": {
+      "founders": "马云等（阿里集团）",
+      "round": "集团内部投入",
+      "investors": "阿里集团"
+    },
+    "unitree": {
+      "founders": "王兴兴",
+      "round": "科创板上市",
+      "investors": "美团、金石、源码等",
+      "investorNote": "历史B2投资方"
+    },
+    "rokid": {
+      "founders": "祝铭明",
+      "round": "战略投资（拟）",
+      "investors": "上海康耐特光学"
+    },
+    "brainco": {
+      "founders": "韩璧丞",
+      "round": "Pre-B",
+      "investors": "香港佳纳（道氏技术）、三七互娱",
+      "investorNote": "已核投资方，轮次分别记录",
+      "roundNote": "香港佳纳单家投资·已交割"
+    }
+  }
+}
