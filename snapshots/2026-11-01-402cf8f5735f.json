@@ -1,0 +1,4872 @@
+{
+  "id": "2026-11-01-402cf8f5735f",
+  "recordedAt": "2026-11-01",
+  "recordedTimestamp": "2026-11-01T14:48:06.483902+00:00",
+  "signature": "402cf8f5735f49c989d97348194b21b7a307494af817e86439f7d5a3dd52f3b4",
+  "modelId": "odds-v1",
+  "kind": "prospective",
+  "forecasts": [
+    {
+      "id": "worlds:industry",
+      "bet": "worlds",
+      "lens": "industry",
+      "event": "全球付费月活用户达到100万，覆盖至少3个国家，连续保持12个月。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        1,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 1,
+          "date": "2026-10-21",
+          "kind": "人工证据判断",
+          "note": "已有可体验的短时动态世界和可导出的三维场景；两条路线的能力不同。 MIST提示需拆分动作/可见/正确性，并核目标盲选与人工标签；不据单一生成协议改分。 Fréchet Forcing改善长画面稳定，动作幅度与重访仍受限；无实机闭环，分数维持。",
+          "sources": [
+            {
+              "title": "World Labs 发布 Atlas",
+              "url": "https://www.worldlabs.ai/blog/atlas",
+              "date": "2026-09-01",
+              "scope": "企业宣称"
+            },
+            {
+              "title": "Project Genie 向部分订阅用户开放",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+              "date": "2026-01-29",
+              "scope": "官方产品说明"
+            },
+            {
+              "id": "mist_20261016",
+              "title": "Execution Before Memory: Diagnosing Memory Failures in Video World Models",
+              "url": "https://arxiv.org/abs/2610.23542",
+              "date": "2026-10-16",
+              "publishedAt": "2026-10-16T14:37:13Z",
+              "availableAt": "2026-10-16",
+              "checkedAt": "2026-10-20",
+              "type": "预印本·评估方法",
+              "scope": "摘要、方法/实验§3–5/7、讨论§8、表2/12/13及相关附录C/D定向核读；内部43例Wan TI2V-5B三段5秒，另WRBench40/MBench-T30。结果依赖目标提示与同评分器择优，盲选未显著胜基线；无43例人工标签或真实外部预测验证。未运行代码/观看原视频。10/16原始提交，10/20延迟发现。"
+            },
+            {
+              "id": "frechet_forcing_20261019",
+              "title": "Fréchet Forcing: Training Long-Horizon Streaming World Models from Short Clips",
+              "url": "https://arxiv.org/abs/2610.25666",
+              "date": "2026-10-19",
+              "publishedAt": "2026-10-19T02:12:39Z",
+              "availableAt": "2026-10-19",
+              "checkedAt": "2026-10-21",
+              "type": "预印本·长程生成",
+              "scope": "定向核读§4实验/基线、表2/3、96段DROID人工视频检查与§6局限；MiniWorld-1B、两域各32段评估。DROID参考为回放，评估片段曾参与预训练；无真实机器人闭环验证。未独立复现。10/19提交，10/21延迟发现。"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "实际付费、独立运行与长期留存的公开程度。",
+          "sources": [
+            {
+              "title": "World Labs 发布 Atlas",
+              "url": "https://www.worldlabs.ai/blog/atlas",
+              "date": "2026-09-01",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "World Labs 发布 Atlas",
+              "url": "https://www.worldlabs.ai/blog/atlas",
+              "date": "2026-09-01",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "规模制造、渠道与部署容量的已知限制。",
+          "sources": [
+            {
+              "title": "World Labs 发布 Atlas",
+              "url": "https://www.worldlabs.ai/blog/atlas",
+              "date": "2026-09-01",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "监管、责任与支付条件；未披露不等于已经解决。",
+          "sources": [
+            {
+              "title": "World Labs 发布 Atlas",
+              "url": "https://www.worldlabs.ai/blog/atlas",
+              "date": "2026-09-01",
+              "scope": "企业宣称"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "World Labs 发布 Atlas",
+          "url": "https://www.worldlabs.ai/blog/atlas",
+          "date": "2026-09-01",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "Project Genie 向部分订阅用户开放",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+          "date": "2026-01-29",
+          "scope": "官方产品说明"
+        },
+        {
+          "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+          "url": "https://arxiv.org/abs/2604.21686",
+          "date": "2026-04-23",
+          "scope": "预印本"
+        },
+        {
+          "id": "mist_20261016",
+          "title": "Execution Before Memory: Diagnosing Memory Failures in Video World Models",
+          "url": "https://arxiv.org/abs/2610.23542",
+          "date": "2026-10-16",
+          "publishedAt": "2026-10-16T14:37:13Z",
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-20",
+          "type": "预印本·评估方法",
+          "scope": "摘要、方法/实验§3–5/7、讨论§8、表2/12/13及相关附录C/D定向核读；内部43例Wan TI2V-5B三段5秒，另WRBench40/MBench-T30。结果依赖目标提示与同评分器择优，盲选未显著胜基线；无43例人工标签或真实外部预测验证。未运行代码/观看原视频。10/16原始提交，10/20延迟发现。"
+        },
+        {
+          "id": "frechet_forcing_20261019",
+          "title": "Fréchet Forcing: Training Long-Horizon Streaming World Models from Short Clips",
+          "url": "https://arxiv.org/abs/2610.25666",
+          "date": "2026-10-19",
+          "publishedAt": "2026-10-19T02:12:39Z",
+          "availableAt": "2026-10-19",
+          "checkedAt": "2026-10-21",
+          "type": "预印本·长程生成",
+          "scope": "定向核读§4实验/基线、表2/3、96段DROID人工视频检查与§6局限；MiniWorld-1B、两域各32段评估。DROID参考为回放，评估片段曾参与预训练；无真实机器人闭环验证。未独立复现。10/19提交，10/21延迟发现。"
+        }
+      ],
+      "counter": "新鲜感后使用流失，或一致性与计算成本始终限制核心玩法。",
+      "trigger": "长期状态一致性和付费留存得到连续12个月验证。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.28175988596981577,
+      "low": 0.046132759103985836,
+      "high": 0.7894765191847781
+    },
+    {
+      "id": "worlds:consumer",
+      "bet": "worlds",
+      "lens": "consumer",
+      "event": "全球月活用户达到1亿，覆盖至少3个国家，连续保持12个月。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 1,
+          "date": "2026-10-21",
+          "kind": "人工证据判断",
+          "note": "短时世界与三维生成可体验，长期稳定交互仍待验证。 MIST补充评估门槛，未改变消费者采用证据或分数。 Fréchet Forcing改善长画面稳定，动作幅度与重访仍受限；无实机闭环，分数维持。",
+          "sources": [
+            {
+              "title": "World Labs 发布 Atlas",
+              "url": "https://www.worldlabs.ai/blog/atlas",
+              "date": "2026-09-01",
+              "scope": "企业宣称"
+            },
+            {
+              "title": "Project Genie 向部分订阅用户开放",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+              "date": "2026-01-29",
+              "scope": "官方产品说明"
+            },
+            {
+              "id": "mist_20261016",
+              "title": "Execution Before Memory: Diagnosing Memory Failures in Video World Models",
+              "url": "https://arxiv.org/abs/2610.23542",
+              "date": "2026-10-16",
+              "publishedAt": "2026-10-16T14:37:13Z",
+              "availableAt": "2026-10-16",
+              "checkedAt": "2026-10-20",
+              "type": "预印本·评估方法",
+              "scope": "摘要、方法/实验§3–5/7、讨论§8、表2/12/13及相关附录C/D定向核读；内部43例Wan TI2V-5B三段5秒，另WRBench40/MBench-T30。结果依赖目标提示与同评分器择优，盲选未显著胜基线；无43例人工标签或真实外部预测验证。未运行代码/观看原视频。10/16原始提交，10/20延迟发现。"
+            },
+            {
+              "id": "frechet_forcing_20261019",
+              "title": "Fréchet Forcing: Training Long-Horizon Streaming World Models from Short Clips",
+              "url": "https://arxiv.org/abs/2610.25666",
+              "date": "2026-10-19",
+              "publishedAt": "2026-10-19T02:12:39Z",
+              "availableAt": "2026-10-19",
+              "checkedAt": "2026-10-21",
+              "type": "预印本·长程生成",
+              "scope": "定向核读§4实验/基线、表2/3、96段DROID人工视频检查与§6局限；MiniWorld-1B、两域各32段评估。DROID参考为回放，评估片段曾参与预训练；无真实机器人闭环验证。未独立复现。10/19提交，10/21延迟发现。"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "尚未核得面向大众的一亿月活或长期留存；未披露记未知。",
+          "sources": [
+            {
+              "title": "World Labs 发布 Atlas",
+              "url": "https://www.worldlabs.ai/blog/atlas",
+              "date": "2026-09-01",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "实时推理与内容成本仍是已知障碍，缺大规模付费覆盖成本证据。",
+          "sources": [
+            {
+              "title": "World Labs 发布 Atlas",
+              "url": "https://www.worldlabs.ai/blog/atlas",
+              "date": "2026-09-01",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "产品已开放，面向一亿月活的渠道与容量尚未核实，记未知。",
+          "sources": [
+            {
+              "title": "World Labs 发布 Atlas",
+              "url": "https://www.worldlabs.ai/blog/atlas",
+              "date": "2026-09-01",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "消费者责任与内容规则尚未有可比规模证据，记未知。",
+          "sources": [
+            {
+              "title": "World Labs 发布 Atlas",
+              "url": "https://www.worldlabs.ai/blog/atlas",
+              "date": "2026-09-01",
+              "scope": "企业宣称"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "World Labs 发布 Atlas",
+          "url": "https://www.worldlabs.ai/blog/atlas",
+          "date": "2026-09-01",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "Project Genie 向部分订阅用户开放",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+          "date": "2026-01-29",
+          "scope": "官方产品说明"
+        },
+        {
+          "title": "WorldMark: A Unified Benchmark Suite for Interactive Video World Models",
+          "url": "https://arxiv.org/abs/2604.21686",
+          "date": "2026-04-23",
+          "scope": "预印本"
+        },
+        {
+          "id": "mist_20261016",
+          "title": "Execution Before Memory: Diagnosing Memory Failures in Video World Models",
+          "url": "https://arxiv.org/abs/2610.23542",
+          "date": "2026-10-16",
+          "publishedAt": "2026-10-16T14:37:13Z",
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-20",
+          "type": "预印本·评估方法",
+          "scope": "摘要、方法/实验§3–5/7、讨论§8、表2/12/13及相关附录C/D定向核读；内部43例Wan TI2V-5B三段5秒，另WRBench40/MBench-T30。结果依赖目标提示与同评分器择优，盲选未显著胜基线；无43例人工标签或真实外部预测验证。未运行代码/观看原视频。10/16原始提交，10/20延迟发现。"
+        },
+        {
+          "id": "frechet_forcing_20261019",
+          "title": "Fréchet Forcing: Training Long-Horizon Streaming World Models from Short Clips",
+          "url": "https://arxiv.org/abs/2610.25666",
+          "date": "2026-10-19",
+          "publishedAt": "2026-10-19T02:12:39Z",
+          "availableAt": "2026-10-19",
+          "checkedAt": "2026-10-21",
+          "type": "预印本·长程生成",
+          "scope": "定向核读§4实验/基线、表2/3、96段DROID人工视频检查与§6局限；MiniWorld-1B、两域各32段评估。DROID参考为回放，评估片段曾参与预训练；无真实机器人闭环验证。未独立复现。10/19提交，10/21延迟发现。"
+        }
+      ],
+      "counter": "新鲜感后使用流失，或一致性与计算成本始终限制核心玩法。",
+      "trigger": "长期状态一致性和付费留存得到连续12个月验证。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.2,
+      "low": 0.02702702702702703,
+      "high": 0.6829268292682926
+    },
+    {
+      "id": "spatial:industry",
+      "bet": "spatial",
+      "lens": "industry",
+      "event": "AI眼镜年出货量达到5000万台，至少3个国家有规模销售，并披露90日活跃留存。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 0,
+          "date": "2026-10-18",
+          "kind": "人工证据判断",
+          "note": "已有在售产品；所核来源未提供独立的全天任务成功率、故障率及续航实测，可靠性暂记未知。销量只计入采用组。 新增Rokid语音打车演示发布记录；尚无独立任务成功率和手机接管数据，分数保持。",
+          "sources": [
+            {
+              "id": "essilor_fy2025",
+              "title": "Q4/FY 2025 Results",
+              "url": "https://www.essilorluxottica.com/api/getCapContent?download=false&id=283150",
+              "date": "2026-02-11",
+              "availableAt": "2026-02-11",
+              "checkedAt": "2026-10-16",
+              "scope": "40页PDF可读，核读新闻稿p1及p3-4的销量、产品范围、利润率影响；未核读后附全部管理报告。",
+              "type": "公司年度业绩披露PDF"
+            },
+            {
+              "id": "rokid_tencent_demo_1016",
+              "title": "乐奇x腾讯打车，全程语音打车！",
+              "url": "https://www.bilibili.com/video/BV1wwJ96gEy8",
+              "date": "2026-10-16",
+              "availableAt": "2026-10-16",
+              "checkedAt": "2026-10-18",
+              "publishedAt": "2026-10-16T07:29:34Z",
+              "scope": "公开API核到投稿标题、作者、UTC发布时间与42秒时长；另核企业认证为杭州灵伴科技有限公司。简介为空，视频正文未观看/逐帧核验，未实机测试。媒体转述仅作发现线索；覆盖机型、城市、固件、支付/异常处理、成功率与留存未确认。",
+              "type": "企业演示发布·投稿元数据",
+              "metadataUrl": "https://api.bilibili.com/x/web-interface/view?bvid=BV1wwJ96gEy8",
+              "accountUrl": "https://api.bilibili.com/x/web-interface/card?mid=314358436"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "真实销量支持需求；缺90日AI功能活跃留存，故只记+1。",
+          "sources": [
+            {
+              "id": "essilor_fy2025",
+              "title": "Q4/FY 2025 Results",
+              "url": "https://www.essilorluxottica.com/api/getCapContent?download=false&id=283150",
+              "date": "2026-02-11",
+              "availableAt": "2026-02-11",
+              "checkedAt": "2026-10-16",
+              "scope": "40页PDF可读，核读新闻稿p1及p3-4的销量、产品范围、利润率影响；未核读后附全部管理报告。",
+              "type": "公司年度业绩披露PDF"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "Snap 发布 SPECS AR 眼镜",
+              "url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses",
+              "date": "2026-06-16",
+              "scope": "官方产品说明"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "EssilorLuxottica披露既有眼镜品牌、光学渠道及AI眼镜业务扩张，提供分发基础；不把销量再计一次，跨国扩产能力仍待验证。",
+          "sources": [
+            {
+              "id": "essilor_fy2025",
+              "title": "Q4/FY 2025 Results",
+              "url": "https://www.essilorluxottica.com/api/getCapContent?download=false&id=283150",
+              "date": "2026-02-11",
+              "availableAt": "2026-02-11",
+              "checkedAt": "2026-10-16",
+              "scope": "40页PDF可读，核读新闻稿p1及p3-4的销量、产品范围、利润率影响；未核读后附全部管理报告。",
+              "type": "公司年度业绩披露PDF"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "监管、责任与支付条件；未披露不等于已经解决。",
+          "sources": [
+            {
+              "title": "Snap 发布 SPECS AR 眼镜",
+              "url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses",
+              "date": "2026-06-16",
+              "scope": "官方产品说明"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "essilor_fy2025",
+          "title": "Q4/FY 2025 Results",
+          "url": "https://www.essilorluxottica.com/api/getCapContent?download=false&id=283150",
+          "date": "2026-02-11",
+          "availableAt": "2026-02-11",
+          "checkedAt": "2026-10-16",
+          "scope": "40页PDF可读，核读新闻稿p1及p3-4的销量、产品范围、利润率影响；未核读后附全部管理报告。",
+          "type": "公司年度业绩披露PDF"
+        },
+        {
+          "title": "Snap 发布 SPECS AR 眼镜",
+          "url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses",
+          "date": "2026-06-16",
+          "scope": "官方产品说明"
+        },
+        {
+          "title": "Snap 与 Qualcomm 扩展 Specs 合作",
+          "url": "https://newsroom.snap.com/snap-qualcomm-strategic-collaboration-specs-2026",
+          "date": "2026-04-10",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "A generic non-invasive neuromotor interface for human-computer interaction",
+          "url": "https://www.nature.com/articles/s41586-025-09255-w",
+          "date": "2025-07-23",
+          "scope": "同行评审"
+        },
+        {
+          "id": "rokid_tencent_demo_1016",
+          "title": "乐奇x腾讯打车，全程语音打车！",
+          "url": "https://www.bilibili.com/video/BV1wwJ96gEy8",
+          "date": "2026-10-16",
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-18",
+          "publishedAt": "2026-10-16T07:29:34Z",
+          "scope": "公开API核到投稿标题、作者、UTC发布时间与42秒时长；另核企业认证为杭州灵伴科技有限公司。简介为空，视频正文未观看/逐帧核验，未实机测试。媒体转述仅作发现线索；覆盖机型、城市、固件、支付/异常处理、成功率与留存未确认。",
+          "type": "企业演示发布·投稿元数据",
+          "metadataUrl": "https://api.bilibili.com/x/web-interface/view?bvid=BV1wwJ96gEy8",
+          "accountUrl": "https://api.bilibili.com/x/web-interface/card?mid=314358436"
+        }
+      ],
+      "counter": "多数人仍只用它拍摄、听音频，空间显示应用无法形成持续使用。",
+      "trigger": "AI功能的90日留存、非拍摄用途和用户付费公开。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.3810242613298804,
+      "low": 0.07766645725483722,
+      "high": 0.8671844806273674
+    },
+    {
+      "id": "spatial:consumer",
+      "bet": "spatial",
+      "lens": "consumer",
+      "event": "AI眼镜全球月活使用人数达到1亿，至少3个国家；只计实际使用，不用累计销量替代。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 0,
+          "date": "2026-10-18",
+          "kind": "人工证据判断",
+          "note": "在售硬件不能替代可靠性实测；缺全天AI任务成功率、故障率与续航独立数据。 新增Rokid语音打车演示发布记录；尚无独立任务成功率和手机接管数据，分数保持。",
+          "sources": [
+            {
+              "id": "essilor_fy2025",
+              "title": "Q4/FY 2025 Results",
+              "url": "https://www.essilorluxottica.com/api/getCapContent?download=false&id=283150",
+              "date": "2026-02-11",
+              "availableAt": "2026-02-11",
+              "checkedAt": "2026-10-16",
+              "scope": "40页PDF可读，核读新闻稿p1及p3-4的销量、产品范围、利润率影响；未核读后附全部管理报告。",
+              "type": "公司年度业绩披露PDF"
+            },
+            {
+              "id": "rokid_tencent_demo_1016",
+              "title": "乐奇x腾讯打车，全程语音打车！",
+              "url": "https://www.bilibili.com/video/BV1wwJ96gEy8",
+              "date": "2026-10-16",
+              "availableAt": "2026-10-16",
+              "checkedAt": "2026-10-18",
+              "publishedAt": "2026-10-16T07:29:34Z",
+              "scope": "公开API核到投稿标题、作者、UTC发布时间与42秒时长；另核企业认证为杭州灵伴科技有限公司。简介为空，视频正文未观看/逐帧核验，未实机测试。媒体转述仅作发现线索；覆盖机型、城市、固件、支付/异常处理、成功率与留存未确认。",
+              "type": "企业演示发布·投稿元数据",
+              "metadataUrl": "https://api.bilibili.com/x/web-interface/view?bvid=BV1wwJ96gEy8",
+              "accountUrl": "https://api.bilibili.com/x/web-interface/card?mid=314358436"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "七百万年销量不是月活或AI功能留存；一亿月活合同的采用分暂记未知。",
+          "sources": [
+            {
+              "id": "essilor_fy2025",
+              "title": "Q4/FY 2025 Results",
+              "url": "https://www.essilorluxottica.com/api/getCapContent?download=false&id=283150",
+              "date": "2026-02-11",
+              "availableAt": "2026-02-11",
+              "checkedAt": "2026-10-16",
+              "scope": "40页PDF可读，核读新闻稿p1及p3-4的销量、产品范围、利润率影响；未核读后附全部管理报告。",
+              "type": "公司年度业绩披露PDF"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "消费者持续使用的成本收益缺可比数据，记未知。",
+          "sources": [
+            {
+              "title": "Snap 发布 SPECS AR 眼镜",
+              "url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses",
+              "date": "2026-06-16",
+              "scope": "官方产品说明"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "既有眼镜品牌与光学渠道提供分发基础，跨国扩产仍待验证。",
+          "sources": [
+            {
+              "id": "essilor_fy2025",
+              "title": "Q4/FY 2025 Results",
+              "url": "https://www.essilorluxottica.com/api/getCapContent?download=false&id=283150",
+              "date": "2026-02-11",
+              "availableAt": "2026-02-11",
+              "checkedAt": "2026-10-16",
+              "scope": "40页PDF可读，核读新闻稿p1及p3-4的销量、产品范围、利润率影响；未核读后附全部管理报告。",
+              "type": "公司年度业绩披露PDF"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "隐私与摄录规则的长期影响尚不明确，记未知。",
+          "sources": [
+            {
+              "title": "Snap 发布 SPECS AR 眼镜",
+              "url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses",
+              "date": "2026-06-16",
+              "scope": "官方产品说明"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "essilor_fy2025",
+          "title": "Q4/FY 2025 Results",
+          "url": "https://www.essilorluxottica.com/api/getCapContent?download=false&id=283150",
+          "date": "2026-02-11",
+          "availableAt": "2026-02-11",
+          "checkedAt": "2026-10-16",
+          "scope": "40页PDF可读，核读新闻稿p1及p3-4的销量、产品范围、利润率影响；未核读后附全部管理报告。",
+          "type": "公司年度业绩披露PDF"
+        },
+        {
+          "title": "Snap 发布 SPECS AR 眼镜",
+          "url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses",
+          "date": "2026-06-16",
+          "scope": "官方产品说明"
+        },
+        {
+          "title": "Snap 与 Qualcomm 扩展 Specs 合作",
+          "url": "https://newsroom.snap.com/snap-qualcomm-strategic-collaboration-specs-2026",
+          "date": "2026-04-10",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "A generic non-invasive neuromotor interface for human-computer interaction",
+          "url": "https://www.nature.com/articles/s41586-025-09255-w",
+          "date": "2025-07-23",
+          "scope": "同行评审"
+        },
+        {
+          "id": "rokid_tencent_demo_1016",
+          "title": "乐奇x腾讯打车，全程语音打车！",
+          "url": "https://www.bilibili.com/video/BV1wwJ96gEy8",
+          "date": "2026-10-16",
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-18",
+          "publishedAt": "2026-10-16T07:29:34Z",
+          "scope": "公开API核到投稿标题、作者、UTC发布时间与42秒时长；另核企业认证为杭州灵伴科技有限公司。简介为空，视频正文未观看/逐帧核验，未实机测试。媒体转述仅作发现线索；覆盖机型、城市、固件、支付/异常处理、成功率与留存未确认。",
+          "type": "企业演示发布·投稿元数据",
+          "metadataUrl": "https://api.bilibili.com/x/web-interface/view?bvid=BV1wwJ96gEy8",
+          "accountUrl": "https://api.bilibili.com/x/web-interface/card?mid=314358436"
+        }
+      ],
+      "counter": "多数人仍只用它拍摄、听音频，空间显示应用无法形成持续使用。",
+      "trigger": "AI功能的90日留存、非拍摄用途和用户付费公开。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.28175988596981577,
+      "low": 0.046132759103985836,
+      "high": 0.7894765191847781
+    },
+    {
+      "id": "labs:industry",
+      "bet": "labs",
+      "lens": "industry",
+      "event": "100家机构连续付费使用闭环自主实验一年，并有10项独立复现成果进入量产。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 1,
+          "date": "2026-10-22",
+          "kind": "人工证据判断",
+          "note": "特定材料、染料实验和人工执行的分子设计闭环分别已有结果，仍缺跨域独立复现与完整无人链路。 Xaira细胞扰动提名有单轮湿实验验证，命中率接近人工；反馈与自动实验尚待连接，跨域复现和总成本未核，分数维持。",
+          "sources": [
+            {
+              "title": "Periodic 发布实验数据驱动的模型研究",
+              "url": "https://periodic.com/news/nature-is-our-learning-environment",
+              "date": "2026-09-15",
+              "scope": "企业宣称"
+            },
+            {
+              "title": "闭环系统联合优化钙钛矿材料与制备",
+              "url": "https://www.nature.com/articles/s41586-026-10482-y",
+              "date": "2026-04-14",
+              "scope": "同行评审"
+            },
+            {
+              "id": "google_wetlabs_blog",
+              "title": "Google湿实验闭环与自动化研究",
+              "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
+              "date": "2026-10-16",
+              "availableAt": "2026-10-16",
+              "checkedAt": "2026-10-17",
+              "scope": "官方博客全文及三篇原稿定向核读；VERID染料自动化、适配体人工执行和蛋白人机协作分别记录。",
+              "type": "官方研究披露"
+            },
+            {
+              "id": "xaira_xscientist_20261021",
+              "title": "X-Scientist: A Recursive Self-Improving Agentic AI Platform for Drug Discovery",
+              "url": "https://www.xaira.com/news/x-scientist-recursive-self-improving-agentic-ai-platform",
+              "date": "2026-10-21",
+              "availableAt": "2026-10-21",
+              "checkedAt": "2026-10-22",
+              "type": "企业原始研究披露",
+              "scope": "官方正文§1–5、图2/3/4图注与未来工作；HepG2的TGF-β条件，AI/人工/随机381/321/433项扰动，各≥30细胞。未取原始表达矩阵、完整方法或独立复现。提名时间与湿实验时间分开；反馈与自动执行仍为后续。"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "实际付费、独立运行与长期留存的公开程度。",
+          "sources": [
+            {
+              "title": "Periodic 发布实验数据驱动的模型研究",
+              "url": "https://periodic.com/news/nature-is-our-learning-environment",
+              "date": "2026-09-15",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "Periodic 发布实验数据驱动的模型研究",
+              "url": "https://periodic.com/news/nature-is-our-learning-environment",
+              "date": "2026-09-15",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "规模制造、渠道与部署容量的已知限制。",
+          "sources": [
+            {
+              "title": "Periodic 发布实验数据驱动的模型研究",
+              "url": "https://periodic.com/news/nature-is-our-learning-environment",
+              "date": "2026-09-15",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "监管、责任与支付条件；未披露不等于已经解决。",
+          "sources": [
+            {
+              "title": "Periodic 发布实验数据驱动的模型研究",
+              "url": "https://periodic.com/news/nature-is-our-learning-environment",
+              "date": "2026-09-15",
+              "scope": "企业宣称"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Periodic 发布实验数据驱动的模型研究",
+          "url": "https://periodic.com/news/nature-is-our-learning-environment",
+          "date": "2026-09-15",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "闭环系统联合优化钙钛矿材料与制备",
+          "url": "https://www.nature.com/articles/s41586-026-10482-y",
+          "date": "2026-04-14",
+          "scope": "同行评审"
+        },
+        {
+          "title": "Autonomous closed-loop framework for reproducible perovskite solar cells",
+          "url": "https://www.nature.com/articles/s41586-026-10482-y",
+          "date": "2026-04-14",
+          "scope": "同行评审"
+        },
+        {
+          "id": "verid_pdf",
+          "title": "Semantic Representation for Agentic Self-Play in Automated Laboratories",
+          "url": "https://www.gstatic.com/science-ai/verid_semantic_lab.pdf",
+          "date": "2026-10-16",
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-17",
+          "scope": "16页PDF中定向核读印刷p1-2引言/摘要，p4-10架构、染料实验和讨论；未声称全文逐页核验或复现",
+          "type": "原始技术稿·未核实同行评审"
+        },
+        {
+          "id": "aptamer_pdf",
+          "title": "Aptamers as a sandbox for lab-in-the-loop agentic molecular discovery",
+          "url": "https://www.gstatic.com/science-ai/agentic_aptamer_sandbox.pdf",
+          "date": "2026-10-12",
+          "availableAt": "2026-10-12",
+          "checkedAt": "2026-10-17",
+          "scope": "27页PDF定向核读印刷p1摘要、p10-12讨论/限制、p13方法人工执行说明、p15方法、p18数据与代码、p19作者贡献；未核验全部补充表",
+          "type": "原始技术稿·未核实同行评审"
+        },
+        {
+          "id": "epitope_pdf",
+          "title": "Agent-guided epitope excision enables economical de novo binder design",
+          "url": "https://www.gstatic.com/science-ai/epitope_excision.pdf",
+          "date": "2026-10-14",
+          "availableAt": "2026-10-14",
+          "checkedAt": "2026-10-17",
+          "scope": "17页PDF定向核读印刷p1-3摘要/设计/基线与p10-12湿实验结果/讨论；未逐项重算原始数据",
+          "type": "原始技术稿·未核实同行评审"
+        },
+        {
+          "id": "xaira_xscientist_20261021",
+          "title": "X-Scientist: A Recursive Self-Improving Agentic AI Platform for Drug Discovery",
+          "url": "https://www.xaira.com/news/x-scientist-recursive-self-improving-agentic-ai-platform",
+          "date": "2026-10-21",
+          "availableAt": "2026-10-21",
+          "checkedAt": "2026-10-22",
+          "type": "企业原始研究披露",
+          "scope": "官方正文§1–5、图2/3/4图注与未来工作；HepG2的TGF-β条件，AI/人工/随机381/321/433项扰动，各≥30细胞。未取原始表达矩阵、完整方法或独立复现。提名时间与湿实验时间分开；反馈与自动执行仍为后续。"
+        }
+      ],
+      "counter": "测量伪信号会误导优化；缺匹配预算对照或独立复现，发现改善也可能无法转为量产收益。",
+      "trigger": "独立复现、实验吞吐和量产成果的实际经济收益。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.3810242613298804,
+      "low": 0.07766645725483722,
+      "high": 0.8671844806273674
+    },
+    {
+      "id": "bci:industry",
+      "bet": "bci",
+      "lens": "industry",
+      "event": "至少10万人使用获批神经接口沟通或控制产品，有一年独立家庭使用与维护数据。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 1,
+          "date": "2026-10-20",
+          "kind": "人工证据判断",
+          "note": "少数研究参与者已实现神经信号驱动交流；学术团队展示实时语音及语调控制。 新影像合作是流程开发计划，尚无病例效果比较，分数维持。",
+          "sources": [
+            {
+              "title": "Paradromics 披露羊实验长期记录数据",
+              "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+              "date": "2026-10-08",
+              "scope": "企业动物实验披露"
+            },
+            {
+              "title": "Neuralink 公布脑数据预训练研究",
+              "url": "https://neuralink.com/updates/pretraining-on-50000-hours/",
+              "date": "2026-10-01",
+              "scope": "企业宣称"
+            },
+            {
+              "id": "paradromics_siemens_20261019",
+              "title": "Paradromics and Siemens Healthineers影像流程合作",
+              "url": "https://paradromics.com/news/paradromics-siemens-healthineers-launch-strategic-initiative-build-advanced-imaging-foundation-for-the-future-of-brain-computer-interfaces/",
+              "date": "2026-10-19",
+              "availableAt": "2026-10-19",
+              "checkedAt": "2026-10-20",
+              "type": "公司合作公告",
+              "scope": "核读Paradromics公告正文和研究用途限制：现有标准扫描协议已用，拟开发完整多模态影像流程；未披露样本/比较结果、审批或资本金额。Siemens一方未找到同文；web正文可读，直接HTTP403保留。"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "实际付费、独立运行与长期留存的公开程度。",
+          "sources": [
+            {
+              "title": "Paradromics 披露羊实验长期记录数据",
+              "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+              "date": "2026-10-08",
+              "scope": "企业动物实验披露"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "Paradromics 披露羊实验长期记录数据",
+              "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+              "date": "2026-10-08",
+              "scope": "企业动物实验披露"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "规模制造、渠道与部署容量的已知限制。",
+          "sources": [
+            {
+              "title": "Paradromics 披露羊实验长期记录数据",
+              "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+              "date": "2026-10-08",
+              "scope": "企业动物实验披露"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "监管、责任与支付条件；未披露不等于已经解决。",
+          "sources": [
+            {
+              "title": "Paradromics 披露羊实验长期记录数据",
+              "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+              "date": "2026-10-08",
+              "scope": "企业动物实验披露"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paradromics 披露羊实验长期记录数据",
+          "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+          "date": "2026-10-08",
+          "scope": "企业动物实验披露"
+        },
+        {
+          "title": "Neuralink 公布脑数据预训练研究",
+          "url": "https://neuralink.com/updates/pretraining-on-50000-hours/",
+          "date": "2026-10-01",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "Paradromics 披露首位参与者实时交流",
+          "url": "https://paradromics.com/news/paradromics-achieves-real-time-speech-connexus-brain-computer-interface/",
+          "date": "2026-09-14",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "An instantaneous voice-synthesis neuroprosthesis",
+          "url": "https://www.nature.com/articles/s41586-025-09127-3",
+          "date": "2025-06-12",
+          "scope": "同行评审"
+        },
+        {
+          "title": "Connect-One 临床登记 NCT07357428",
+          "url": "https://clinicaltrials.gov/study/NCT07357428",
+          "date": "2026-10-15",
+          "scope": "临床登记"
+        },
+        {
+          "id": "paradromics_siemens_20261019",
+          "title": "Paradromics and Siemens Healthineers影像流程合作",
+          "url": "https://paradromics.com/news/paradromics-siemens-healthineers-launch-strategic-initiative-build-advanced-imaging-foundation-for-the-future-of-brain-computer-interfaces/",
+          "date": "2026-10-19",
+          "availableAt": "2026-10-19",
+          "checkedAt": "2026-10-20",
+          "type": "公司合作公告",
+          "scope": "核读Paradromics公告正文和研究用途限制：现有标准扫描协议已用，拟开发完整多模态影像流程；未披露样本/比较结果、审批或资本金额。Siemens一方未找到同文；web正文可读，直接HTTP403保留。"
+        }
+      ],
+      "counter": "长期解码漂移、家庭支持负担或手术风险使可用人群持续受限。",
+      "trigger": "低维护独立使用、长期稳定性和医疗支付。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.06077187108446388,
+      "low": 0.0052353515881138485,
+      "high": 0.3191526425854787
+    },
+    {
+      "id": "bci:consumer",
+      "bet": "bci",
+      "lens": "consumer",
+      "event": "非侵入或植入神经接口全球月活人数达到1亿，连续保持一年；不含普通蓝牙耳机。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        0,
+        -2,
+        -2,
+        -2,
+        -1
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "医疗研究中的神经交流效果不能直接推出大众日常交互的可靠性，记未知。",
+          "sources": [
+            {
+              "title": "Paradromics 披露羊实验长期记录数据",
+              "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+              "date": "2026-10-08",
+              "scope": "企业动物实验披露"
+            },
+            {
+              "title": "Neuralink 公布脑数据预训练研究",
+              "url": "https://neuralink.com/updates/pretraining-on-50000-hours/",
+              "date": "2026-10-01",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": -2,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "现有研究和医疗参与者与一亿月活的合同距离很大，未出现可核大众采用。",
+          "sources": [
+            {
+              "title": "Paradromics 披露羊实验长期记录数据",
+              "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+              "date": "2026-10-08",
+              "scope": "企业动物实验披露"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": -2,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "植入、维护与信号获取成本构成障碍，非侵入产品的持续价值仍待验证。",
+          "sources": [
+            {
+              "title": "Paradromics 披露羊实验长期记录数据",
+              "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+              "date": "2026-10-08",
+              "scope": "企业动物实验披露"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": -2,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "临床植入与维护路径不适用于亿级消费者部署，非侵入路线也未验证该规模。",
+          "sources": [
+            {
+              "title": "Paradromics 披露羊实验长期记录数据",
+              "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+              "date": "2026-10-08",
+              "scope": "企业动物实验披露"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "手术、隐私、责任及批准条件构成大众扩散障碍。",
+          "sources": [
+            {
+              "title": "Paradromics 披露羊实验长期记录数据",
+              "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+              "date": "2026-10-08",
+              "scope": "企业动物实验披露"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paradromics 披露羊实验长期记录数据",
+          "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+          "date": "2026-10-08",
+          "scope": "企业动物实验披露"
+        },
+        {
+          "title": "Neuralink 公布脑数据预训练研究",
+          "url": "https://neuralink.com/updates/pretraining-on-50000-hours/",
+          "date": "2026-10-01",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "Paradromics 披露首位参与者实时交流",
+          "url": "https://paradromics.com/news/paradromics-achieves-real-time-speech-connexus-brain-computer-interface/",
+          "date": "2026-09-14",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "An instantaneous voice-synthesis neuroprosthesis",
+          "url": "https://www.nature.com/articles/s41586-025-09127-3",
+          "date": "2025-06-12",
+          "scope": "同行评审"
+        },
+        {
+          "title": "Connect-One 临床登记 NCT07357428",
+          "url": "https://clinicaltrials.gov/study/NCT07357428",
+          "date": "2026-10-15",
+          "scope": "临床登记"
+        },
+        {
+          "id": "paradromics_siemens_20261019",
+          "title": "Paradromics and Siemens Healthineers影像流程合作",
+          "url": "https://paradromics.com/news/paradromics-siemens-healthineers-launch-strategic-initiative-build-advanced-imaging-foundation-for-the-future-of-brain-computer-interfaces/",
+          "date": "2026-10-19",
+          "availableAt": "2026-10-19",
+          "checkedAt": "2026-10-20",
+          "type": "公司合作公告",
+          "scope": "核读Paradromics公告正文和研究用途限制：现有标准扫描协议已用，拟开发完整多模态影像流程；未披露样本/比较结果、审批或资本金额。Siemens一方未找到同文；web正文可读，直接HTTP403保留。"
+        }
+      ],
+      "counter": "长期解码漂移、家庭支持负担或手术风险使可用人群持续受限。",
+      "trigger": "低维护独立使用、长期稳定性和医疗支付。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.010559496557544764,
+      "low": 0.0013139973255171548,
+      "high": 0.1339235425703415
+    },
+    {
+      "id": "editing:industry",
+      "bet": "editing",
+      "lens": "industry",
+      "event": "至少2种体内编辑疗法正式获批，累计治疗10万人，并披露不少于3年安全随访。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        1,
+        0,
+        -1,
+        -1,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "已有小样本人体病因编辑结果；CHOP/Penn曾为单个婴儿开发定制治疗。",
+          "sources": [
+            {
+              "title": "BEAM-301 首批6人数据同时出现效果与风险",
+              "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            },
+            {
+              "title": "nex-z 的 MAGNITUDE 临床暂停解除",
+              "url": "https://ir.intelliatx.com/node/12526/html",
+              "date": "2026-03-02",
+              "scope": "公司监管文件"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "实际付费、独立运行与长期留存的公开程度。",
+          "sources": [
+            {
+              "title": "BEAM-301 首批6人数据同时出现效果与风险",
+              "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "BEAM-301 首批6人数据同时出现效果与风险",
+              "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "规模制造、渠道与部署容量的已知限制。",
+          "sources": [
+            {
+              "title": "BEAM-301 首批6人数据同时出现效果与风险",
+              "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "监管、责任与支付条件；未披露不等于已经解决。",
+          "sources": [
+            {
+              "title": "BEAM-301 首批6人数据同时出现效果与风险",
+              "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "BEAM-301 首批6人数据同时出现效果与风险",
+          "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301",
+          "date": "2026-10-13",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "nex-z 的 MAGNITUDE 临床暂停解除",
+          "url": "https://ir.intelliatx.com/node/12526/html",
+          "date": "2026-03-02",
+          "scope": "公司监管文件"
+        },
+        {
+          "title": "Patient-Specific In Vivo Gene Editing to Treat a Rare Genetic Disease",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12713542/",
+          "date": "2025-05-15",
+          "scope": "同行评审"
+        },
+        {
+          "title": "BEAM-301 临床登记 NCT06735755",
+          "url": "https://clinicaltrials.gov/study/NCT06735755",
+          "date": "2026-10-15",
+          "scope": "临床登记"
+        }
+      ],
+      "counter": "严重不良事件抵消获益，或每次换靶点仍需近乎重新开发一款药物。",
+      "trigger": "获批、支付覆盖、治疗中心吞吐和长期随访。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.1374254456394301,
+      "low": 0.015703606227171703,
+      "high": 0.5529846744430708
+    },
+    {
+      "id": "organs:industry",
+      "bet": "organs",
+      "lens": "industry",
+      "event": "至少3国正式批准，累计移植1万例，并有多中心2年移植物存活数据。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "部分活体受者已获得数月免透析；也出现排斥、移植物取出和后续人肾移植。",
+          "sources": [
+            {
+              "title": "eGenesis 更新5名扩展使用受者",
+              "url": "https://egenesisbio.com/news-media/press-releases/egenesis-announces-clinical-update-in-ongoing-expanded-access-study-of-egen-2784-in-patients-with-kidney-failure",
+              "date": "2026-09-03",
+              "scope": "企业宣称"
+            },
+            {
+              "title": "猪肾受者免疫图谱揭示早期排斥",
+              "url": "https://www.nature.com/articles/s41591-025-04053-3",
+              "date": "2026-01-08",
+              "scope": "同行评审"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "实际付费、独立运行与长期留存的公开程度。",
+          "sources": [
+            {
+              "title": "eGenesis 更新5名扩展使用受者",
+              "url": "https://egenesisbio.com/news-media/press-releases/egenesis-announces-clinical-update-in-ongoing-expanded-access-study-of-egen-2784-in-patients-with-kidney-failure",
+              "date": "2026-09-03",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "eGenesis 更新5名扩展使用受者",
+              "url": "https://egenesisbio.com/news-media/press-releases/egenesis-announces-clinical-update-in-ongoing-expanded-access-study-of-egen-2784-in-patients-with-kidney-failure",
+              "date": "2026-09-03",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "规模制造、渠道与部署容量的已知限制。",
+          "sources": [
+            {
+              "title": "eGenesis 更新5名扩展使用受者",
+              "url": "https://egenesisbio.com/news-media/press-releases/egenesis-announces-clinical-update-in-ongoing-expanded-access-study-of-egen-2784-in-patients-with-kidney-failure",
+              "date": "2026-09-03",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "监管、责任与支付条件；未披露不等于已经解决。",
+          "sources": [
+            {
+              "title": "eGenesis 更新5名扩展使用受者",
+              "url": "https://egenesisbio.com/news-media/press-releases/egenesis-announces-clinical-update-in-ongoing-expanded-access-study-of-egen-2784-in-patients-with-kidney-failure",
+              "date": "2026-09-03",
+              "scope": "企业宣称"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "eGenesis 更新5名扩展使用受者",
+          "url": "https://egenesisbio.com/news-media/press-releases/egenesis-announces-clinical-update-in-ongoing-expanded-access-study-of-egen-2784-in-patients-with-kidney-failure",
+          "date": "2026-09-03",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "猪肾受者免疫图谱揭示早期排斥",
+          "url": "https://www.nature.com/articles/s41591-025-04053-3",
+          "date": "2026-01-08",
+          "scope": "同行评审"
+        },
+        {
+          "title": "猪肾活体受者的纵向免疫图谱研究",
+          "url": "https://www.nature.com/articles/s41591-025-04053-3",
+          "date": "2026-01-08",
+          "scope": "同行评审"
+        },
+        {
+          "title": "EXPAND 临床登记 NCT06878560",
+          "url": "https://clinicaltrials.gov/study/NCT06878560",
+          "date": "2026-10-15",
+          "scope": "临床登记"
+        }
+      ],
+      "counter": "多年仍只能短期桥接，或免疫与感染代价抵消免透析收益。",
+      "trigger": "正式批准、感染监测和多中心长期存活。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.06077187108446388,
+      "low": 0.0052353515881138485,
+      "high": 0.3191526425854787
+    },
+    {
+      "id": "robots:industry",
+      "bet": "robots",
+      "lens": "industry",
+      "event": "至少10万台可跨任务机器人付费部署，覆盖3个国家，并披露全年接管率和单位任务成本。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        1,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 1,
+          "date": "2026-10-25",
+          "kind": "人工证据判断",
+          "note": "物流窄场景已运行；公司研究显示部分陌生家庭任务能迁移。 REKI短任务计分改善与WBD人工指引实验新增控制证据；尚未跨过家庭长期自主可靠性门槛，分数维持。 ContactBench补接触任务与行为变化失败证据，传感覆盖/反馈架构影响触觉收益；未跨过长期家庭可靠性门槛，分数维持。 FRED补人类视频联合训练的受控实机迁移；平均任务得分允许部分给分，每任务12次，长期可靠性与成本仍待核，分数维持。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            },
+            {
+              "title": "Physical Intelligence 开放模型 API beta",
+              "url": "https://www.pi.website/blog/api-beta",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            },
+            {
+              "id": "reki_20261015",
+              "title": "REKI: Registering Knowledge in VLAs",
+              "url": "https://arxiv.org/abs/2610.22178",
+              "date": "2026-10-15",
+              "publishedAt": "2026-10-15T16:34:06Z",
+              "availableAt": "2026-10-15",
+              "checkedAt": "2026-10-19",
+              "type": "预印本·定向核读",
+              "scope": "核读摘要、§7–8及附录E：单UR5平台、5任务、每任务50训练与10测试episode；结果包含部分子任务计分，非纯完整成功率。核官方仓库README许可，代码MIT、权重CC-BY-NC-SA 4.0；未运行代码/独立复现。UTC10/15提交，上海10/16。"
+            },
+            {
+              "id": "wbd_20261015",
+              "title": "Whole-Body Dexterity",
+              "url": "https://arxiv.org/abs/2610.22184",
+              "date": "2026-10-15",
+              "publishedAt": "2026-10-15T16:40:48Z",
+              "availableAt": "2026-10-15",
+              "checkedAt": "2026-10-19",
+              "type": "预印本·定向核读",
+              "scope": "核读摘要、§IV-C、表I/II及结论；G1、篮球/15cm纸箱、1名训练8小时以上操作者。50次合计45成功含40次身体往返，完整货架搬运7/10；人工持续提供动作与切换权重。未全文复核全部仿真附录、观看完整视频或独立复现。UTC10/15提交，上海10/16。"
+            },
+            {
+              "id": "contactbench_20261017",
+              "title": "ContactBench 1.0: A Benchmark for Everyday Contact-Rich Robotic Manipulation",
+              "url": "https://arxiv.org/abs/2610.24512",
+              "date": "2026-10-17",
+              "publishedAt": "2026-10-17T07:12:36Z",
+              "availableAt": "2026-10-17",
+              "checkedAt": "2026-10-21",
+              "type": "预印本·真实机器人基准",
+              "scope": "定向核读任务、实验设置、表III–V、行为泛化与讨论；UR5e/WSG50，6任务各100示范，各被评策略每任务30次。单任务微调、物体固定；触觉仅4任务，另2任务未评触觉。未运行代码/观看视频。10/17提交，10/21延迟发现。"
+            },
+            {
+              "id": "fred_20261021",
+              "title": "Self-Distilling Future Video Representations for World Action Models",
+              "url": "https://arxiv.org/abs/2610.30320",
+              "date": "2026-10-21",
+              "publishedAt": "2026-10-21T18:33:13Z",
+              "availableAt": "2026-10-21",
+              "checkedAt": "2026-10-25",
+              "type": "预印本·实机迁移研究",
+              "scope": "代理核§4及附录B/C/F/G，root核表2/12、B.1/B.2计分和原始日期；Franka8任务、OpenArm7任务各12试次。部分完成给分，50.0%为平均任务得分。未运行代码/观看原视频或独立复现；UTC10/21、上海10/22，本轮10/25延迟核读。"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "实际付费、独立运行与长期留存的公开程度。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "规模制造、渠道与部署容量的已知限制。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "监管、责任与支付条件；未披露不等于已经解决。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Google 发布 Argon 机器人开发案例",
+          "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+          "date": "2026-10-13",
+          "scope": "企业演示"
+        },
+        {
+          "title": "Physical Intelligence 开放模型 API beta",
+          "url": "https://www.pi.website/blog/api-beta",
+          "date": "2026-10-13",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "Figure 报告30个陌生家庭任务测试",
+          "url": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization",
+          "date": "2026-09-17",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "π0.5: A VLA with Open-World Generalization",
+          "url": "https://www.pi.website/blog/pi05",
+          "date": "2025-04-22",
+          "scope": "技术报告"
+        },
+        {
+          "id": "figure_nscale_20260903",
+          "title": "Figure与Nscale战略合作及投资",
+          "url": "https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership",
+          "date": "2026-09-03",
+          "availableAt": "2026-09-03",
+          "checkedAt": "2026-10-17",
+          "scope": "完整公告日期及投资/算力条款核读；投资额未披露，35亿美元为算力承诺，初始部署目标2027H2。",
+          "type": "公司资本公告"
+        },
+        {
+          "id": "reki_20261015",
+          "title": "REKI: Registering Knowledge in VLAs",
+          "url": "https://arxiv.org/abs/2610.22178",
+          "date": "2026-10-15",
+          "publishedAt": "2026-10-15T16:34:06Z",
+          "availableAt": "2026-10-15",
+          "checkedAt": "2026-10-19",
+          "type": "预印本·定向核读",
+          "scope": "核读摘要、§7–8及附录E：单UR5平台、5任务、每任务50训练与10测试episode；结果包含部分子任务计分，非纯完整成功率。核官方仓库README许可，代码MIT、权重CC-BY-NC-SA 4.0；未运行代码/独立复现。UTC10/15提交，上海10/16。"
+        },
+        {
+          "id": "wbd_20261015",
+          "title": "Whole-Body Dexterity",
+          "url": "https://arxiv.org/abs/2610.22184",
+          "date": "2026-10-15",
+          "publishedAt": "2026-10-15T16:40:48Z",
+          "availableAt": "2026-10-15",
+          "checkedAt": "2026-10-19",
+          "type": "预印本·定向核读",
+          "scope": "核读摘要、§IV-C、表I/II及结论；G1、篮球/15cm纸箱、1名训练8小时以上操作者。50次合计45成功含40次身体往返，完整货架搬运7/10；人工持续提供动作与切换权重。未全文复核全部仿真附录、观看完整视频或独立复现。UTC10/15提交，上海10/16。"
+        },
+        {
+          "id": "contactbench_20261017",
+          "title": "ContactBench 1.0: A Benchmark for Everyday Contact-Rich Robotic Manipulation",
+          "url": "https://arxiv.org/abs/2610.24512",
+          "date": "2026-10-17",
+          "publishedAt": "2026-10-17T07:12:36Z",
+          "availableAt": "2026-10-17",
+          "checkedAt": "2026-10-21",
+          "type": "预印本·真实机器人基准",
+          "scope": "定向核读任务、实验设置、表III–V、行为泛化与讨论；UR5e/WSG50，6任务各100示范，各被评策略每任务30次。单任务微调、物体固定；触觉仅4任务，另2任务未评触觉。未运行代码/观看视频。10/17提交，10/21延迟发现。"
+        },
+        {
+          "id": "fred_20261021",
+          "title": "Self-Distilling Future Video Representations for World Action Models",
+          "url": "https://arxiv.org/abs/2610.30320",
+          "date": "2026-10-21",
+          "publishedAt": "2026-10-21T18:33:13Z",
+          "availableAt": "2026-10-21",
+          "checkedAt": "2026-10-25",
+          "type": "预印本·实机迁移研究",
+          "scope": "代理核§4及附录B/C/F/G，root核表2/12、B.1/B.2计分和原始日期；Franka8任务、OpenArm7任务各12试次。部分完成给分，50.0%为平均任务得分。未运行代码/观看原视频或独立复现；UTC10/21、上海10/22，本轮10/25延迟核读。"
+        }
+      ],
+      "counter": "每扩场地仍大量调试；后台人工成为主要成本，专用设备长期更经济。",
+      "trigger": "跨场地连续运行、人工接管和全成本数据。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.28175988596981577,
+      "low": 0.046132759103985836,
+      "high": 0.7894765191847781
+    },
+    {
+      "id": "robots:consumer",
+      "bet": "robots",
+      "lens": "consumer",
+      "event": "至少1亿人每月直接使用通用机器人服务；只计算付费日常服务，不计算观看演示。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        1,
+        0,
+        -1,
+        -1,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 1,
+          "date": "2026-10-21",
+          "kind": "人工证据判断",
+          "note": "窄场景运行及跨任务研究支持可行性，未证明家庭全年可靠性。 REKI短任务计分改善与WBD人工指引实验新增控制证据；尚未跨过家庭长期自主可靠性门槛，分数维持。 ContactBench补接触任务与行为变化失败证据，传感覆盖/反馈架构影响触觉收益；未跨过长期家庭可靠性门槛，分数维持。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            },
+            {
+              "title": "Physical Intelligence 开放模型 API beta",
+              "url": "https://www.pi.website/blog/api-beta",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            },
+            {
+              "id": "reki_20261015",
+              "title": "REKI: Registering Knowledge in VLAs",
+              "url": "https://arxiv.org/abs/2610.22178",
+              "date": "2026-10-15",
+              "publishedAt": "2026-10-15T16:34:06Z",
+              "availableAt": "2026-10-15",
+              "checkedAt": "2026-10-19",
+              "type": "预印本·定向核读",
+              "scope": "核读摘要、§7–8及附录E：单UR5平台、5任务、每任务50训练与10测试episode；结果包含部分子任务计分，非纯完整成功率。核官方仓库README许可，代码MIT、权重CC-BY-NC-SA 4.0；未运行代码/独立复现。UTC10/15提交，上海10/16。"
+            },
+            {
+              "id": "wbd_20261015",
+              "title": "Whole-Body Dexterity",
+              "url": "https://arxiv.org/abs/2610.22184",
+              "date": "2026-10-15",
+              "publishedAt": "2026-10-15T16:40:48Z",
+              "availableAt": "2026-10-15",
+              "checkedAt": "2026-10-19",
+              "type": "预印本·定向核读",
+              "scope": "核读摘要、§IV-C、表I/II及结论；G1、篮球/15cm纸箱、1名训练8小时以上操作者。50次合计45成功含40次身体往返，完整货架搬运7/10；人工持续提供动作与切换权重。未全文复核全部仿真附录、观看完整视频或独立复现。UTC10/15提交，上海10/16。"
+            },
+            {
+              "id": "contactbench_20261017",
+              "title": "ContactBench 1.0: A Benchmark for Everyday Contact-Rich Robotic Manipulation",
+              "url": "https://arxiv.org/abs/2610.24512",
+              "date": "2026-10-17",
+              "publishedAt": "2026-10-17T07:12:36Z",
+              "availableAt": "2026-10-17",
+              "checkedAt": "2026-10-21",
+              "type": "预印本·真实机器人基准",
+              "scope": "定向核读任务、实验设置、表III–V、行为泛化与讨论；UR5e/WSG50，6任务各100示范，各被评策略每任务30次。单任务微调、物体固定；触觉仅4任务，另2任务未评触觉。未运行代码/观看视频。10/17提交，10/21延迟发现。"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "企业任务部署不能替代消费者每月付费使用，记未知。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "硬件、维护和人工接管成本限制消费服务价格。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "大众服务部署所需售后、场地与容量仍存在工程障碍。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "大众服务责任与支付条件缺可比数据，记未知。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Google 发布 Argon 机器人开发案例",
+          "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+          "date": "2026-10-13",
+          "scope": "企业演示"
+        },
+        {
+          "title": "Physical Intelligence 开放模型 API beta",
+          "url": "https://www.pi.website/blog/api-beta",
+          "date": "2026-10-13",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "Figure 报告30个陌生家庭任务测试",
+          "url": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization",
+          "date": "2026-09-17",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "π0.5: A VLA with Open-World Generalization",
+          "url": "https://www.pi.website/blog/pi05",
+          "date": "2025-04-22",
+          "scope": "技术报告"
+        },
+        {
+          "id": "figure_nscale_20260903",
+          "title": "Figure与Nscale战略合作及投资",
+          "url": "https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership",
+          "date": "2026-09-03",
+          "availableAt": "2026-09-03",
+          "checkedAt": "2026-10-17",
+          "scope": "完整公告日期及投资/算力条款核读；投资额未披露，35亿美元为算力承诺，初始部署目标2027H2。",
+          "type": "公司资本公告"
+        },
+        {
+          "id": "reki_20261015",
+          "title": "REKI: Registering Knowledge in VLAs",
+          "url": "https://arxiv.org/abs/2610.22178",
+          "date": "2026-10-15",
+          "publishedAt": "2026-10-15T16:34:06Z",
+          "availableAt": "2026-10-15",
+          "checkedAt": "2026-10-19",
+          "type": "预印本·定向核读",
+          "scope": "核读摘要、§7–8及附录E：单UR5平台、5任务、每任务50训练与10测试episode；结果包含部分子任务计分，非纯完整成功率。核官方仓库README许可，代码MIT、权重CC-BY-NC-SA 4.0；未运行代码/独立复现。UTC10/15提交，上海10/16。"
+        },
+        {
+          "id": "wbd_20261015",
+          "title": "Whole-Body Dexterity",
+          "url": "https://arxiv.org/abs/2610.22184",
+          "date": "2026-10-15",
+          "publishedAt": "2026-10-15T16:40:48Z",
+          "availableAt": "2026-10-15",
+          "checkedAt": "2026-10-19",
+          "type": "预印本·定向核读",
+          "scope": "核读摘要、§IV-C、表I/II及结论；G1、篮球/15cm纸箱、1名训练8小时以上操作者。50次合计45成功含40次身体往返，完整货架搬运7/10；人工持续提供动作与切换权重。未全文复核全部仿真附录、观看完整视频或独立复现。UTC10/15提交，上海10/16。"
+        },
+        {
+          "id": "contactbench_20261017",
+          "title": "ContactBench 1.0: A Benchmark for Everyday Contact-Rich Robotic Manipulation",
+          "url": "https://arxiv.org/abs/2610.24512",
+          "date": "2026-10-17",
+          "publishedAt": "2026-10-17T07:12:36Z",
+          "availableAt": "2026-10-17",
+          "checkedAt": "2026-10-21",
+          "type": "预印本·真实机器人基准",
+          "scope": "定向核读任务、实验设置、表III–V、行为泛化与讨论；UR5e/WSG50，6任务各100示范，各被评策略每任务30次。单任务微调、物体固定；触觉仅4任务，另2任务未评触觉。未运行代码/观看视频。10/17提交，10/21延迟发现。"
+        },
+        {
+          "id": "fred_20261021",
+          "title": "Self-Distilling Future Video Representations for World Action Models",
+          "url": "https://arxiv.org/abs/2610.30320",
+          "date": "2026-10-21",
+          "publishedAt": "2026-10-21T18:33:13Z",
+          "availableAt": "2026-10-21",
+          "checkedAt": "2026-10-25",
+          "type": "预印本·实机迁移研究",
+          "scope": "代理核§4及附录B/C/F/G，root核表2/12、B.1/B.2计分和原始日期；Franka8任务、OpenArm7任务各12试次。部分完成给分，50.0%为平均任务得分。未运行代码/观看原视频或独立复现；UTC10/21、上海10/22，本轮10/25延迟核读。"
+        }
+      ],
+      "counter": "每扩场地仍大量调试；后台人工成为主要成本，专用设备长期更经济。",
+      "trigger": "跨场地连续运行、人工接管和全成本数据。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.1374254456394301,
+      "low": 0.015703606227171703,
+      "high": 0.5529846744430708
+    },
+    {
+      "id": "tandem:industry",
+      "bet": "tandem",
+      "lens": "industry",
+      "event": "年实际出货100GW，至少3国采用，且有5年户外衰减和保修数据。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        2,
+        1,
+        0,
+        1,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 2,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "研发电池的效率优势和早期商业发货已存在。",
+          "sources": [
+            {
+              "title": "LONGi 宣布叠层研发电池35.5%效率",
+              "url": "https://www.longi.com/en/news/crystalline-silicon-perovskite-tandem-solar-cell-new-world-efficiency-2026/",
+              "date": "2026-07-14",
+              "scope": "企业披露认证"
+            },
+            {
+              "title": "叠层电池研究针对局部遮阴失效",
+              "url": "https://www.nature.com/articles/s41560-026-02067-w",
+              "date": "2026-06-25",
+              "scope": "同行评审"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "实际付费、独立运行与长期留存的公开程度。",
+          "sources": [
+            {
+              "title": "LONGi 宣布叠层研发电池35.5%效率",
+              "url": "https://www.longi.com/en/news/crystalline-silicon-perovskite-tandem-solar-cell-new-world-efficiency-2026/",
+              "date": "2026-07-14",
+              "scope": "企业披露认证"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "LONGi 宣布叠层研发电池35.5%效率",
+              "url": "https://www.longi.com/en/news/crystalline-silicon-perovskite-tandem-solar-cell-new-world-efficiency-2026/",
+              "date": "2026-07-14",
+              "scope": "企业披露认证"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "规模制造、渠道与部署容量的已知限制。",
+          "sources": [
+            {
+              "title": "LONGi 宣布叠层研发电池35.5%效率",
+              "url": "https://www.longi.com/en/news/crystalline-silicon-perovskite-tandem-solar-cell-new-world-efficiency-2026/",
+              "date": "2026-07-14",
+              "scope": "企业披露认证"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-17",
+          "kind": "人工证据判断",
+          "note": "相关技术出口临时登记已实施；叠层生产技术拟列入禁止类，目录仍征求意见，成品不纳入。跨境工艺扩散净影响待核，维持0。",
+          "sources": [
+            {
+              "title": "LONGi 宣布叠层研发电池35.5%效率",
+              "url": "https://www.longi.com/en/news/crystalline-silicon-perovskite-tandem-solar-cell-new-world-efficiency-2026/",
+              "date": "2026-07-14",
+              "scope": "企业披露认证"
+            },
+            {
+              "id": "mofcom_48",
+              "title": "技术出口目录拟修订与临时登记管理",
+              "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_0a31a3c9ac404f7a9b0e917ce3412997.html",
+              "date": "2026-10-16",
+              "availableAt": "2026-10-16",
+              "checkedAt": "2026-10-17",
+              "scope": "公告三部分及官方答问全部正文；附件WPS未取得，不采用二手技术阈值。目录征求意见至11/15，临时登记即日起至目录正式修订实施。",
+              "type": "官方政策原文"
+            },
+            {
+              "id": "mofcom_qa",
+              "title": "技术出口目录修订官方答问",
+              "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_d7661dbf62794345a221404f82a25959.html",
+              "date": "2026-10-16",
+              "availableAt": "2026-10-16",
+              "checkedAt": "2026-10-17",
+              "scope": "核读全部问答：钙钛矿及叠层组件生产技术为拟禁止类；相关产品不纳入，列明核心设备按范围登记。",
+              "type": "官方政策解读"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "LONGi 宣布叠层研发电池35.5%效率",
+          "url": "https://www.longi.com/en/news/crystalline-silicon-perovskite-tandem-solar-cell-new-world-efficiency-2026/",
+          "date": "2026-07-14",
+          "scope": "企业披露认证"
+        },
+        {
+          "title": "叠层电池研究针对局部遮阴失效",
+          "url": "https://www.nature.com/articles/s41560-026-02067-w",
+          "date": "2026-06-25",
+          "scope": "同行评审"
+        },
+        {
+          "title": "叠层太阳能电池的反偏与遮阴稳定性研究",
+          "url": "https://www.nature.com/articles/s41560-026-02067-w",
+          "date": "2026-06-25",
+          "scope": "同行评审"
+        },
+        {
+          "id": "mofcom_48",
+          "title": "技术出口目录拟修订与临时登记管理",
+          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_0a31a3c9ac404f7a9b0e917ce3412997.html",
+          "date": "2026-10-16",
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-17",
+          "scope": "公告三部分及官方答问全部正文；附件WPS未取得，不采用二手技术阈值。目录征求意见至11/15，临时登记即日起至目录正式修订实施。",
+          "type": "官方政策原文"
+        },
+        {
+          "id": "mofcom_qa",
+          "title": "技术出口目录修订官方答问",
+          "url": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_d7661dbf62794345a221404f82a25959.html",
+          "date": "2026-10-16",
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-17",
+          "scope": "核读全部问答：钙钛矿及叠层组件生产技术为拟禁止类；相关产品不纳入，列明核心设备按范围登记。",
+          "type": "官方政策解读"
+        }
+      ],
+      "counter": "效率收益被封装与衰减吞没，成熟硅技术降价持续压低竞争空间。",
+      "trigger": "实际出货、良率、全组件成本和户外可靠性。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.6024989407343608,
+      "low": 0.14413821035625188,
+      "high": 0.9375009994366413
+    },
+    {
+      "id": "storage:industry",
+      "bet": "storage",
+      "lens": "industry",
+      "event": "全球投入商业运行的多日储能达到10GWh，覆盖3国，至少3个项目有一年运行成本记录。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 1,
+          "date": "2026-10-17",
+          "kind": "人工证据判断",
+          "note": "外部模块验证与企业170模块/10+并网pack/100小时测试自报并存；客户长期商业运行尚待核。",
+          "sources": [
+            {
+              "title": "Form Energy 签署爱尔兰1000MWh项目协议",
+              "url": "https://formenergy.com/form-energy-and-futurenergy-ireland-announce-agreement-to-deploy-first-iron-air-battery-storage-project-in-ireland/",
+              "date": "2026-03-17",
+              "scope": "企业宣称"
+            },
+            {
+              "title": "加州能源委员会披露空气储能验证报告",
+              "url": "https://www.energy.ca.gov/publications/2025/demonstrating-aqueous-air-breathing-energy-storage-system-multi-day-resiliency",
+              "date": "2025-11-19",
+              "scope": "官方技术报告"
+            },
+            {
+              "id": "form_progress_1017",
+              "title": "Form Energy研发与并网测试时间线",
+              "url": "https://formenergy.com/about/",
+              "date": null,
+              "availableAt": "2026-10-17",
+              "checkedAt": "2026-10-17",
+              "scope": "核读2025/2026进度段；2026条目无具体披露日。企业自报170模块、10+并网pack测试与连续100小时，未给独立长期商业成本。",
+              "type": "企业进度自报"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "实际付费、独立运行与长期留存的公开程度。",
+          "sources": [
+            {
+              "title": "Form Energy 签署爱尔兰1000MWh项目协议",
+              "url": "https://formenergy.com/form-energy-and-futurenergy-ireland-announce-agreement-to-deploy-first-iron-air-battery-storage-project-in-ireland/",
+              "date": "2026-03-17",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "Form Energy 签署爱尔兰1000MWh项目协议",
+              "url": "https://formenergy.com/form-energy-and-futurenergy-ireland-announce-agreement-to-deploy-first-iron-air-battery-storage-project-in-ireland/",
+              "date": "2026-03-17",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "规模制造、渠道与部署容量的已知限制。",
+          "sources": [
+            {
+              "title": "Form Energy 签署爱尔兰1000MWh项目协议",
+              "url": "https://formenergy.com/form-energy-and-futurenergy-ireland-announce-agreement-to-deploy-first-iron-air-battery-storage-project-in-ireland/",
+              "date": "2026-03-17",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "监管、责任与支付条件；未披露不等于已经解决。",
+          "sources": [
+            {
+              "title": "Form Energy 签署爱尔兰1000MWh项目协议",
+              "url": "https://formenergy.com/form-energy-and-futurenergy-ireland-announce-agreement-to-deploy-first-iron-air-battery-storage-project-in-ireland/",
+              "date": "2026-03-17",
+              "scope": "企业宣称"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "Form Energy 签署爱尔兰1000MWh项目协议",
+          "url": "https://formenergy.com/form-energy-and-futurenergy-ireland-announce-agreement-to-deploy-first-iron-air-battery-storage-project-in-ireland/",
+          "date": "2026-03-17",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "加州能源委员会披露空气储能验证报告",
+          "url": "https://www.energy.ca.gov/publications/2025/demonstrating-aqueous-air-breathing-energy-storage-system-multi-day-resiliency",
+          "date": "2025-11-19",
+          "scope": "官方技术报告"
+        },
+        {
+          "title": "Demonstrating an Aqueous Air-Breathing Energy Storage System for Multi-Day Resiliency",
+          "url": "https://www.energy.ca.gov/publications/2025/demonstrating-aqueous-air-breathing-energy-storage-system-multi-day-resiliency",
+          "date": "2025-11-19",
+          "scope": "工程报告"
+        },
+        {
+          "id": "form_progress_1017",
+          "title": "Form Energy研发与并网测试时间线",
+          "url": "https://formenergy.com/about/",
+          "date": null,
+          "availableAt": "2026-10-17",
+          "checkedAt": "2026-10-17",
+          "scope": "核读2025/2026进度段；2026条目无具体披露日。企业自报170模块、10+并网pack测试与连续100小时，未给独立长期商业成本。",
+          "type": "企业进度自报"
+        },
+        {
+          "id": "gre_irp_2026",
+          "title": "Great River Energy 2026—2040 IRP",
+          "url": "https://greatriverenergy.com/wp-content/uploads/2026/05/2026-2040-GRE-IRP-FINAL-4-24-2026.pdf",
+          "date": "2026-04-24",
+          "availableAt": "2026-04-24",
+          "checkedAt": "2026-10-17",
+          "scope": "69页PDF定向核读封函与PDF第16页/页脚11：剩余模块待交付，预计2026年底COD；不是当日新进展。",
+          "type": "客户工程规划"
+        }
+      ],
+      "counter": "客户大型项目投运延期、长期可用率与全成本不足，或其他供电/储能组合更便宜。",
+      "trigger": "从协议与订单跨到实际并网、可用率和全年成本。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.2,
+      "low": 0.02702702702702703,
+      "high": 0.6829268292682926
+    },
+    {
+      "id": "fusion:industry",
+      "bet": "fusion",
+      "lens": "industry",
+      "event": "至少3座电站持续向电网售电一年，并独立核证全厂净发电与全成本。",
+      "deadline": "2036-12-31",
+      "prior": 0.2,
+      "scores": [
+        0,
+        -1,
+        -2,
+        -1,
+        -1
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "磁体、装置与等离子体实验持续推进；仍未在本轮来源中证明商业全厂净发电。",
+          "sources": [
+            {
+              "title": "CFS 签订大规模高温超导带材采购",
+              "url": "https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-places-largest-single-/",
+              "date": "2026-09-30",
+              "scope": "企业宣称"
+            },
+            {
+              "title": "Helion 公布 Polaris 聚变实验节点",
+              "url": "https://www.helionenergy.com/newsroom/helion-achieves-new-fusion-energy-milestones",
+              "date": "2026-02-13",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "实际付费、独立运行与长期留存的公开程度。",
+          "sources": [
+            {
+              "title": "CFS 签订大规模高温超导带材采购",
+              "url": "https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-places-largest-single-/",
+              "date": "2026-09-30",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": -2,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "CFS 签订大规模高温超导带材采购",
+              "url": "https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-places-largest-single-/",
+              "date": "2026-09-30",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": -1,
+          "date": "2026-10-17",
+          "kind": "人工证据判断",
+          "note": "Helion电容制造线正在配置至更高吞吐，尚缺稳定产量、良率、寿命及全厂运行记录；仍为-1。",
+          "sources": [
+            {
+              "title": "CFS 签订大规模高温超导带材采购",
+              "url": "https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-places-largest-single-/",
+              "date": "2026-09-30",
+              "scope": "企业宣称"
+            },
+            {
+              "id": "helion_capacitors",
+              "title": "Helion电容制造线工程更新",
+              "url": "https://www.helionenergy.com/blog/inside-helions-capacitor-manufacturing-line",
+              "date": "2026-10-16",
+              "availableAt": "2026-10-16",
+              "checkedAt": "2026-10-17",
+              "scope": "完整工程正文；Omega正在上线/配置，约2模块每小时为目标配置速率，未核稳定产能或全厂净发电。",
+              "type": "企业部件工程披露"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "监管、责任与支付条件；未披露不等于已经解决。",
+          "sources": [
+            {
+              "title": "CFS 签订大规模高温超导带材采购",
+              "url": "https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-places-largest-single-/",
+              "date": "2026-09-30",
+              "scope": "企业宣称"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "title": "CFS 签订大规模高温超导带材采购",
+          "url": "https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-places-largest-single-/",
+          "date": "2026-09-30",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "Helion 公布 Polaris 聚变实验节点",
+          "url": "https://www.helionenergy.com/newsroom/helion-achieves-new-fusion-energy-milestones",
+          "date": "2026-02-13",
+          "scope": "企业宣称"
+        },
+        {
+          "title": "ARC Fusion Power Plant Physics Basis",
+          "url": "https://www.cambridge.org/core/journals/journal-of-plasma-physics/collections/arc-fusion-power-plant-physics-basis",
+          "date": "2026-06-04",
+          "scope": "设计论文集"
+        },
+        {
+          "id": "helion_capacitors",
+          "title": "Helion电容制造线工程更新",
+          "url": "https://www.helionenergy.com/blog/inside-helions-capacitor-manufacturing-line",
+          "date": "2026-10-16",
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-17",
+          "scope": "完整工程正文；Omega正在上线/配置，约2模块每小时为目标配置速率，未核稳定产能或全厂净发电。",
+          "type": "企业部件工程披露"
+        }
+      ],
+      "counter": "实验指标提升而整机收支长期不过关，或维护与建设成本无法竞争。",
+      "trigger": "独立核证全厂净电、可用率、维护周期和电价。",
+      "resolutionPolicy": "2036-12-31前达到完整条件；统计可在2037-06-30前发布。缺证据标未决，不自动算失败。",
+      "p": 0.025605160243529185,
+      "low": 0.002285576518188314,
+      "high": 0.21212121212121215
+    },
+    {
+      "id": "wear2027",
+      "bet": "wear2027",
+      "lens": "milestone",
+      "event": "厂商已公布的2027全年AI眼镜出货合计达到2000万台，且至少3个国家有实际销售；不计普通音频眼镜。",
+      "deadline": "2027-12-31",
+      "prior": 0.1,
+      "scores": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "已有在售产品；所核来源未提供独立的全天任务成功率、故障率及续航实测，可靠性暂记未知。销量只计入采用组。",
+          "sources": [
+            {
+              "id": "essilor_fy2025",
+              "title": "Q4/FY 2025 Results",
+              "url": "https://www.essilorluxottica.com/api/getCapContent?download=false&id=283150",
+              "date": "2026-02-11",
+              "availableAt": "2026-02-11",
+              "checkedAt": "2026-10-16",
+              "scope": "40页PDF可读，核读新闻稿p1及p3-4的销量、产品范围、利润率影响；未核读后附全部管理报告。",
+              "type": "公司年度业绩披露PDF"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "真实销量支持需求；缺90日AI功能活跃留存，故只记+1。",
+          "sources": [
+            {
+              "id": "essilor_fy2025",
+              "title": "Q4/FY 2025 Results",
+              "url": "https://www.essilorluxottica.com/api/getCapContent?download=false&id=283150",
+              "date": "2026-02-11",
+              "availableAt": "2026-02-11",
+              "checkedAt": "2026-10-16",
+              "scope": "40页PDF可读，核读新闻稿p1及p3-4的销量、产品范围、利润率影响；未核读后附全部管理报告。",
+              "type": "公司年度业绩披露PDF"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "Snap 发布 SPECS AR 眼镜",
+              "url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses",
+              "date": "2026-06-16",
+              "scope": "官方产品说明"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "EssilorLuxottica披露既有眼镜品牌、光学渠道及AI眼镜业务扩张，提供分发基础；不把销量再计一次，跨国扩产能力仍待验证。",
+          "sources": [
+            {
+              "id": "essilor_fy2025",
+              "title": "Q4/FY 2025 Results",
+              "url": "https://www.essilorluxottica.com/api/getCapContent?download=false&id=283150",
+              "date": "2026-02-11",
+              "availableAt": "2026-02-11",
+              "checkedAt": "2026-10-16",
+              "scope": "40页PDF可读，核读新闻稿p1及p3-4的销量、产品范围、利润率影响；未核读后附全部管理报告。",
+              "type": "公司年度业绩披露PDF"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "监管、责任与支付条件；未披露不等于已经解决。",
+          "sources": [
+            {
+              "title": "Snap 发布 SPECS AR 眼镜",
+              "url": "https://newsroom.snap.com/introducing-specs-augmented-reality-glasses",
+              "date": "2026-06-16",
+              "scope": "官方产品说明"
+            }
+          ]
+        }
+      ],
+      "resolutionPolicy": "年度公司财报及销售范围；全年结果可在2028-06-30前结算。",
+      "p": 0.21481650514305806,
+      "low": 0.07766645725483722,
+      "high": 0.8671844806273674
+    },
+    {
+      "id": "robot2027",
+      "bet": "robot2027",
+      "lens": "milestone",
+      "event": "至少一项跨任务机器人付费部署，公开独立一年运行、人工接管与单位任务全成本记录。",
+      "deadline": "2027-12-31",
+      "prior": 0.1,
+      "scores": [
+        1,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "物流窄场景已运行；公司研究显示部分陌生家庭任务能迁移。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            },
+            {
+              "title": "Physical Intelligence 开放模型 API beta",
+              "url": "https://www.pi.website/blog/api-beta",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "实际付费、独立运行与长期留存的公开程度。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "规模制造、渠道与部署容量的已知限制。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "监管、责任与支付条件；未披露不等于已经解决。",
+          "sources": [
+            {
+              "title": "Google 发布 Argon 机器人开发案例",
+              "url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+              "date": "2026-10-13",
+              "scope": "企业演示"
+            }
+          ]
+        }
+      ],
+      "resolutionPolicy": "独立客户或同行评审运行报告，不以厂商演示或订单结算。",
+      "p": 0.1484665743533182,
+      "low": 0.046132759103985836,
+      "high": 0.7894765191847781
+    },
+    {
+      "id": "editing2027",
+      "bet": "editing2027",
+      "lens": "milestone",
+      "event": "FDA正式批准至少一项体内基因编辑治疗；不计IND许可、体外编辑或仅有审评申请。",
+      "deadline": "2027-12-31",
+      "prior": 0.1,
+      "scores": [
+        1,
+        0,
+        -1,
+        -1,
+        0
+      ],
+      "evidence": [
+        {
+          "group": "技术可靠性",
+          "score": 1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "已有小样本人体病因编辑结果；CHOP/Penn曾为单个婴儿开发定制治疗。",
+          "sources": [
+            {
+              "title": "BEAM-301 首批6人数据同时出现效果与风险",
+              "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            },
+            {
+              "title": "nex-z 的 MAGNITUDE 临床暂停解除",
+              "url": "https://ir.intelliatx.com/node/12526/html",
+              "date": "2026-03-02",
+              "scope": "公司监管文件"
+            }
+          ]
+        },
+        {
+          "group": "真实采用",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "实际付费、独立运行与长期留存的公开程度。",
+          "sources": [
+            {
+              "title": "BEAM-301 首批6人数据同时出现效果与风险",
+              "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "单位经济性",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "成本、支付与替代方案仍需实际数据。",
+          "sources": [
+            {
+              "title": "BEAM-301 首批6人数据同时出现效果与风险",
+              "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "生产与分发",
+          "score": -1,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "规模制造、渠道与部署容量的已知限制。",
+          "sources": [
+            {
+              "title": "BEAM-301 首批6人数据同时出现效果与风险",
+              "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            }
+          ]
+        },
+        {
+          "group": "制度与支付",
+          "score": 0,
+          "date": "2026-10-16",
+          "kind": "人工证据判断",
+          "note": "监管、责任与支付条件；未披露不等于已经解决。",
+          "sources": [
+            {
+              "title": "BEAM-301 首批6人数据同时出现效果与风险",
+              "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-present-initial-data-phase-12-trial-beam-301",
+              "date": "2026-10-13",
+              "scope": "企业宣称"
+            }
+          ]
+        }
+      ],
+      "resolutionPolicy": "FDA正式批准记录；不以临床试验进展替代。",
+      "p": 0.06612657232314459,
+      "low": 0.015703606227171703,
+      "high": 0.5529846744430708
+    }
+  ],
+  "model": {
+    "id": "odds-v1",
+    "prior": 0.2,
+    "priorRange": [
+      0.1,
+      0.35
+    ],
+    "dependence": 0.65,
+    "dependenceRange": [
+      0.4,
+      0.8
+    ],
+    "logLikelihoodPerPoint": 0.6931471805599453,
+    "scoreUncertainty": 0.5,
+    "groups": [
+      "技术可靠性",
+      "真实采用",
+      "单位经济性",
+      "生产与分发",
+      "制度与支付"
+    ],
+    "status": "人工假设·未经校准",
+    "formula": "logit(p) = logit(prior) + 0.65 × ln(2) × Σ证据组分",
+    "rangeLabel": "假设敏感性范围",
+    "rubric": [
+      [
+        -2,
+        "存在明确障碍"
+      ],
+      [
+        -1,
+        "障碍占优"
+      ],
+      [
+        0,
+        "未知或正反相抵"
+      ],
+      [
+        1,
+        "有条件支持"
+      ],
+      [
+        2,
+        "多项实际证据支持"
+      ]
+    ]
+  },
+  "graph": {
+    "sources": [
+      {
+        "id": "ilo_exposure_2025",
+        "title": "How might generative AI impact different occupations?",
+        "url": "https://www.ilo.org/resource/article/how-might-generative-ai-impact-different-occupations",
+        "date": "2025-05-20",
+        "availableAt": "2025-05-20",
+        "checkedAt": "2026-10-16",
+        "scope": "核读任务级暴露方法、四分之一估计、暴露不等于实际影响、任务转型解释；未读140号工作论文全文。",
+        "type": "原研究机构方法说明"
+      },
+      {
+        "id": "bls_ep_2024_2034",
+        "title": "Employment Projections — 2024–2034",
+        "url": "https://www.bls.gov/news.release/archives/ecopro_08282025.pdf",
+        "date": "2025-08-28",
+        "availableAt": "2025-08-28",
+        "checkedAt": "2026-10-16",
+        "scope": "9页PDF可读，核读p1、p3-6产业/岗位投影及不确定性提示；采用固定历史版本，未把现行滚动表混入。",
+        "type": "官方原始劳动统计投影"
+      },
+      {
+        "id": "google_wearos_pm",
+        "title": "Group Product Manager, Wearables Platform, Wear OS",
+        "url": "https://www.google.com/about/careers/applications/jobs/results/86029336917746374-group-product-manager-wearables-platform-wear-os",
+        "date": null,
+        "availableAt": "2026-10-16",
+        "checkedAt": "2026-10-16",
+        "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
+        "type": "当前官方具体JD"
+      },
+      {
+        "id": "nist_chips_loi_20261022",
+        "title": "CHIPS附股权条件研发资助意向",
+        "url": "https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd",
+        "date": "2026-10-22",
+        "availableAt": "2026-10-22",
+        "checkedAt": "2026-10-25",
+        "type": "政府原始公告",
+        "scope": "NIST正文L118–131；四份LOI合计最高3.89亿美元，Helion最高1.75亿、CFS最高8500万；award附少数/无控制/无投票权股权条件，比例未列。未核到最终协议/拨付。"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "dir:worlds",
+        "label": "生成世界",
+        "type": "方向",
+        "recordedAt": "2026-10-16",
+        "direction": "worlds"
+      },
+      {
+        "id": "dir:spatial",
+        "label": "AI可穿戴",
+        "type": "方向",
+        "recordedAt": "2026-10-16",
+        "direction": "spatial"
+      },
+      {
+        "id": "dir:robots",
+        "label": "通用机器人",
+        "type": "方向",
+        "recordedAt": "2026-10-16",
+        "direction": "robots"
+      },
+      {
+        "id": "dir:editing",
+        "label": "体内基因编辑",
+        "type": "方向",
+        "recordedAt": "2026-10-16",
+        "direction": "editing"
+      },
+      {
+        "id": "dir:organs",
+        "label": "异种器官",
+        "type": "方向",
+        "recordedAt": "2026-10-16",
+        "direction": "organs"
+      },
+      {
+        "id": "dir:labs",
+        "label": "自主实验",
+        "type": "方向",
+        "recordedAt": "2026-10-16",
+        "direction": "labs"
+      },
+      {
+        "id": "dir:tandem",
+        "label": "叠层光伏",
+        "type": "方向",
+        "recordedAt": "2026-10-16",
+        "direction": "tandem"
+      },
+      {
+        "id": "dir:storage",
+        "label": "多日储能",
+        "type": "方向",
+        "recordedAt": "2026-10-16",
+        "direction": "storage"
+      },
+      {
+        "id": "dir:fusion",
+        "label": "聚变发电",
+        "type": "方向",
+        "recordedAt": "2026-10-16",
+        "direction": "fusion"
+      },
+      {
+        "id": "dir:bci",
+        "label": "神经交互",
+        "type": "方向",
+        "recordedAt": "2026-10-16",
+        "direction": "bci"
+      },
+      {
+        "id": "co:world_labs",
+        "label": "World Labs",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "world_labs"
+      },
+      {
+        "id": "co:pi",
+        "label": "Physical Intelligence",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "pi"
+      },
+      {
+        "id": "co:figure",
+        "label": "Figure",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "figure"
+      },
+      {
+        "id": "co:meta",
+        "label": "Meta",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "meta"
+      },
+      {
+        "id": "co:snap",
+        "label": "Snap／Specs",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "snap"
+      },
+      {
+        "id": "co:neuralink",
+        "label": "Neuralink",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "neuralink"
+      },
+      {
+        "id": "co:paradromics",
+        "label": "Paradromics",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "paradromics"
+      },
+      {
+        "id": "co:periodic",
+        "label": "Periodic Labs",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "periodic"
+      },
+      {
+        "id": "co:beam",
+        "label": "Beam Therapeutics",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "beam"
+      },
+      {
+        "id": "co:egenesis",
+        "label": "eGenesis",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "egenesis"
+      },
+      {
+        "id": "co:oxford_pv",
+        "label": "Oxford PV",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "oxford_pv"
+      },
+      {
+        "id": "co:form_energy",
+        "label": "Form Energy",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "form_energy"
+      },
+      {
+        "id": "co:cfs",
+        "label": "Commonwealth Fusion Systems",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "cfs"
+      },
+      {
+        "id": "co:helion",
+        "label": "Helion",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "helion"
+      },
+      {
+        "id": "co:unitree",
+        "label": "宇树科技",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "unitree"
+      },
+      {
+        "id": "co:rokid",
+        "label": "Rokid 乐奇",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "rokid"
+      },
+      {
+        "id": "co:brainco",
+        "label": "BrainCo 强脑科技",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "companyId": "brainco"
+      },
+      {
+        "id": "skill:stats",
+        "label": "统计与实验",
+        "type": "技能",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "skill:data",
+        "label": "数据流程",
+        "type": "技能",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "skill:tools",
+        "label": "工具开发",
+        "type": "技能",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "skill:hci",
+        "label": "人机交互",
+        "type": "技能",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "skill:neuro",
+        "label": "神经科学",
+        "type": "技能",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "skill:signal",
+        "label": "信号与硬件",
+        "type": "技能",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "skill:economics",
+        "label": "成本与经营分析",
+        "type": "技能",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "skill:medical",
+        "label": "临床与法规",
+        "type": "技能",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "task:eval",
+        "label": "产品与体验评估",
+        "type": "任务",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "task:pipeline",
+        "label": "数据与研究工具",
+        "type": "任务",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "task:workflow",
+        "label": "模型评估与工作流",
+        "type": "任务",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "task:market",
+        "label": "经营与产业分析",
+        "type": "任务",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "task:clinical",
+        "label": "临床工程与转化",
+        "type": "任务",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "task:neural",
+        "label": "神经信号工程",
+        "type": "任务",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "co:google",
+        "label": "Google",
+        "type": "公司",
+        "recordedAt": "2026-10-16",
+        "source": {
+          "id": "google_wearos_pm",
+          "title": "Group Product Manager, Wearables Platform, Wear OS",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/86029336917746374-group-product-manager-wearables-platform-wear-os",
+          "date": null,
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-16",
+          "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
+          "type": "当前官方具体JD"
+        }
+      },
+      {
+        "id": "task:wearos",
+        "label": "Wear OS产品管理",
+        "type": "任务",
+        "recordedAt": "2026-10-16",
+        "source": {
+          "id": "google_wearos_pm",
+          "title": "Group Product Manager, Wearables Platform, Wear OS",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/86029336917746374-group-product-manager-wearables-platform-wear-os",
+          "date": null,
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-16",
+          "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
+          "type": "当前官方具体JD"
+        }
+      },
+      {
+        "id": "skill:architecture",
+        "label": "系统架构与生态",
+        "type": "技能",
+        "recordedAt": "2026-10-16"
+      },
+      {
+        "id": "task:factory-analytics",
+        "label": "工厂BI与数据建模",
+        "type": "任务",
+        "recordedAt": "2026-10-17"
+      },
+      {
+        "id": "skill:sql-python",
+        "label": "SQL/Python数据建模",
+        "type": "技能",
+        "recordedAt": "2026-10-17"
+      },
+      {
+        "id": "task:wearable-human-factors",
+        "label": "穿戴人体研究与测量",
+        "type": "任务",
+        "recordedAt": "2026-10-17"
+      },
+      {
+        "id": "skill:cad-prototype",
+        "label": "CAD与硬件原型",
+        "type": "技能",
+        "recordedAt": "2026-10-17"
+      },
+      {
+        "id": "skill:measurement",
+        "label": "传感器与测量系统",
+        "type": "技能",
+        "recordedAt": "2026-10-17"
+      },
+      {
+        "id": "task:voice-hailing",
+        "label": "语音叫车",
+        "type": "任务",
+        "recordedAt": "2026-10-18"
+      },
+      {
+        "id": "task:bci-imaging",
+        "label": "脑机临床影像流程",
+        "type": "任务",
+        "recordedAt": "2026-10-20"
+      },
+      {
+        "id": "task:research-set-ops",
+        "label": "研究场景与道具运营",
+        "type": "任务",
+        "recordedAt": "2026-10-20"
+      },
+      {
+        "id": "task:product-growth-analytics",
+        "label": "产品增长分析",
+        "type": "任务",
+        "recordedAt": "2026-10-30"
+      }
+    ],
+    "edges": [
+      {
+        "id": "e0",
+        "from": "dir:worlds",
+        "to": "co:world_labs",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://www.worldlabs.ai/blog/atlas",
+          "title": "Marble三维世界产品、Atlas空间模型",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e1",
+        "from": "dir:robots",
+        "to": "co:pi",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://www.pi.website/blog/api-beta",
+          "title": "通用机器人模型、Pi API beta",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e2",
+        "from": "dir:robots",
+        "to": "co:figure",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://www.figure.ai/news",
+          "title": "Figure 03人形机器人、Helix模型",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e3",
+        "from": "dir:spatial",
+        "to": "co:meta",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://about.fb.com/news/2026/09/introducing-ray-ban-meta-audio-glasses-new-styles-plus-muse/",
+          "title": "AI眼镜、VR与成熟社交广告平台",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e4",
+        "from": "dir:spatial",
+        "to": "co:snap",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://investor.snap.com/news/news-details/2026/SPECS-Make-Computing-More-Human-with-New-Experiences-Partnerships-and-SPECS-Intelligence/default.aspx",
+          "title": "Snapchat与Specs AR计算平台",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e5",
+        "from": "dir:bci",
+        "to": "co:neuralink",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://neuralink.com/updates/",
+          "title": "N1植入物、R1手术机器人与临床应用",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e6",
+        "from": "dir:bci",
+        "to": "co:paradromics",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://paradromics.com/news/paradromics-achieves-real-time-speech-connexus-brain-computer-interface/",
+          "title": "Connexus植入式沟通接口 · 早期临床",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e7",
+        "from": "dir:labs",
+        "to": "co:periodic",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://periodic.com/news/building-labs-that-learn",
+          "title": "AI科学家与自主物理实验室",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e8",
+        "from": "dir:editing",
+        "to": "co:beam",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://investors.beamtx.com/",
+          "title": "碱基编辑疗法 · 临床阶段",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e9",
+        "from": "dir:organs",
+        "to": "co:egenesis",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://egenesisbio.com/news-media/press-releases",
+          "title": "基因工程猪肾 · 临床与Expanded Access研究",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e10",
+        "from": "dir:tandem",
+        "to": "co:oxford_pv",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://www.oxfordpv.com/press-releases/first-solar-oxford-pv-enter-into-patent-licensing-agreement-for-us-markets",
+          "title": "钙钛矿／硅叠层光伏 · 初期出货与授权",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e11",
+        "from": "dir:storage",
+        "to": "co:form_energy",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://formenergy.com/",
+          "title": "100小时铁空气电池 · 制造与商业部署",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e12",
+        "from": "dir:fusion",
+        "to": "co:cfs",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/",
+          "title": "SPARC示范装置、ARC商业电站计划",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e13",
+        "from": "dir:fusion",
+        "to": "co:helion",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://www.helionenergy.com/",
+          "title": "Polaris原型实验、Orion电站建设",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e14",
+        "from": "dir:robots",
+        "to": "co:unitree",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://www.unitree.com/",
+          "title": "四足、人形机器人与数据采集平台",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e15",
+        "from": "dir:spatial",
+        "to": "co:rokid",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://www.rokid.com/zh-CN/about",
+          "title": "AI／AR眼镜、YodaOS与开发者生态",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e16",
+        "from": "dir:bci",
+        "to": "co:brainco",
+        "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "url": "https://www.brainco.cn/en-US/about",
+          "title": "非侵入式接口、仿生义肢与神经反馈产品",
+          "date": "2026-10-16"
+        }
+      },
+      {
+        "id": "e17",
+        "from": "dir:spatial",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e18",
+        "from": "dir:spatial",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e19",
+        "from": "dir:worlds",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e20",
+        "from": "dir:worlds",
+        "to": "task:workflow",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e21",
+        "from": "dir:robots",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e22",
+        "from": "dir:robots",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e23",
+        "from": "dir:bci",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e25",
+        "from": "dir:editing",
+        "to": "task:clinical",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e26",
+        "from": "dir:editing",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e27",
+        "from": "dir:organs",
+        "to": "task:clinical",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e28",
+        "from": "dir:organs",
+        "to": "task:market",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e29",
+        "from": "dir:labs",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e30",
+        "from": "dir:labs",
+        "to": "task:workflow",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e31",
+        "from": "dir:tandem",
+        "to": "task:market",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e32",
+        "from": "dir:tandem",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e33",
+        "from": "dir:storage",
+        "to": "task:market",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e34",
+        "from": "dir:storage",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e35",
+        "from": "dir:fusion",
+        "to": "task:market",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e36",
+        "from": "dir:fusion",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e37",
+        "from": "task:eval",
+        "to": "skill:stats",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e38",
+        "from": "task:eval",
+        "to": "skill:hci",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e39",
+        "from": "task:eval",
+        "to": "skill:data",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e40",
+        "from": "task:pipeline",
+        "to": "skill:data",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e41",
+        "from": "task:pipeline",
+        "to": "skill:tools",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e42",
+        "from": "task:workflow",
+        "to": "skill:tools",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e43",
+        "from": "task:workflow",
+        "to": "skill:stats",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e44",
+        "from": "task:market",
+        "to": "skill:economics",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e45",
+        "from": "task:market",
+        "to": "skill:data",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e100",
+        "from": "dir:bci",
+        "to": "task:neural",
+        "kind": "hypothesis",
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e101",
+        "from": "task:clinical",
+        "to": "skill:medical",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e102",
+        "from": "task:clinical",
+        "to": "skill:stats",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e103",
+        "from": "task:neural",
+        "to": "skill:neuro",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e104",
+        "from": "task:neural",
+        "to": "skill:signal",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e105",
+        "from": "task:neural",
+        "to": "skill:tools",
+        "kind": "hypothesis",
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e106",
+        "from": "co:world_labs",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e107",
+        "from": "co:world_labs",
+        "to": "task:workflow",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e108",
+        "from": "co:pi",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e109",
+        "from": "co:pi",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e110",
+        "from": "co:figure",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e111",
+        "from": "co:figure",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e112",
+        "from": "co:meta",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e113",
+        "from": "co:meta",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e114",
+        "from": "co:snap",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e115",
+        "from": "co:snap",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e116",
+        "from": "co:neuralink",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e117",
+        "from": "co:neuralink",
+        "to": "task:neural",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e118",
+        "from": "co:paradromics",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e119",
+        "from": "co:paradromics",
+        "to": "task:neural",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e120",
+        "from": "co:periodic",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e121",
+        "from": "co:periodic",
+        "to": "task:workflow",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e122",
+        "from": "co:beam",
+        "to": "task:clinical",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e123",
+        "from": "co:beam",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e124",
+        "from": "co:egenesis",
+        "to": "task:clinical",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e125",
+        "from": "co:egenesis",
+        "to": "task:market",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e126",
+        "from": "co:oxford_pv",
+        "to": "task:market",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e127",
+        "from": "co:oxford_pv",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e128",
+        "from": "co:form_energy",
+        "to": "task:market",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e129",
+        "from": "co:form_energy",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e130",
+        "from": "co:cfs",
+        "to": "task:market",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e131",
+        "from": "co:cfs",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e132",
+        "from": "co:helion",
+        "to": "task:market",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e133",
+        "from": "co:helion",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e134",
+        "from": "co:unitree",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e135",
+        "from": "co:unitree",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e136",
+        "from": "co:rokid",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e137",
+        "from": "co:rokid",
+        "to": "task:pipeline",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e138",
+        "from": "co:brainco",
+        "to": "task:eval",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e139",
+        "from": "co:brainco",
+        "to": "task:neural",
+        "kind": "hypothesis",
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": null
+      },
+      {
+        "id": "e140",
+        "from": "dir:spatial",
+        "to": "co:google",
+        "kind": "fact",
+        "relation": "招聘产品岗位",
+        "note": "当前官方JD核查日，不代表首次发布日期。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "id": "google_wearos_pm",
+          "title": "Group Product Manager, Wearables Platform, Wear OS",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/86029336917746374-group-product-manager-wearables-platform-wear-os",
+          "date": null,
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-16",
+          "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
+          "type": "当前官方具体JD"
+        }
+      },
+      {
+        "id": "e141",
+        "from": "co:google",
+        "to": "task:wearos",
+        "kind": "fact",
+        "relation": "当前官方JD",
+        "note": "岗位正文和Apply入口可读；未核实名额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "id": "google_wearos_pm",
+          "title": "Group Product Manager, Wearables Platform, Wear OS",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/86029336917746374-group-product-manager-wearables-platform-wear-os",
+          "date": null,
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-16",
+          "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
+          "type": "当前官方具体JD"
+        }
+      },
+      {
+        "id": "e142",
+        "from": "task:wearos",
+        "to": "skill:architecture",
+        "kind": "fact",
+        "relation": "要求／职责",
+        "note": "系统架构、AI平台及OEM生态职责。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "id": "google_wearos_pm",
+          "title": "Group Product Manager, Wearables Platform, Wear OS",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/86029336917746374-group-product-manager-wearables-platform-wear-os",
+          "date": null,
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-16",
+          "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
+          "type": "当前官方具体JD"
+        }
+      },
+      {
+        "id": "e143",
+        "from": "task:wearos",
+        "to": "skill:hci",
+        "kind": "fact",
+        "relation": "体验与UX职责",
+        "note": "职责含用户体验；不据此推断个人具备该岗位资格。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "id": "google_wearos_pm",
+          "title": "Group Product Manager, Wearables Platform, Wear OS",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/86029336917746374-group-product-manager-wearables-platform-wear-os",
+          "date": null,
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-16",
+          "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
+          "type": "当前官方具体JD"
+        }
+      },
+      {
+        "id": "job1017_form_task",
+        "from": "co:form_energy",
+        "to": "task:factory-analytics",
+        "kind": "fact",
+        "relation": "当前招聘任务",
+        "note": "官方JD涉及工厂BI、数据模型与数据质量；4年以上相关代码经验。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": null,
+        "source": {
+          "id": "form_factory_analytics_1017",
+          "title": "Senior Data Analytics Engineer, Factory Software",
+          "url": "https://jobs.ashbyhq.com/formenergy/0928f724-f61d-44d0-840c-4594d16eb77e",
+          "date": "2026-10-15",
+          "availableAt": "2026-10-15",
+          "checkedAt": "2026-10-17",
+          "scope": "通过官方公开招聘API核读完整职责、要求、地点、isListed=true与申请URL；岗位首次发布字段为UTC 2026-10-15，本轮首次核到不是当天新发。",
+          "type": "官方招聘证据",
+          "apiUrl": "https://api.ashbyhq.com/posting-api/job-board/formenergy"
+        }
+      },
+      {
+        "id": "job1017_form_sql",
+        "from": "task:factory-analytics",
+        "to": "skill:sql-python",
+        "kind": "fact",
+        "relation": "JD要求",
+        "note": "岗位明确列SQL和Python，不推断个人已满足要求。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": null,
+        "source": {
+          "id": "form_factory_analytics_1017",
+          "title": "Senior Data Analytics Engineer, Factory Software",
+          "url": "https://jobs.ashbyhq.com/formenergy/0928f724-f61d-44d0-840c-4594d16eb77e",
+          "date": "2026-10-15",
+          "availableAt": "2026-10-15",
+          "checkedAt": "2026-10-17",
+          "scope": "通过官方公开招聘API核读完整职责、要求、地点、isListed=true与申请URL；岗位首次发布字段为UTC 2026-10-15，本轮首次核到不是当天新发。",
+          "type": "官方招聘证据",
+          "apiUrl": "https://api.ashbyhq.com/posting-api/job-board/formenergy"
+        }
+      },
+      {
+        "id": "job1017_form_flow",
+        "from": "task:factory-analytics",
+        "to": "skill:data",
+        "kind": "fact",
+        "relation": "JD要求",
+        "note": "数据模型、质量标准及工厂数据流。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": null,
+        "source": {
+          "id": "form_factory_analytics_1017",
+          "title": "Senior Data Analytics Engineer, Factory Software",
+          "url": "https://jobs.ashbyhq.com/formenergy/0928f724-f61d-44d0-840c-4594d16eb77e",
+          "date": "2026-10-15",
+          "availableAt": "2026-10-15",
+          "checkedAt": "2026-10-17",
+          "scope": "通过官方公开招聘API核读完整职责、要求、地点、isListed=true与申请URL；岗位首次发布字段为UTC 2026-10-15，本轮首次核到不是当天新发。",
+          "type": "官方招聘证据",
+          "apiUrl": "https://api.ashbyhq.com/posting-api/job-board/formenergy"
+        }
+      },
+      {
+        "id": "job1017_snap_task",
+        "from": "co:snap",
+        "to": "task:wearable-human-factors",
+        "kind": "fact",
+        "relation": "SPECS招聘任务",
+        "note": "官方SPECS人因岗位，12个月固定期限，洛杉矶。 本雷达当前入口证据于10/20撤下：HTTP404且实时目录未列；不作为实际招聘截止日期。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": "2026-10-20",
+        "source": {
+          "id": "snap_human_factors_1017",
+          "title": "Human Factors Research Technologist (Fixed Term, 12 Months)",
+          "url": "https://careers.snap.com/job?id=R0046429",
+          "date": null,
+          "availableAt": "2026-10-17",
+          "checkedAt": "2026-10-17",
+          "scope": "核读官方目录及JD全部职责、3年以上要求、SPECS归属、12个月期限、4天办公室与Apply入口；未申请。发布日期仅显示相对天数，不生成具体日期。",
+          "type": "官方招聘证据"
+        }
+      },
+      {
+        "id": "job1017_snap_stats",
+        "from": "task:wearable-human-factors",
+        "to": "skill:stats",
+        "kind": "fact",
+        "relation": "JD要求",
+        "note": "人体定量/定性研究、实验设计及数据分析。 本雷达当前入口证据于10/20撤下：HTTP404且实时目录未列；不作为实际招聘截止日期。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": "2026-10-20",
+        "source": {
+          "id": "snap_human_factors_1017",
+          "title": "Human Factors Research Technologist (Fixed Term, 12 Months)",
+          "url": "https://careers.snap.com/job?id=R0046429",
+          "date": null,
+          "availableAt": "2026-10-17",
+          "checkedAt": "2026-10-17",
+          "scope": "核读官方目录及JD全部职责、3年以上要求、SPECS归属、12个月期限、4天办公室与Apply入口；未申请。发布日期仅显示相对天数，不生成具体日期。",
+          "type": "官方招聘证据"
+        }
+      },
+      {
+        "id": "job1017_snap_measure",
+        "from": "task:wearable-human-factors",
+        "to": "skill:measurement",
+        "kind": "fact",
+        "relation": "JD要求",
+        "note": "传感器、实验仪器与校准方法。 本雷达当前入口证据于10/20撤下：HTTP404且实时目录未列；不作为实际招聘截止日期。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": "2026-10-20",
+        "source": {
+          "id": "snap_human_factors_1017",
+          "title": "Human Factors Research Technologist (Fixed Term, 12 Months)",
+          "url": "https://careers.snap.com/job?id=R0046429",
+          "date": null,
+          "availableAt": "2026-10-17",
+          "checkedAt": "2026-10-17",
+          "scope": "核读官方目录及JD全部职责、3年以上要求、SPECS归属、12个月期限、4天办公室与Apply入口；未申请。发布日期仅显示相对天数，不生成具体日期。",
+          "type": "官方招聘证据"
+        }
+      },
+      {
+        "id": "job1017_snap_cad",
+        "from": "task:wearable-human-factors",
+        "to": "skill:cad-prototype",
+        "kind": "fact",
+        "relation": "JD要求",
+        "note": "CAD修改、硬件原型、制造与工程验证。 本雷达当前入口证据于10/20撤下：HTTP404且实时目录未列；不作为实际招聘截止日期。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": "2026-10-20",
+        "source": {
+          "id": "snap_human_factors_1017",
+          "title": "Human Factors Research Technologist (Fixed Term, 12 Months)",
+          "url": "https://careers.snap.com/job?id=R0046429",
+          "date": null,
+          "availableAt": "2026-10-17",
+          "checkedAt": "2026-10-17",
+          "scope": "核读官方目录及JD全部职责、3年以上要求、SPECS归属、12个月期限、4天办公室与Apply入口；未申请。发布日期仅显示相对天数，不生成具体日期。",
+          "type": "官方招聘证据"
+        }
+      },
+      {
+        "id": "app1018_rokid_hailing",
+        "from": "co:rokid",
+        "to": "task:voice-hailing",
+        "kind": "fact",
+        "relation": "发布演示",
+        "note": "企业认证账号投稿元数据确认发布；不是全量开放、实测成功率或岗位需求证据。",
+        "recordedAt": "2026-10-18",
+        "validFrom": "2026-10-16",
+        "validTo": null,
+        "source": {
+          "id": "rokid_tencent_demo_1016",
+          "title": "乐奇x腾讯打车，全程语音打车！",
+          "url": "https://www.bilibili.com/video/BV1wwJ96gEy8",
+          "date": "2026-10-16",
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-18",
+          "publishedAt": "2026-10-16T07:29:34Z",
+          "scope": "公开API核到投稿标题、作者、UTC发布时间与42秒时长；另核企业认证为杭州灵伴科技有限公司。简介为空，视频正文未观看/逐帧核验，未实机测试。媒体转述仅作发现线索；覆盖机型、城市、固件、支付/异常处理、成功率与留存未确认。",
+          "type": "企业演示发布·投稿元数据",
+          "metadataUrl": "https://api.bilibili.com/x/web-interface/view?bvid=BV1wwJ96gEy8",
+          "accountUrl": "https://api.bilibili.com/x/web-interface/card?mid=314358436"
+        }
+      },
+      {
+        "id": "collab1020_bci_imaging",
+        "from": "co:paradromics",
+        "to": "task:bci-imaging",
+        "kind": "fact",
+        "relation": "拟开发",
+        "note": "已公告合作，不等于流程完成或临床效果验证。",
+        "recordedAt": "2026-10-20",
+        "validFrom": "2026-10-19",
+        "validTo": null,
+        "source": {
+          "id": "paradromics_siemens_20261019",
+          "title": "Paradromics and Siemens Healthineers影像流程合作",
+          "url": "https://paradromics.com/news/paradromics-siemens-healthineers-launch-strategic-initiative-build-advanced-imaging-foundation-for-the-future-of-brain-computer-interfaces/",
+          "date": "2026-10-19",
+          "availableAt": "2026-10-19",
+          "checkedAt": "2026-10-20",
+          "type": "公司合作公告",
+          "scope": "核读Paradromics公告正文和研究用途限制：现有标准扫描协议已用，拟开发完整多模态影像流程；未披露样本/比较结果、审批或资本金额。Siemens一方未找到同文；web正文可读，直接HTTP403保留。"
+        }
+      },
+      {
+        "id": "job1020_pi_environment",
+        "from": "co:pi",
+        "to": "task:research-set-ops",
+        "kind": "fact",
+        "relation": "招聘任务",
+        "note": "采购、库存、场景交付。",
+        "recordedAt": "2026-10-20",
+        "validFrom": "2026-10-20",
+        "validTo": null,
+        "source": {
+          "id": "pi_environment_coordinator_1020",
+          "title": "Environment Coordinator",
+          "url": "https://jobs.ashbyhq.com/physicalintelligence/2907bb5a-c750-4f0a-93d7-db59bcaff76f",
+          "date": "2026-10-19",
+          "availableAt": "2026-10-19",
+          "publishedAt": "2026-10-19T19:15:37.977+00:00",
+          "checkedAt": "2026-10-20",
+          "scope": "官方公开招聘API isListed=true；全文核职责、2年以上现场运营、40磅搬运及现场地点；未申请。UTC10/19、上海10/20。",
+          "type": "官方招聘证据"
+        }
+      },
+      {
+        "id": "cfs_helion_chips_loi_20261022",
+        "from": "co:cfs",
+        "to": "co:helion",
+        "kind": "fact",
+        "relation": "CHIPS研发意向共同入选",
+        "note": "同一政府研发计划分别入选：CFS最高8500万美元、Helion最高1.75亿美元，均附少数股权条件；并非两家公司合作或资金已到账。",
+        "recordedAt": "2026-10-25",
+        "validFrom": "2026-10-22",
+        "validTo": null,
+        "source": {
+          "id": "nist_chips_loi_20261022",
+          "title": "CHIPS附股权条件研发资助意向",
+          "url": "https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd",
+          "date": "2026-10-22",
+          "availableAt": "2026-10-22",
+          "checkedAt": "2026-10-25",
+          "type": "政府原始公告",
+          "scope": "NIST正文L118–131；四份LOI合计最高3.89亿美元，Helion最高1.75亿、CFS最高8500万；award附少数/无控制/无投票权股权条件，比例未列。未核到最终协议/拨付。"
+        }
+      },
+      {
+        "id": "job1030_snap_l4_company",
+        "from": "co:snap",
+        "to": "task:product-growth-analytics",
+        "kind": "fact",
+        "relation": "Growth招聘任务",
+        "note": "本轮恢复核实的Growth数据科学岗位；非SPECS眼镜团队。",
+        "recordedAt": "2026-10-30",
+        "validFrom": "2026-10-30",
+        "validTo": null,
+        "source": {
+          "id": "snap_l4_1030",
+          "title": "Data Scientist, Level 4 · Growth",
+          "url": "https://careers.snap.com/job?id=Q426DSA4",
+          "date": null,
+          "availableAt": "2026-10-30",
+          "checkedAt": "2026-10-30",
+          "scope": "完整职责、资历、SQL/Python/R优先要求、4天办公室及当前目录；实际复开日未知，10/21旧目录已列，本轮纠正漏更。",
+          "type": "官方招聘证据"
+        }
+      },
+      {
+        "id": "job1030_snap_l4_stats",
+        "from": "task:product-growth-analytics",
+        "to": "skill:stats",
+        "kind": "fact",
+        "relation": "JD优先要求",
+        "note": "本轮恢复核实的Growth数据科学岗位；非SPECS眼镜团队。",
+        "recordedAt": "2026-10-30",
+        "validFrom": "2026-10-30",
+        "validTo": null,
+        "source": {
+          "id": "snap_l4_1030",
+          "title": "Data Scientist, Level 4 · Growth",
+          "url": "https://careers.snap.com/job?id=Q426DSA4",
+          "date": null,
+          "availableAt": "2026-10-30",
+          "checkedAt": "2026-10-30",
+          "scope": "完整职责、资历、SQL/Python/R优先要求、4天办公室及当前目录；实际复开日未知，10/21旧目录已列，本轮纠正漏更。",
+          "type": "官方招聘证据"
+        }
+      },
+      {
+        "id": "job1030_snap_l4_sql",
+        "from": "task:product-growth-analytics",
+        "to": "skill:sql-python",
+        "kind": "fact",
+        "relation": "JD优先要求",
+        "note": "本轮恢复核实的Growth数据科学岗位；非SPECS眼镜团队。",
+        "recordedAt": "2026-10-30",
+        "validFrom": "2026-10-30",
+        "validTo": null,
+        "source": {
+          "id": "snap_l4_1030",
+          "title": "Data Scientist, Level 4 · Growth",
+          "url": "https://careers.snap.com/job?id=Q426DSA4",
+          "date": null,
+          "availableAt": "2026-10-30",
+          "checkedAt": "2026-10-30",
+          "scope": "完整职责、资历、SQL/Python/R优先要求、4天办公室及当前目录；实际复开日未知，10/21旧目录已列，本轮纠正漏更。",
+          "type": "官方招聘证据"
+        }
+      },
+      {
+        "id": "job1030_snap_l4_data",
+        "from": "task:product-growth-analytics",
+        "to": "skill:data",
+        "kind": "fact",
+        "relation": "JD职责",
+        "note": "本轮恢复核实的Growth数据科学岗位；非SPECS眼镜团队。",
+        "recordedAt": "2026-10-30",
+        "validFrom": "2026-10-30",
+        "validTo": null,
+        "source": {
+          "id": "snap_l4_1030",
+          "title": "Data Scientist, Level 4 · Growth",
+          "url": "https://careers.snap.com/job?id=Q426DSA4",
+          "date": null,
+          "availableAt": "2026-10-30",
+          "checkedAt": "2026-10-30",
+          "scope": "完整职责、资历、SQL/Python/R优先要求、4天办公室及当前目录；实际复开日未知，10/21旧目录已列，本轮纠正漏更。",
+          "type": "官方招聘证据"
+        }
+      }
+    ]
+  },
+  "hierarchy": {
+    "schema": 1,
+    "reviewedAt": "2026-10-17",
+    "kind": "research_hypothesis",
+    "themes": [
+      {
+        "id": "daily-ai",
+        "name": "随身AI与新交互",
+        "kind": "生活与工作",
+        "change": "导航、翻译和协作从打开应用，转向随身设备中的持续交互。",
+        "question": "随身AI能否成为手机之外的日常入口？",
+        "adoption": "AI眼镜已有销售规模；AI功能留存仍待披露",
+        "next": "90日AI功能留存、每日使用频次、持续付费",
+        "primaryDirections": [
+          "spatial"
+        ],
+        "directions": [
+          "spatial"
+        ],
+        "evidence": [
+          {
+            "label": "2025年AI眼镜销量超过700万副",
+            "date": "2026-02-11",
+            "kind": "公司业绩披露",
+            "sourceId": "essilor_fy2025"
+          },
+          {
+            "label": "Rokid发布腾讯语音打车演示；开放范围待核",
+            "date": "2026-10-16",
+            "kind": "企业演示发布",
+            "sourceId": "rokid_tencent_demo_1016"
+          }
+        ],
+        "products": [
+          "ai-glasses",
+          "spatial-interface"
+        ]
+      },
+      {
+        "id": "physical-work",
+        "name": "现实任务自动化",
+        "kind": "生活与工作",
+        "change": "机器承担更多物流、生产、实验和日常服务任务，人的工作转向监督、维护与流程设计。",
+        "question": "机器能否持续完成真实任务，并降低全流程成本？",
+        "adoption": "窄场景已运行；跨任务与长期独立运行仍待验证",
+        "next": "客户付费、全年人工接管率、单位任务全成本",
+        "primaryDirections": [
+          "robots",
+          "labs"
+        ],
+        "directions": [
+          "robots",
+          "labs"
+        ],
+        "evidence": [
+          {
+            "label": "Figure公布30个陌生家庭的跨任务测试",
+            "date": "2026-09-17",
+            "kind": "公司测试披露",
+            "direction": "robots"
+          },
+          {
+            "label": "闭环实验已在特定材料任务中验证",
+            "date": "2026-04-14",
+            "kind": "同行评审",
+            "direction": "labs"
+          },
+          {
+            "label": "Google湿实验闭环研究：分任务验证，适配体实验由人执行",
+            "date": "2026-10-16",
+            "kind": "研究团队披露",
+            "sourceId": "google_wetlabs_blog"
+          }
+        ],
+        "products": [
+          "robot-services",
+          "autonomous-labs"
+        ]
+      },
+      {
+        "id": "digital-spaces",
+        "name": "数字空间与体验",
+        "kind": "生活与工作",
+        "change": "游戏、教学和设计中的场景可以按需生成、修改，并与现实环境连接。",
+        "question": "可生成的空间能否形成持续活动与付费？",
+        "adoption": "已有生成与交互产品；长期使用与付费待核",
+        "next": "持续状态、创作复用、付费用户与留存",
+        "primaryDirections": [
+          "worlds"
+        ],
+        "directions": [
+          "worlds",
+          "spatial"
+        ],
+        "evidence": [
+          {
+            "label": "Atlas已提供三维生成与重建产品",
+            "date": "2026-09-01",
+            "kind": "官方产品说明",
+            "direction": "worlds"
+          }
+        ],
+        "products": [
+          "generated-worlds",
+          "spatial-interface"
+        ]
+      },
+      {
+        "id": "health-restoration",
+        "name": "治疗与功能恢复",
+        "kind": "生活与工作",
+        "change": "部分患者获得病因治疗、替代器官，以及恢复交流和操作设备的能力。",
+        "question": "早期人体结果能否变成更多患者可获得的长期治疗？",
+        "adoption": "人体早期试验与辅助交流案例；覆盖和随访仍有限",
+        "next": "正式批准、实际治疗人数、长期安全、支付与家庭独立使用",
+        "primaryDirections": [
+          "editing",
+          "organs",
+          "bci"
+        ],
+        "directions": [
+          "editing",
+          "organs",
+          "bci"
+        ],
+        "evidence": [
+          {
+            "label": "体内编辑已有小样本人体结果",
+            "date": "2026-10-13",
+            "kind": "企业临床披露",
+            "direction": "editing"
+          },
+          {
+            "label": "器官替代已有早期人体使用",
+            "date": "2026-09-03",
+            "kind": "既有临床与研究记录",
+            "direction": "organs"
+          },
+          {
+            "label": "少数研究参与者已实现神经信号驱动交流",
+            "date": "2026-09-14",
+            "kind": "公司人体研究披露",
+            "direction": "bci"
+          }
+        ],
+        "products": [
+          "causal-treatments",
+          "organ-replacement",
+          "assistive-communication"
+        ]
+      },
+      {
+        "id": "electricity",
+        "name": "电力供给",
+        "kind": "基础设施",
+        "change": "更多稳定、可负担的电力支撑计算、制造、交通与家庭用电。",
+        "question": "新供电技术能否改善实际电价、可靠性与建设规模？",
+        "adoption": "不同路线处于发货、项目协议和实验验证阶段",
+        "next": "实际发电与供电量、全成本、寿命和电网运行",
+        "primaryDirections": [
+          "tandem",
+          "storage",
+          "fusion"
+        ],
+        "directions": [
+          "tandem",
+          "storage",
+          "fusion"
+        ],
+        "evidence": [
+          {
+            "label": "叠层研发电池效率纪录已披露，商业寿命待验证",
+            "date": "2026-07-14",
+            "kind": "既有技术记录",
+            "direction": "tandem"
+          },
+          {
+            "label": "Form Energy签署1000MWh项目协议",
+            "date": "2026-03-17",
+            "kind": "既有项目与实验记录",
+            "direction": "storage"
+          },
+          {
+            "label": "叠层生产技术出口临时登记已实施，禁限目录仍征求意见",
+            "date": "2026-10-16",
+            "kind": "官方政策",
+            "sourceId": "mofcom_48"
+          }
+        ],
+        "products": [
+          "power-generation",
+          "firm-power"
+        ]
+      }
+    ],
+    "products": [
+      {
+        "id": "ai-glasses",
+        "name": "AI眼镜",
+        "directions": [
+          "spatial"
+        ]
+      },
+      {
+        "id": "spatial-interface",
+        "name": "空间显示与交互",
+        "directions": [
+          "spatial"
+        ]
+      },
+      {
+        "id": "robot-services",
+        "name": "机器人与实体服务",
+        "directions": [
+          "robots"
+        ]
+      },
+      {
+        "id": "autonomous-labs",
+        "name": "自主实验平台",
+        "directions": [
+          "labs"
+        ]
+      },
+      {
+        "id": "generated-worlds",
+        "name": "生成式游戏、教学与设计空间",
+        "directions": [
+          "worlds"
+        ]
+      },
+      {
+        "id": "causal-treatments",
+        "name": "病因治疗",
+        "directions": [
+          "editing"
+        ]
+      },
+      {
+        "id": "organ-replacement",
+        "name": "器官替代",
+        "directions": [
+          "organs"
+        ]
+      },
+      {
+        "id": "assistive-communication",
+        "name": "交流与行动辅助",
+        "directions": [
+          "bci"
+        ]
+      },
+      {
+        "id": "power-generation",
+        "name": "发电",
+        "directions": [
+          "tandem",
+          "fusion"
+        ]
+      },
+      {
+        "id": "firm-power",
+        "name": "储能与稳定供电",
+        "directions": [
+          "storage"
+        ]
+      }
+    ],
+    "policy": {
+      "themeProbability": "主题不汇总子技术概率；百分比对应具体应用事件。",
+      "membership": "主线和产品连接为研究归类；事实来源仍保留在技术、公司与岗位条目。",
+      "expansion": "新增主线需说明生活或工作变化、采用机制、公司生态和岗位任务；不以融资、名气或单项性能纪录升级。",
+      "evidenceAsOf": "2026-10-17增量复核；各事实保留原日期，完整技术核查与本轮目录/论文增量范围分开。"
+    }
+  }
+}

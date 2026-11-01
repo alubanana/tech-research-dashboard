@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "asOf": "2026-10-21",
+  "asOf": "2026-11-01",
   "checkedAt": "2026-10-15",
   "directions": [
     {
@@ -73,6 +73,29 @@
           "why": "支持长程画面稳定性进展；动作幅度、局部物体和重访一致性仍需分别验证，未证明真实闭环可用。",
           "url": "https://arxiv.org/abs/2610.25666",
           "readScope": "定向核读§4实验/基线、表2/3、96段DROID人工视频检查与§6局限；MiniWorld-1B、两域各32段评估。DROID参考为回放，评估片段曾参与预训练；无真实机器人闭环验证。未独立复现。10/19提交，10/21延迟发现。"
+        },
+        {
+          "date": "2026-10-27",
+          "checkedAt": "2026-10-28",
+          "title": "Genie 4开放受邀研究预览",
+          "kind": "世界模型发布",
+          "evidence": "企业发布与模型说明",
+          "summary": "加入原生音频、实时语言修改和Gemini协同场景规划；受邀测试者可用，Ultra及API早期伙伴访问仍为后续计划。",
+          "why": "增加多模态互动能力；模型页仍限几分钟连续交互，对象持久性、空间与音频准确性仍有缺口。",
+          "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+          "readScope": "root核官方搜索返回的完整公告中能力/开放/局限段，并独立读模型页L247–318。直接web打开公告失败，HTTP200正文仅导航，不作正文已取；模型页恢复核心范围。演示是缩短片段，未观看视频、实测或核独立基准；不据发布自述升级真实采用。"
+        },
+        {
+          "date": "2026-10-29",
+          "publishedAt": "2026-10-29T17:54:42Z",
+          "checkedAt": "2026-10-30",
+          "title": "L3G-World以三维记忆改善场景回访一致性",
+          "kind": "世界模型研究",
+          "evidence": "预印本·离线基准",
+          "summary": "DL3DV和RealEstate10K用481帧往返轨迹测试同机位一致性；单H100生成400帧时报告9.02FPS，静态场景记忆可反复更新。",
+          "why": "提供持久场景记忆的效率证据。独立运动物体尚未建模，大范围探索仍增加内存，生成误差可传播；代码与权重待发布。",
+          "url": "https://arxiv.org/abs/2610.40614",
+          "readScope": "代理核§4.1–4.4、表1–3、附录B.2–B.4/E及官方仓库；root核原始提交日期、表1/2和E。UTC10/29、上海10/30。481为帧数，测试场景总数/随机种子/置信区间未核。表1单H100480×832，比较分辨率有差异；表2效率单A100。回访外观一致性与真实动态物理分开；未运行代码或看视频。"
         }
       ],
       "papers": [
@@ -112,6 +135,16 @@
           "contribution": "DROID/Sekai各32段评估，对比原模型及相同数据FM-only；另人工检查96段DROID视频，减少长程画面漂移。",
           "limit": "仅两个域、一个模型尺度。两个分叉时点转角达指令49%–60%；4000帧约20%DROID视频有局部伪影。参考为回放、评估片段曾参与预训练，重访不保证一致，无实机闭环验证。 本轮定向章节核读；原始日期与延迟发现日分开。",
           "url": "https://arxiv.org/abs/2610.25666"
+        },
+        {
+          "date": "2026-10-29",
+          "publishedAt": "2026-10-29T17:54:42Z",
+          "checkedAt": "2026-10-30",
+          "title": "L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory",
+          "type": "预印本·三维场景记忆",
+          "contribution": "将潜在特征存入三维高斯记忆；481帧往返评估中，DL3DV自一致LPIPS为0.366，Lyra 2.0为0.493。",
+          "limit": "静态场景、同路径返回；场景总数和置信区间未核，部分相机/几何指标落后。基线经单图/动作转换适配，代码和权重尚待发布，未独立复现。",
+          "url": "https://arxiv.org/abs/2610.40614"
         }
       ]
     },
@@ -241,6 +274,17 @@
           "summary": "VERID在染料任务验证机器人状态与故障处理；适配体三轮反馈的湿实验由人执行，蛋白设计采用人机协作。",
           "why": "新增闭环可行性与测量伪信号反证；尚需独立复现、匹配预算对照和跨领域验证。",
           "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/"
+        },
+        {
+          "date": "2026-10-21",
+          "checkedAt": "2026-10-22",
+          "title": "Xaira披露细胞靶点提名与湿实验验证",
+          "kind": "细胞实验",
+          "evidence": "企业原始研究披露",
+          "summary": "HepG2/TGF-β条件下，AI提名381项扰动的命中率7.1%，人工321项为6.9%，随机433项为0.9%；每项至少30个细胞。",
+          "why": "候选提名20分钟对人工超过3小时，仅计提名；单轮湿实验验证后反馈和自动执行尚待连接。跨域复现、总成本与治疗效果仍待验证。",
+          "url": "https://www.xaira.com/news/x-scientist-recursive-self-improving-agentic-ai-platform",
+          "readScope": "官方正文§1–5、图2/3/4图注与未来工作；HepG2的TGF-β条件，AI/人工/随机381/321/433项扰动，各≥30细胞。未取原始表达矩阵、完整方法或独立复现。提名时间与湿实验时间分开；反馈与自动执行仍为后续。"
         }
       ],
       "papers": [
@@ -275,6 +319,15 @@
           "contribution": "人机协作通过表位裁剪降低结构预测计算量，并以FAP结合物进行湿实验验证。",
           "limit": "定向核读p1-3及p10-12；计算命中与少量湿实验克隆不是同一指标，未独立复现。",
           "url": "https://www.gstatic.com/science-ai/epitope_excision.pdf"
+        },
+        {
+          "date": "2026-10-21",
+          "checkedAt": "2026-10-22",
+          "title": "X-Scientist: A Recursive Self-Improving Agentic AI Platform for Drug Discovery",
+          "type": "企业原始研究披露·未核到同行评审稿",
+          "contribution": "Perturb-seq评估HepG2/TGF-β候选；以reversal z-score≥3为命中，AI7.1%与人工6.9%接近，随机0.9%。提名时间20分钟对超过3小时。",
+          "limit": "只详报12种暴露中的TGF-β条件；≥30细胞不等于生物重复。未取得原始数据、置信区间、匹配总成本或完整方法。时间仅计提名，不含湿实验；本次为单轮，反馈和自动执行仍是下一步，未验证治疗效果。",
+          "url": "https://www.xaira.com/news/x-scientist-recursive-self-improving-agentic-ai-platform"
         }
       ]
     },
@@ -346,6 +399,28 @@
           "url": "https://paradromics.com/news/paradromics-siemens-healthineers-launch-strategic-initiative-build-advanced-imaging-foundation-for-the-future-of-brain-computer-interfaces/",
           "checkedAt": "2026-10-20",
           "readScope": "核读Paradromics公告正文和研究用途限制：现有标准扫描协议已用，拟开发完整多模态影像流程；未披露样本/比较结果、审批或资本金额。Siemens一方未找到同文；web正文可读，直接HTTP403保留。"
+        },
+        {
+          "date": "2026-10-26",
+          "checkedAt": "2026-10-27",
+          "title": "Connect-One取消四小时车程招募限制",
+          "kind": "临床招募方案",
+          "evidence": "公司披露·监管方案修订",
+          "summary": "Paradromics称FDA批准取消住址距临床点四小时车程内的限制；候选者仍须到院并满足其他入选条件。",
+          "why": "扩大可考虑招募的人群；远距离筛查、随访与当地医疗协调流程仍在建立，没有本轮新疗效或长期安全结果。",
+          "url": "https://paradromics.com/news/paradromics-receives-fda-approval-to-expand-connexus-brain-computer-interface-clinical-study-recruitment-nationwide/",
+          "readScope": "研究代理与root核公告正文L22–40。FDA批准原函未取得；NCT07357428官方API仍为4/14旧登记、Recruiting且无结果，不覆盖原更新时间或当上市批准。"
+        },
+        {
+          "date": "2026-10-26",
+          "checkedAt": "2026-10-27",
+          "title": "美国拟扩大脑机接口等对外投资限制",
+          "kind": "政策提案",
+          "evidence": "财政部公告与Federal Register草案",
+          "summary": "10/22宣布、10/26刊登的提案拟覆盖流向中国等关注国相关主体的BCI、自动实验与云实验室技术投资，意见至12/7。",
+          "why": "增加跨境资本路径不确定性；提案未生效，公开证券存在例外及治理权限制，未核任何单家公司或轮次实际适用。",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21786.pdf",
+          "readScope": "代理核PDF P0/P9/P29草案§851.226(s)/(u)(5)及P12–13；root核财政部L330–354、PDF对应条款/日期/公开证券与治理权例外。最终规则另定生效日，不能写全面股票禁投或某轮已受限。"
         }
       ],
       "papers": [
@@ -413,6 +488,39 @@
           "summary": "此前肝脏安全事件导致暂停；该研究在增加安全措施后获准恢复。",
           "why": "历史安全反证保留；当前状态须更新为暂停已解除。",
           "url": "https://ir.intelliatx.com/node/12526/html"
+        },
+        {
+          "date": "2026-10-26",
+          "checkedAt": "2026-10-27",
+          "title": "SERP-01披露四人早期体内碱基编辑数据",
+          "kind": "早期人体研究",
+          "evidence": "企业临床披露·无对照IIT",
+          "summary": "截至10/15，4名PiZZ AATD受试者AAT均超过11µM；其中1人10周肝活检靶位纠正54%，最长随访10个月。",
+          "why": "补人体靶位纠正与生物标志物证据；样本小、无对照，肺/肝长期结局和完整脱靶风险仍待验证。",
+          "url": "https://rss.globenewswire.com/news-release/2026/10/26/3387986/0/en/serapha-bio-announces-positive-interim-safety-and-efficacy-data-from-the-serp-01-investigator-initiated-trial-presented-at-the-ers-alpha-1-antitrypsin-conference-2026.html",
+          "readScope": "代理与root核原始公司稿L54–84；35mg1人、45mg3人，未见严重或治疗相关≥3级不良事件为公司口径；单人邻位未检出旁观者编辑不等于全基因组无脱靶。2/3期为未来计划，IIT非注册设计。Root补NCT07193615 API：RenJi申办、Early Phase1、预计18人、旧登记Active not recruiting/无结果，不把18写实际入组。"
+        },
+        {
+          "date": "2026-10-27",
+          "checkedAt": "2026-10-28",
+          "title": "BEAM-301披露禁食改善与严重不良事件",
+          "kind": "早期人体研究",
+          "evidence": "公司披露·开放标签1/2期",
+          "summary": "40mg组2/3达到15小时禁食、最新评估无需淀粉补充；全部6人中4人出现治疗相关严重不良事件，含3例3级输注反应。",
+          "why": "出现疾病管理改善信号，也提示输注安全问题；样本小、无对照，需跟踪调整方案后的60mg队列及长期随访。",
+          "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-reports-initial-clinical-data-phase-12-trial",
+          "readScope": "代理与root核官方正文L25–40。数据截至8/17，20mg/40mg各3人，中位随访7.6月；15小时为方案上限。所有6人有相关TEAE，无DLT或4/5级TEAE；预处理和输注速度已调整。NCT06735755仍旧登记且无结构化结果。FDA批准路径尚在拟讨论。"
+        },
+        {
+          "date": "2026-10-28",
+          "checkedAt": "2026-10-30",
+          "title": "FDA提出个体化编辑共用BLA草案",
+          "kind": "监管草案",
+          "evidence": "FDA草案与联邦公报",
+          "summary": "拟在临床支持的变体范围内，共用生物制品许可申请（BLA），以体外活性和安全数据申请新增变体；11/27征求意见截止。",
+          "why": "为个体化治疗的平台复用提出申报路径。体外与临床关系不可预测时仍需临床数据；开发成本与执行效果待验证。",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/individualized-human-genome-editing-products-considerations-bla-submission-and-postapproval",
+          "readScope": "代理核草案印刷p4–6、9–15；root独立核PDF L206–280、511–642及FDA草案/FR状态与期限。原事件取10/28联邦公报日期，10/30补核；Draft Not for Implementation。限同疾病、可支持的IFS及机制；根本机制变化须另BLA，不作已批准产品或豁免全部临床。"
         }
       ],
       "papers": [
@@ -439,6 +547,15 @@
           "contribution": "梳理碱基编辑从基础研究到临床转化的进展。",
           "limit": "仅核标题、作者、发布日期及摘要；正文付费，未作为新增临床疗效或安全证据。",
           "url": "https://www.nature.com/articles/s41573-026-01548-7"
+        },
+        {
+          "date": "2025-09-26",
+          "checkedAt": "2026-10-27",
+          "title": "YOLT-202早期临床登记 NCT07193615",
+          "type": "临床登记",
+          "contribution": "RenJi医院申办、单组开放Early Phase1；预计18人，登记为Active not recruiting。",
+          "limit": "原最后更新2025/9/26，无结果。18是预计人数，10/26四人数据另为企业披露；未独立核临床原始数据。",
+          "url": "https://clinicaltrials.gov/study/NCT07193615"
         }
       ]
     },
@@ -607,6 +724,42 @@
           "why": "显示接触对齐、力控制与行为适应仍是门槛；触觉RDP在80°为16/30，反馈架构和传感覆盖影响收益。",
           "url": "https://arxiv.org/abs/2610.24512",
           "readScope": "定向核读任务、实验设置、表III–V、行为泛化与讨论；UR5e/WSG50，6任务各100示范，各被评策略每任务30次。单任务微调、物体固定；触觉仅4任务，另2任务未评触觉。未运行代码/观看视频。10/17提交，10/21延迟发现。"
+        },
+        {
+          "date": "2026-10-21",
+          "publishedAt": "2026-10-21T18:33:13Z",
+          "checkedAt": "2026-10-25",
+          "title": "FRED检验人类视频到机器人技能迁移",
+          "kind": "实机迁移研究",
+          "evidence": "预印本·受控实机实验",
+          "summary": "OpenArm人类技能迁移平均任务得分50.0%，DiT4DiT为19.4%；3项迁移任务各12试次，允许部分完成给分。",
+          "why": "支持人类视频联合训练的迁移能力；小样本与受控环境尚不能验证长期家庭可靠性或现场成本。",
+          "url": "https://arxiv.org/abs/2610.30320",
+          "readScope": "代理核§4及附录B/C/F/G，root核表2/12、B.1/B.2计分和原始日期；Franka8任务、OpenArm7任务各12试次。部分完成给分，50.0%为平均任务得分。未运行代码/观看原视频或独立复现；UTC10/21、上海10/22，本轮10/25延迟核读。"
+        },
+        {
+          "date": "2026-10-22",
+          "publishedAt": "2026-10-22T18:16:17Z",
+          "checkedAt": "2026-10-27",
+          "title": "FLORA检验机器人视频标注质量与成本",
+          "kind": "机器人数据工程",
+          "evidence": "预印本·标注评估",
+          "summary": "WGO100集联合F1为34.5%，低于Astra39.0%；更强骨干Refiner为36.4%。约125倍成本优势来自50集的条件估计。",
+          "why": "支持标注工程进展；成本假设与骨干影响排名，尚无独立生产成本或下游机器人长期收益验证。",
+          "url": "https://arxiv.org/abs/2610.31779",
+          "readScope": "代理核§2.1–2.3、B.6/C/D；root核提交日期、WGO样本/表2/9、§2.3及D.2公式。8张GB300及10美元/GPU小时是假设，生产GPU时分母未验证；未运行代码/独立复现。UTC10/22、上海10/23，本轮10/27延迟核读。"
+        },
+        {
+          "date": "2026-10-26",
+          "publishedAt": "2026-10-26T17:59:11Z",
+          "checkedAt": "2026-10-28",
+          "title": "FLoRe用接触力指令改善人形机器人操作",
+          "kind": "真实机器人研究",
+          "evidence": "预印本·受控实机对照",
+          "summary": "Unitree G1三任务各10次，完整成功24/30，同示范与控制器的位置策略8/30；去力指令11/30，去力输入20/30。",
+          "why": "支持把接触力连入示范、策略和全身控制；逐任务训练、单平台和小样本，长期可靠性与独立复现待验证。",
+          "url": "https://arxiv.org/abs/2610.35862",
+          "readScope": "代理核§III、IV-A–F、表I/II和结论；root核原始日期、表II与三任务定义/试次/失败。推龙门7/10、转箱9/10、擦板8/10；强推碰上迈步会失败。仿真仅纳配对条件均未摔倒片段，实机力计与仿真指标分开；示范总数未核。未运行代码/看视频。UTC10/26、上海10/27，10/28核读。"
         }
       ],
       "papers": [
@@ -656,6 +809,36 @@
           "contribution": "6项真实单臂接触任务，各100示范和每策略30次配对评估；对比DP、π0.5及RDP/FTP-1触觉策略。",
           "limit": "UR5e/WSG50、单任务微调与固定物体。触觉只评4任务；另2任务不适合该传感器。门把直径60→55mm时各策略0/10。结果限所测装置与策略，未独立复现。 本轮定向章节核读；原始日期与延迟发现日分开。",
           "url": "https://arxiv.org/abs/2610.24512"
+        },
+        {
+          "date": "2026-10-21",
+          "publishedAt": "2026-10-21T18:33:13Z",
+          "checkedAt": "2026-10-25",
+          "title": "Self-Distilling Future Video Representations for World Action Models",
+          "type": "预印本·实机迁移研究",
+          "contribution": "Franka8任务、OpenArm7任务各12试次；后者553机器人示范与1187人类视频联合训练。人类迁移平均任务得分50.0%，对照DiT4DiT19.4%。",
+          "limit": "允许部分完成给分；81.7%长任务指标为任务进度。受控场景、小样本，部分基线相机配置不同；未独立复现，未验证客户长期运行或总成本。",
+          "url": "https://arxiv.org/abs/2610.30320"
+        },
+        {
+          "date": "2026-10-22",
+          "publishedAt": "2026-10-22T18:16:17Z",
+          "checkedAt": "2026-10-27",
+          "title": "FLORA: An Open Model Suite for Scaling Robotics Data Engines",
+          "type": "预印本·标注评估",
+          "contribution": "WGO100集评估分段、标签与联合F1；另用50集估算标注成本。提供开放机器人数据标注模型。",
+          "limit": "34.5%联合F1低于Astra39.0%，Refiner换强骨干36.4%；125倍成本是工程估计，未包含全部部署开销或验证生产GPU时分母。无下游长期机器人收益/独立复现。",
+          "url": "https://arxiv.org/abs/2610.31779"
+        },
+        {
+          "date": "2026-10-26",
+          "publishedAt": "2026-10-26T17:59:11Z",
+          "checkedAt": "2026-10-28",
+          "title": "Learning Force-Reactive Humanoid Loco-Manipulation",
+          "type": "预印本·实机力反馈",
+          "contribution": "在同示范与控制器条件下，将接触力作为策略输入和实际控制指令；Unitree G1三项接触任务各10次，完整成功24/30、位置策略8/30。",
+          "limit": "单平台、逐任务训练、小样本；强推与迈步相遇仍失败，侧向/下向控制较弱。示范总量未核，仿真统计保留未摔倒片段，未独立复现或验证长期运行。",
+          "url": "https://arxiv.org/abs/2610.35862"
         }
       ]
     },
@@ -746,7 +929,7 @@
       "unproven": "大型商业运行的可用率、循环损耗、实测成本与维护；GRE 2026 IRP仍预计年底COD，尚待剩余模块。",
       "bottleneck": "从模块走到并网系统，并找到能补偿可靠性价值的市场。",
       "trigger": "商业项目完成长时放电，并披露可用率、效率与全生命周期成本。",
-      "counter": "大型项目延期，或成熟电源与其他储能组合在系统层面更便宜。",
+      "counter": "大型项目延期，或成熟电源与其他储能组合在系统层面更便宜。 CEC记载Redwood Valley于2025年因变电站充电限制由5MW/500MWh缩至1.5MW/150MWh，预计2027投运；与GRE Cambridge分开。",
       "oldCategory": "长时储能原型",
       "newCategory": "跨天气周期的电力可靠性资源",
       "nextReview": "2026-11-15",
@@ -871,7 +1054,7 @@
   "registryChecks": [
     {
       "nct": "NCT07357428",
-      "checkedAt": "2026-10-21",
+      "checkedAt": "2026-11-01",
       "url": "https://clinicaltrials.gov/api/v2/studies/NCT07357428",
       "status": "RECRUITING",
       "lastUpdate": "2026-04-14",
@@ -880,7 +1063,7 @@
     },
     {
       "nct": "NCT06735755",
-      "checkedAt": "2026-10-21",
+      "checkedAt": "2026-11-01",
       "url": "https://clinicaltrials.gov/api/v2/studies/NCT06735755",
       "status": "RECRUITING",
       "lastUpdate": "2025-12-15",
@@ -889,7 +1072,7 @@
     },
     {
       "nct": "NCT06878560",
-      "checkedAt": "2026-10-21",
+      "checkedAt": "2026-11-01",
       "url": "https://clinicaltrials.gov/api/v2/studies/NCT06878560",
       "status": "RECRUITING",
       "lastUpdate": "2026-03-27",
@@ -898,14 +1081,44 @@
     },
     {
       "nct": "NCT06128629",
-      "checkedAt": "2026-10-21",
+      "checkedAt": "2026-11-01",
       "url": "https://clinicaltrials.gov/api/v2/studies/NCT06128629",
       "status": "RECRUITING",
       "lastUpdate": "2026-03-27",
       "hasResults": false,
       "scope": "官方API识别、状态、研究设计与申办方；登记状态不替代结果或当前研究中心确认。"
+    },
+    {
+      "nct": "NCT07193615",
+      "checkedAt": "2026-11-01",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT07193615",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "lastUpdate": "2025-09-26",
+      "hasResults": false,
+      "scope": "RenJi申办、EarlyPhase1，预计18人非已入组；旧登记不替代10/26企业四人结果或当前研究中心确认。"
+    },
+    {
+      "nct": "NCT07224256",
+      "checkedAt": "2026-11-01",
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT07224256",
+      "status": "RECRUITING",
+      "lastUpdate": "2025-11-04",
+      "hasResults": false,
+      "scope": "VOICE官方API身份、申办方、设计和状态；6人为预计入组数，原登记更新2025/11/4。首次10/30定向读取，10/31纳入例行跟踪；无结构化结果，不替代企业语音披露。"
     }
   ],
+  "lastIncrementalCheck": {
+    "date": "2026-11-01",
+    "directions": 10,
+    "scope": "10方向目录/摘要、18公司公告与招聘、6临床API；新增正式技术信号0。Meta10/29交割SEC正文恢复，区分125亿优先股已交割与250亿远期初始无款，本轮补证非新公布。"
+  },
+  "lastWeeklyScan": {
+    "date": "2026-10-26",
+    "candidates": 3,
+    "newCandidates": 1,
+    "directionsAdded": 0,
+    "scope": "增强地热官方机组清单、MCED主要终点与监管条件、无人驾驶出行真实使用/安全/远程支持；尚未新增概率合同。"
+  },
   "title": "AI辅助科技研究与可视化分析",
-  "schedule": "研究样本 · 2026-10-21"
+  "schedule": "研究样本 · 2026-11-01"
 }

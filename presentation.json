@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-25",
   "directions": {
     "worlds": {
       "short": "生成世界",
@@ -124,8 +124,10 @@
     },
     "meta": {
       "founders": "Mark Zuckerberg 等",
-      "round": "上市公司",
-      "investors": "公开市场股东"
+      "round": "优先股已交割",
+      "investors": "持有人未披露",
+      "roundNote": "另250亿美元远期；初始无款项",
+      "investorNote": "承销：摩根士丹利、高盛"
     },
     "snap": {
       "founders": "Evan Spiegel、Bobby Murphy",
@@ -174,15 +176,15 @@
     },
     "cfs": {
       "founders": "Bob Mumgaard、Brandon Sorbom 等",
-      "round": "融资（轮次未列）",
-      "investors": "现代汽车集团",
-      "investorNote": "本轮已确认；其他机构待核"
+      "round": "CHIPS研发资助意向",
+      "investors": "美国商务部（拟）",
+      "investorNote": "附少数股权条件；未核拨付"
     },
     "helion": {
       "founders": "David Kirtley、Chris Pihl 等",
-      "round": "Series G",
-      "investors": "Thrive 领投",
-      "investorNote": "Alta Park、Lux、Peak XV 等",
+      "round": "CHIPS研发资助意向",
+      "investors": "美国商务部（拟）",
+      "investorNote": "附少数股权条件；未核拨付",
       "roundNote": "9月追加后合计",
       "dateLabel": "2026-09（追加）"
     },

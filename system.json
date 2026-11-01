@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "createdAt": "2026-10-16",
-  "asOf": "2026-10-21",
+  "asOf": "2026-11-01",
   "model": {
     "id": "odds-v1",
     "prior": 0.2,
@@ -631,9 +631,9 @@
         {
           "group": "技术可靠性",
           "score": 1,
-          "date": "2026-10-17",
+          "date": "2026-10-22",
           "kind": "人工证据判断",
-          "note": "特定材料、染料实验和人工执行的分子设计闭环分别已有结果，仍缺跨域独立复现与完整无人链路。",
+          "note": "特定材料、染料实验和人工执行的分子设计闭环分别已有结果，仍缺跨域独立复现与完整无人链路。 Xaira细胞扰动提名有单轮湿实验验证，命中率接近人工；反馈与自动实验尚待连接，跨域复现和总成本未核，分数维持。",
           "sources": [
             {
               "title": "Periodic 发布实验数据驱动的模型研究",
@@ -656,6 +656,16 @@
               "checkedAt": "2026-10-17",
               "scope": "官方博客全文及三篇原稿定向核读；VERID染料自动化、适配体人工执行和蛋白人机协作分别记录。",
               "type": "官方研究披露"
+            },
+            {
+              "id": "xaira_xscientist_20261021",
+              "title": "X-Scientist: A Recursive Self-Improving Agentic AI Platform for Drug Discovery",
+              "url": "https://www.xaira.com/news/x-scientist-recursive-self-improving-agentic-ai-platform",
+              "date": "2026-10-21",
+              "availableAt": "2026-10-21",
+              "checkedAt": "2026-10-22",
+              "type": "企业原始研究披露",
+              "scope": "官方正文§1–5、图2/3/4图注与未来工作；HepG2的TGF-β条件，AI/人工/随机381/321/433项扰动，各≥30细胞。未取原始表达矩阵、完整方法或独立复现。提名时间与湿实验时间分开；反馈与自动执行仍为后续。"
             }
           ]
         },
@@ -768,6 +778,16 @@
           "checkedAt": "2026-10-17",
           "scope": "17页PDF定向核读印刷p1-3摘要/设计/基线与p10-12湿实验结果/讨论；未逐项重算原始数据",
           "type": "原始技术稿·未核实同行评审"
+        },
+        {
+          "id": "xaira_xscientist_20261021",
+          "title": "X-Scientist: A Recursive Self-Improving Agentic AI Platform for Drug Discovery",
+          "url": "https://www.xaira.com/news/x-scientist-recursive-self-improving-agentic-ai-platform",
+          "date": "2026-10-21",
+          "availableAt": "2026-10-21",
+          "checkedAt": "2026-10-22",
+          "type": "企业原始研究披露",
+          "scope": "官方正文§1–5、图2/3/4图注与未来工作；HepG2的TGF-β条件，AI/人工/随机381/321/433项扰动，各≥30细胞。未取原始表达矩阵、完整方法或独立复现。提名时间与湿实验时间分开；反馈与自动执行仍为后续。"
         }
       ],
       "counter": "测量伪信号会误导优化；缺匹配预算对照或独立复现，发现改善也可能无法转为量产收益。",
@@ -1333,9 +1353,9 @@
         {
           "group": "技术可靠性",
           "score": 1,
-          "date": "2026-10-21",
+          "date": "2026-10-25",
           "kind": "人工证据判断",
-          "note": "物流窄场景已运行；公司研究显示部分陌生家庭任务能迁移。 REKI短任务计分改善与WBD人工指引实验新增控制证据；尚未跨过家庭长期自主可靠性门槛，分数维持。 ContactBench补接触任务与行为变化失败证据，传感覆盖/反馈架构影响触觉收益；未跨过长期家庭可靠性门槛，分数维持。",
+          "note": "物流窄场景已运行；公司研究显示部分陌生家庭任务能迁移。 REKI短任务计分改善与WBD人工指引实验新增控制证据；尚未跨过家庭长期自主可靠性门槛，分数维持。 ContactBench补接触任务与行为变化失败证据，传感覆盖/反馈架构影响触觉收益；未跨过长期家庭可靠性门槛，分数维持。 FRED补人类视频联合训练的受控实机迁移；平均任务得分允许部分给分，每任务12次，长期可靠性与成本仍待核，分数维持。",
           "sources": [
             {
               "title": "Google 发布 Argon 机器人开发案例",
@@ -1381,6 +1401,17 @@
               "checkedAt": "2026-10-21",
               "type": "预印本·真实机器人基准",
               "scope": "定向核读任务、实验设置、表III–V、行为泛化与讨论；UR5e/WSG50，6任务各100示范，各被评策略每任务30次。单任务微调、物体固定；触觉仅4任务，另2任务未评触觉。未运行代码/观看视频。10/17提交，10/21延迟发现。"
+            },
+            {
+              "id": "fred_20261021",
+              "title": "Self-Distilling Future Video Representations for World Action Models",
+              "url": "https://arxiv.org/abs/2610.30320",
+              "date": "2026-10-21",
+              "publishedAt": "2026-10-21T18:33:13Z",
+              "availableAt": "2026-10-21",
+              "checkedAt": "2026-10-25",
+              "type": "预印本·实机迁移研究",
+              "scope": "代理核§4及附录B/C/F/G，root核表2/12、B.1/B.2计分和原始日期；Franka8任务、OpenArm7任务各12试次。部分完成给分，50.0%为平均任务得分。未运行代码/观看原视频或独立复现；UTC10/21、上海10/22，本轮10/25延迟核读。"
             }
           ]
         },
@@ -1512,6 +1543,17 @@
           "checkedAt": "2026-10-21",
           "type": "预印本·真实机器人基准",
           "scope": "定向核读任务、实验设置、表III–V、行为泛化与讨论；UR5e/WSG50，6任务各100示范，各被评策略每任务30次。单任务微调、物体固定；触觉仅4任务，另2任务未评触觉。未运行代码/观看视频。10/17提交，10/21延迟发现。"
+        },
+        {
+          "id": "fred_20261021",
+          "title": "Self-Distilling Future Video Representations for World Action Models",
+          "url": "https://arxiv.org/abs/2610.30320",
+          "date": "2026-10-21",
+          "publishedAt": "2026-10-21T18:33:13Z",
+          "availableAt": "2026-10-21",
+          "checkedAt": "2026-10-25",
+          "type": "预印本·实机迁移研究",
+          "scope": "代理核§4及附录B/C/F/G，root核表2/12、B.1/B.2计分和原始日期；Franka8任务、OpenArm7任务各12试次。部分完成给分，50.0%为平均任务得分。未运行代码/观看原视频或独立复现；UTC10/21、上海10/22，本轮10/25延迟核读。"
         }
       ],
       "counter": "每扩场地仍大量调试；后台人工成为主要成本，专用设备长期更经济。",
@@ -2117,7 +2159,7 @@
       "modelRisk": "从等离子体指标到整厂收支可能出现数量级差距。",
       "bubble": {
         "status": "缺数据，未估计泡沫概率",
-        "signal": "已披露融资估值；商业全厂净电证据仍缺。",
+        "signal": "已披露融资估值；商业全厂净电证据仍缺。 CHIPS资金仍为附少数股权条件的研发资助意向，未核最终拨付；不据此升级发电或技术判断。",
         "missing": [
           "实时市值或最新成交估值",
           "收入、毛利与自由现金流",
@@ -2851,66 +2893,118 @@
     ]
   },
   "graph": {
+    "sources": [
+      {
+        "id": "ilo_exposure_2025",
+        "title": "How might generative AI impact different occupations?",
+        "url": "https://www.ilo.org/resource/article/how-might-generative-ai-impact-different-occupations",
+        "date": "2025-05-20",
+        "availableAt": "2025-05-20",
+        "checkedAt": "2026-10-16",
+        "scope": "核读任务级暴露方法、四分之一估计、暴露不等于实际影响、任务转型解释；未读140号工作论文全文。",
+        "type": "原研究机构方法说明"
+      },
+      {
+        "id": "bls_ep_2024_2034",
+        "title": "Employment Projections — 2024–2034",
+        "url": "https://www.bls.gov/news.release/archives/ecopro_08282025.pdf",
+        "date": "2025-08-28",
+        "availableAt": "2025-08-28",
+        "checkedAt": "2026-10-16",
+        "scope": "9页PDF可读，核读p1、p3-6产业/岗位投影及不确定性提示；采用固定历史版本，未把现行滚动表混入。",
+        "type": "官方原始劳动统计投影"
+      },
+      {
+        "id": "google_wearos_pm",
+        "title": "Group Product Manager, Wearables Platform, Wear OS",
+        "url": "https://www.google.com/about/careers/applications/jobs/results/86029336917746374-group-product-manager-wearables-platform-wear-os",
+        "date": null,
+        "availableAt": "2026-10-16",
+        "checkedAt": "2026-10-16",
+        "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
+        "type": "当前官方具体JD"
+      },
+      {
+        "id": "nist_chips_loi_20261022",
+        "title": "CHIPS附股权条件研发资助意向",
+        "url": "https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd",
+        "date": "2026-10-22",
+        "availableAt": "2026-10-22",
+        "checkedAt": "2026-10-25",
+        "type": "政府原始公告",
+        "scope": "NIST正文L118–131；四份LOI合计最高3.89亿美元，Helion最高1.75亿、CFS最高8500万；award附少数/无控制/无投票权股权条件，比例未列。未核到最终协议/拨付。"
+      }
+    ],
     "nodes": [
       {
         "id": "dir:worlds",
         "label": "生成世界",
         "type": "方向",
-        "recordedAt": "2026-10-16"
+        "recordedAt": "2026-10-16",
+        "direction": "worlds"
       },
       {
         "id": "dir:spatial",
         "label": "AI可穿戴",
         "type": "方向",
-        "recordedAt": "2026-10-16"
+        "recordedAt": "2026-10-16",
+        "direction": "spatial"
       },
       {
         "id": "dir:robots",
         "label": "通用机器人",
         "type": "方向",
-        "recordedAt": "2026-10-16"
+        "recordedAt": "2026-10-16",
+        "direction": "robots"
       },
       {
         "id": "dir:editing",
         "label": "体内基因编辑",
         "type": "方向",
-        "recordedAt": "2026-10-16"
+        "recordedAt": "2026-10-16",
+        "direction": "editing"
       },
       {
         "id": "dir:organs",
         "label": "异种器官",
         "type": "方向",
-        "recordedAt": "2026-10-16"
+        "recordedAt": "2026-10-16",
+        "direction": "organs"
       },
       {
         "id": "dir:labs",
         "label": "自主实验",
         "type": "方向",
-        "recordedAt": "2026-10-16"
+        "recordedAt": "2026-10-16",
+        "direction": "labs"
       },
       {
         "id": "dir:tandem",
         "label": "叠层光伏",
         "type": "方向",
-        "recordedAt": "2026-10-16"
+        "recordedAt": "2026-10-16",
+        "direction": "tandem"
       },
       {
         "id": "dir:storage",
         "label": "多日储能",
         "type": "方向",
-        "recordedAt": "2026-10-16"
+        "recordedAt": "2026-10-16",
+        "direction": "storage"
       },
       {
         "id": "dir:fusion",
         "label": "聚变发电",
         "type": "方向",
-        "recordedAt": "2026-10-16"
+        "recordedAt": "2026-10-16",
+        "direction": "fusion"
       },
       {
         "id": "dir:bci",
         "label": "神经交互",
         "type": "方向",
-        "recordedAt": "2026-10-16"
+        "recordedAt": "2026-10-16",
+        "direction": "bci"
       },
       {
         "id": "co:world_labs",
@@ -3119,13 +3213,33 @@
         "id": "co:google",
         "label": "Google",
         "type": "公司",
-        "recordedAt": "2026-10-16"
+        "recordedAt": "2026-10-16",
+        "source": {
+          "id": "google_wearos_pm",
+          "title": "Group Product Manager, Wearables Platform, Wear OS",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/86029336917746374-group-product-manager-wearables-platform-wear-os",
+          "date": null,
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-16",
+          "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
+          "type": "当前官方具体JD"
+        }
       },
       {
         "id": "task:wearos",
         "label": "Wear OS产品管理",
         "type": "任务",
-        "recordedAt": "2026-10-16"
+        "recordedAt": "2026-10-16",
+        "source": {
+          "id": "google_wearos_pm",
+          "title": "Group Product Manager, Wearables Platform, Wear OS",
+          "url": "https://www.google.com/about/careers/applications/jobs/results/86029336917746374-group-product-manager-wearables-platform-wear-os",
+          "date": null,
+          "availableAt": "2026-10-16",
+          "checkedAt": "2026-10-16",
+          "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
+          "type": "当前官方具体JD"
+        }
       },
       {
         "id": "skill:architecture",
@@ -3180,6 +3294,12 @@
         "label": "研究场景与道具运营",
         "type": "任务",
         "recordedAt": "2026-10-20"
+      },
+      {
+        "id": "task:product-growth-analytics",
+        "label": "产品增长分析",
+        "type": "任务",
+        "recordedAt": "2026-10-30"
       }
     ],
     "edges": [
@@ -3187,1096 +3307,1100 @@
         "id": "e0",
         "from": "dir:worlds",
         "to": "co:world_labs",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://www.worldlabs.ai/blog/atlas",
           "title": "Marble三维世界产品、Atlas空间模型",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e1",
         "from": "dir:robots",
         "to": "co:pi",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://www.pi.website/blog/api-beta",
           "title": "通用机器人模型、Pi API beta",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e2",
         "from": "dir:robots",
         "to": "co:figure",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://www.figure.ai/news",
           "title": "Figure 03人形机器人、Helix模型",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e3",
         "from": "dir:spatial",
         "to": "co:meta",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://about.fb.com/news/2026/09/introducing-ray-ban-meta-audio-glasses-new-styles-plus-muse/",
           "title": "AI眼镜、VR与成熟社交广告平台",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e4",
         "from": "dir:spatial",
         "to": "co:snap",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://investor.snap.com/news/news-details/2026/SPECS-Make-Computing-More-Human-with-New-Experiences-Partnerships-and-SPECS-Intelligence/default.aspx",
           "title": "Snapchat与Specs AR计算平台",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e5",
         "from": "dir:bci",
         "to": "co:neuralink",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://neuralink.com/updates/",
           "title": "N1植入物、R1手术机器人与临床应用",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e6",
         "from": "dir:bci",
         "to": "co:paradromics",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://paradromics.com/news/paradromics-achieves-real-time-speech-connexus-brain-computer-interface/",
           "title": "Connexus植入式沟通接口 · 早期临床",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e7",
         "from": "dir:labs",
         "to": "co:periodic",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://periodic.com/news/building-labs-that-learn",
           "title": "AI科学家与自主物理实验室",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e8",
         "from": "dir:editing",
         "to": "co:beam",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://investors.beamtx.com/",
           "title": "碱基编辑疗法 · 临床阶段",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e9",
         "from": "dir:organs",
         "to": "co:egenesis",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://egenesisbio.com/news-media/press-releases",
           "title": "基因工程猪肾 · 临床与Expanded Access研究",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e10",
         "from": "dir:tandem",
         "to": "co:oxford_pv",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://www.oxfordpv.com/press-releases/first-solar-oxford-pv-enter-into-patent-licensing-agreement-for-us-markets",
           "title": "钙钛矿／硅叠层光伏 · 初期出货与授权",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e11",
         "from": "dir:storage",
         "to": "co:form_energy",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://formenergy.com/",
           "title": "100小时铁空气电池 · 制造与商业部署",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e12",
         "from": "dir:fusion",
         "to": "co:cfs",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/",
           "title": "SPARC示范装置、ARC商业电站计划",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e13",
         "from": "dir:fusion",
         "to": "co:helion",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://www.helionenergy.com/",
           "title": "Polaris原型实验、Orion电站建设",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e14",
         "from": "dir:robots",
         "to": "co:unitree",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://www.unitree.com/",
           "title": "四足、人形机器人与数据采集平台",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e15",
         "from": "dir:spatial",
         "to": "co:rokid",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://www.rokid.com/zh-CN/about",
           "title": "AI／AR眼镜、YodaOS与开发者生态",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e16",
         "from": "dir:bci",
         "to": "co:brainco",
-        "relation": "研发／产品",
         "kind": "fact",
+        "relation": "研发／产品",
+        "note": "现有产品来源核读，不推断完整业务或市场份额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "url": "https://www.brainco.cn/en-US/about",
           "title": "非侵入式接口、仿生义肢与神经反馈产品",
           "date": "2026-10-16"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "现有产品来源核读，不推断完整业务或市场份额。"
+        }
       },
       {
         "id": "e17",
         "from": "dir:spatial",
         "to": "task:eval",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e18",
         "from": "dir:spatial",
         "to": "task:pipeline",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e19",
         "from": "dir:worlds",
         "to": "task:eval",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e20",
         "from": "dir:worlds",
         "to": "task:workflow",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e21",
         "from": "dir:robots",
         "to": "task:eval",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e22",
         "from": "dir:robots",
         "to": "task:pipeline",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e23",
         "from": "dir:bci",
         "to": "task:eval",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e25",
         "from": "dir:editing",
         "to": "task:clinical",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e26",
         "from": "dir:editing",
         "to": "task:pipeline",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e27",
         "from": "dir:organs",
         "to": "task:clinical",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e28",
         "from": "dir:organs",
         "to": "task:market",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e29",
         "from": "dir:labs",
         "to": "task:pipeline",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e30",
         "from": "dir:labs",
         "to": "task:workflow",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e31",
         "from": "dir:tandem",
         "to": "task:market",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e32",
         "from": "dir:tandem",
         "to": "task:eval",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e33",
         "from": "dir:storage",
         "to": "task:market",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e34",
         "from": "dir:storage",
         "to": "task:pipeline",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e35",
         "from": "dir:fusion",
         "to": "task:market",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e36",
         "from": "dir:fusion",
         "to": "task:pipeline",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e37",
         "from": "task:eval",
         "to": "skill:stats",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e38",
         "from": "task:eval",
         "to": "skill:hci",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e39",
         "from": "task:eval",
         "to": "skill:data",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e40",
         "from": "task:pipeline",
         "to": "skill:data",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e41",
         "from": "task:pipeline",
         "to": "skill:tools",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e42",
         "from": "task:workflow",
         "to": "skill:tools",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e43",
         "from": "task:workflow",
         "to": "skill:stats",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e44",
         "from": "task:market",
         "to": "skill:economics",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e45",
         "from": "task:market",
         "to": "skill:data",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e100",
         "from": "dir:bci",
         "to": "task:neural",
-        "relation": "可能形成任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能形成任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e101",
         "from": "task:clinical",
         "to": "skill:medical",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e102",
         "from": "task:clinical",
         "to": "skill:stats",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e103",
         "from": "task:neural",
         "to": "skill:neuro",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e104",
         "from": "task:neural",
         "to": "skill:signal",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e105",
         "from": "task:neural",
         "to": "skill:tools",
-        "relation": "需要／可迁移",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "需要／可迁移",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e106",
         "from": "co:world_labs",
         "to": "task:eval",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e107",
         "from": "co:world_labs",
         "to": "task:workflow",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e108",
         "from": "co:pi",
         "to": "task:eval",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e109",
         "from": "co:pi",
         "to": "task:pipeline",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e110",
         "from": "co:figure",
         "to": "task:eval",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e111",
         "from": "co:figure",
         "to": "task:pipeline",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e112",
         "from": "co:meta",
         "to": "task:eval",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e113",
         "from": "co:meta",
         "to": "task:pipeline",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e114",
         "from": "co:snap",
         "to": "task:eval",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e115",
         "from": "co:snap",
         "to": "task:pipeline",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e116",
         "from": "co:neuralink",
         "to": "task:eval",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e117",
         "from": "co:neuralink",
         "to": "task:neural",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e118",
         "from": "co:paradromics",
         "to": "task:eval",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e119",
         "from": "co:paradromics",
         "to": "task:neural",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e120",
         "from": "co:periodic",
         "to": "task:pipeline",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e121",
         "from": "co:periodic",
         "to": "task:workflow",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e122",
         "from": "co:beam",
         "to": "task:clinical",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e123",
         "from": "co:beam",
         "to": "task:pipeline",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e124",
         "from": "co:egenesis",
         "to": "task:clinical",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e125",
         "from": "co:egenesis",
         "to": "task:market",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e126",
         "from": "co:oxford_pv",
         "to": "task:market",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e127",
         "from": "co:oxford_pv",
         "to": "task:eval",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e128",
         "from": "co:form_energy",
         "to": "task:market",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e129",
         "from": "co:form_energy",
         "to": "task:pipeline",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e130",
         "from": "co:cfs",
         "to": "task:market",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e131",
         "from": "co:cfs",
         "to": "task:pipeline",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e132",
         "from": "co:helion",
         "to": "task:market",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e133",
         "from": "co:helion",
         "to": "task:pipeline",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e134",
         "from": "co:unitree",
         "to": "task:eval",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e135",
         "from": "co:unitree",
         "to": "task:pipeline",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e136",
         "from": "co:rokid",
         "to": "task:eval",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e137",
         "from": "co:rokid",
         "to": "task:pipeline",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e138",
         "from": "co:brainco",
         "to": "task:eval",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e139",
         "from": "co:brainco",
         "to": "task:neural",
-        "relation": "可能涉及任务",
         "kind": "hypothesis",
-        "source": null,
+        "relation": "可能涉及任务",
+        "note": "任务迁移假设，需具体JD核对",
+        "recordedAt": "2026-10-16",
         "validFrom": "2026-10-16",
         "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "任务迁移假设，需具体JD核对"
+        "source": null
       },
       {
         "id": "e140",
         "from": "dir:spatial",
         "to": "co:google",
-        "relation": "招聘产品岗位",
         "kind": "fact",
+        "relation": "招聘产品岗位",
+        "note": "当前官方JD核查日，不代表首次发布日期。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "id": "google_wearos_pm",
           "title": "Group Product Manager, Wearables Platform, Wear OS",
@@ -4286,18 +4410,18 @@
           "checkedAt": "2026-10-16",
           "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
           "type": "当前官方具体JD"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "当前官方JD核查日，不代表首次发布日期。"
+        }
       },
       {
         "id": "e141",
         "from": "co:google",
         "to": "task:wearos",
-        "relation": "当前官方JD",
         "kind": "fact",
+        "relation": "当前官方JD",
+        "note": "岗位正文和Apply入口可读；未核实名额。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "id": "google_wearos_pm",
           "title": "Group Product Manager, Wearables Platform, Wear OS",
@@ -4307,18 +4431,18 @@
           "checkedAt": "2026-10-16",
           "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
           "type": "当前官方具体JD"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "岗位正文和Apply入口可读；未核实名额。"
+        }
       },
       {
         "id": "e142",
         "from": "task:wearos",
         "to": "skill:architecture",
-        "relation": "要求／职责",
         "kind": "fact",
+        "relation": "要求／职责",
+        "note": "系统架构、AI平台及OEM生态职责。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "id": "google_wearos_pm",
           "title": "Group Product Manager, Wearables Platform, Wear OS",
@@ -4328,18 +4452,18 @@
           "checkedAt": "2026-10-16",
           "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
           "type": "当前官方具体JD"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "系统架构、AI平台及OEM生态职责。"
+        }
       },
       {
         "id": "e143",
         "from": "task:wearos",
         "to": "skill:hci",
-        "relation": "体验与UX职责",
         "kind": "fact",
+        "relation": "体验与UX职责",
+        "note": "职责含用户体验；不据此推断个人具备该岗位资格。",
+        "recordedAt": "2026-10-16",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "id": "google_wearos_pm",
           "title": "Group Product Manager, Wearables Platform, Wear OS",
@@ -4349,18 +4473,18 @@
           "checkedAt": "2026-10-16",
           "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
           "type": "当前官方具体JD"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-16",
-        "note": "职责含用户体验；不据此推断个人具备该岗位资格。"
+        }
       },
       {
         "id": "job1017_form_task",
         "from": "co:form_energy",
         "to": "task:factory-analytics",
-        "relation": "当前招聘任务",
         "kind": "fact",
+        "relation": "当前招聘任务",
+        "note": "官方JD涉及工厂BI、数据模型与数据质量；4年以上相关代码经验。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": null,
         "source": {
           "id": "form_factory_analytics_1017",
           "title": "Senior Data Analytics Engineer, Factory Software",
@@ -4371,18 +4495,18 @@
           "scope": "通过官方公开招聘API核读完整职责、要求、地点、isListed=true与申请URL；岗位首次发布字段为UTC 2026-10-15，本轮首次核到不是当天新发。",
           "type": "官方招聘证据",
           "apiUrl": "https://api.ashbyhq.com/posting-api/job-board/formenergy"
-        },
-        "validFrom": "2026-10-17",
-        "validTo": null,
-        "recordedAt": "2026-10-17",
-        "note": "官方JD涉及工厂BI、数据模型与数据质量；4年以上相关代码经验。"
+        }
       },
       {
         "id": "job1017_form_sql",
         "from": "task:factory-analytics",
         "to": "skill:sql-python",
-        "relation": "JD要求",
         "kind": "fact",
+        "relation": "JD要求",
+        "note": "岗位明确列SQL和Python，不推断个人已满足要求。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": null,
         "source": {
           "id": "form_factory_analytics_1017",
           "title": "Senior Data Analytics Engineer, Factory Software",
@@ -4393,18 +4517,18 @@
           "scope": "通过官方公开招聘API核读完整职责、要求、地点、isListed=true与申请URL；岗位首次发布字段为UTC 2026-10-15，本轮首次核到不是当天新发。",
           "type": "官方招聘证据",
           "apiUrl": "https://api.ashbyhq.com/posting-api/job-board/formenergy"
-        },
-        "validFrom": "2026-10-17",
-        "validTo": null,
-        "recordedAt": "2026-10-17",
-        "note": "岗位明确列SQL和Python，不推断个人已满足要求。"
+        }
       },
       {
         "id": "job1017_form_flow",
         "from": "task:factory-analytics",
         "to": "skill:data",
-        "relation": "JD要求",
         "kind": "fact",
+        "relation": "JD要求",
+        "note": "数据模型、质量标准及工厂数据流。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": null,
         "source": {
           "id": "form_factory_analytics_1017",
           "title": "Senior Data Analytics Engineer, Factory Software",
@@ -4415,18 +4539,18 @@
           "scope": "通过官方公开招聘API核读完整职责、要求、地点、isListed=true与申请URL；岗位首次发布字段为UTC 2026-10-15，本轮首次核到不是当天新发。",
           "type": "官方招聘证据",
           "apiUrl": "https://api.ashbyhq.com/posting-api/job-board/formenergy"
-        },
-        "validFrom": "2026-10-17",
-        "validTo": null,
-        "recordedAt": "2026-10-17",
-        "note": "数据模型、质量标准及工厂数据流。"
+        }
       },
       {
         "id": "job1017_snap_task",
         "from": "co:snap",
         "to": "task:wearable-human-factors",
-        "relation": "SPECS招聘任务",
         "kind": "fact",
+        "relation": "SPECS招聘任务",
+        "note": "官方SPECS人因岗位，12个月固定期限，洛杉矶。 本雷达当前入口证据于10/20撤下：HTTP404且实时目录未列；不作为实际招聘截止日期。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": "2026-10-20",
         "source": {
           "id": "snap_human_factors_1017",
           "title": "Human Factors Research Technologist (Fixed Term, 12 Months)",
@@ -4436,18 +4560,18 @@
           "checkedAt": "2026-10-17",
           "scope": "核读官方目录及JD全部职责、3年以上要求、SPECS归属、12个月期限、4天办公室与Apply入口；未申请。发布日期仅显示相对天数，不生成具体日期。",
           "type": "官方招聘证据"
-        },
-        "validFrom": "2026-10-17",
-        "validTo": "2026-10-20",
-        "recordedAt": "2026-10-17",
-        "note": "官方SPECS人因岗位，12个月固定期限，洛杉矶。 本雷达当前入口证据于10/20撤下：HTTP404且实时目录未列；不作为实际招聘截止日期。"
+        }
       },
       {
         "id": "job1017_snap_stats",
         "from": "task:wearable-human-factors",
         "to": "skill:stats",
-        "relation": "JD要求",
         "kind": "fact",
+        "relation": "JD要求",
+        "note": "人体定量/定性研究、实验设计及数据分析。 本雷达当前入口证据于10/20撤下：HTTP404且实时目录未列；不作为实际招聘截止日期。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": "2026-10-20",
         "source": {
           "id": "snap_human_factors_1017",
           "title": "Human Factors Research Technologist (Fixed Term, 12 Months)",
@@ -4457,18 +4581,18 @@
           "checkedAt": "2026-10-17",
           "scope": "核读官方目录及JD全部职责、3年以上要求、SPECS归属、12个月期限、4天办公室与Apply入口；未申请。发布日期仅显示相对天数，不生成具体日期。",
           "type": "官方招聘证据"
-        },
-        "validFrom": "2026-10-17",
-        "validTo": "2026-10-20",
-        "recordedAt": "2026-10-17",
-        "note": "人体定量/定性研究、实验设计及数据分析。 本雷达当前入口证据于10/20撤下：HTTP404且实时目录未列；不作为实际招聘截止日期。"
+        }
       },
       {
         "id": "job1017_snap_measure",
         "from": "task:wearable-human-factors",
         "to": "skill:measurement",
-        "relation": "JD要求",
         "kind": "fact",
+        "relation": "JD要求",
+        "note": "传感器、实验仪器与校准方法。 本雷达当前入口证据于10/20撤下：HTTP404且实时目录未列；不作为实际招聘截止日期。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": "2026-10-20",
         "source": {
           "id": "snap_human_factors_1017",
           "title": "Human Factors Research Technologist (Fixed Term, 12 Months)",
@@ -4478,18 +4602,18 @@
           "checkedAt": "2026-10-17",
           "scope": "核读官方目录及JD全部职责、3年以上要求、SPECS归属、12个月期限、4天办公室与Apply入口；未申请。发布日期仅显示相对天数，不生成具体日期。",
           "type": "官方招聘证据"
-        },
-        "validFrom": "2026-10-17",
-        "validTo": "2026-10-20",
-        "recordedAt": "2026-10-17",
-        "note": "传感器、实验仪器与校准方法。 本雷达当前入口证据于10/20撤下：HTTP404且实时目录未列；不作为实际招聘截止日期。"
+        }
       },
       {
         "id": "job1017_snap_cad",
         "from": "task:wearable-human-factors",
         "to": "skill:cad-prototype",
-        "relation": "JD要求",
         "kind": "fact",
+        "relation": "JD要求",
+        "note": "CAD修改、硬件原型、制造与工程验证。 本雷达当前入口证据于10/20撤下：HTTP404且实时目录未列；不作为实际招聘截止日期。",
+        "recordedAt": "2026-10-17",
+        "validFrom": "2026-10-17",
+        "validTo": "2026-10-20",
         "source": {
           "id": "snap_human_factors_1017",
           "title": "Human Factors Research Technologist (Fixed Term, 12 Months)",
@@ -4499,18 +4623,18 @@
           "checkedAt": "2026-10-17",
           "scope": "核读官方目录及JD全部职责、3年以上要求、SPECS归属、12个月期限、4天办公室与Apply入口；未申请。发布日期仅显示相对天数，不生成具体日期。",
           "type": "官方招聘证据"
-        },
-        "validFrom": "2026-10-17",
-        "validTo": "2026-10-20",
-        "recordedAt": "2026-10-17",
-        "note": "CAD修改、硬件原型、制造与工程验证。 本雷达当前入口证据于10/20撤下：HTTP404且实时目录未列；不作为实际招聘截止日期。"
+        }
       },
       {
         "id": "app1018_rokid_hailing",
         "from": "co:rokid",
         "to": "task:voice-hailing",
-        "relation": "发布演示",
         "kind": "fact",
+        "relation": "发布演示",
+        "note": "企业认证账号投稿元数据确认发布；不是全量开放、实测成功率或岗位需求证据。",
+        "recordedAt": "2026-10-18",
+        "validFrom": "2026-10-16",
+        "validTo": null,
         "source": {
           "id": "rokid_tencent_demo_1016",
           "title": "乐奇x腾讯打车，全程语音打车！",
@@ -4523,18 +4647,18 @@
           "type": "企业演示发布·投稿元数据",
           "metadataUrl": "https://api.bilibili.com/x/web-interface/view?bvid=BV1wwJ96gEy8",
           "accountUrl": "https://api.bilibili.com/x/web-interface/card?mid=314358436"
-        },
-        "validFrom": "2026-10-16",
-        "validTo": null,
-        "recordedAt": "2026-10-18",
-        "note": "企业认证账号投稿元数据确认发布；不是全量开放、实测成功率或岗位需求证据。"
+        }
       },
       {
         "id": "collab1020_bci_imaging",
         "from": "co:paradromics",
         "to": "task:bci-imaging",
-        "relation": "拟开发",
         "kind": "fact",
+        "relation": "拟开发",
+        "note": "已公告合作，不等于流程完成或临床效果验证。",
+        "recordedAt": "2026-10-20",
+        "validFrom": "2026-10-19",
+        "validTo": null,
         "source": {
           "id": "paradromics_siemens_20261019",
           "title": "Paradromics and Siemens Healthineers影像流程合作",
@@ -4544,18 +4668,18 @@
           "checkedAt": "2026-10-20",
           "type": "公司合作公告",
           "scope": "核读Paradromics公告正文和研究用途限制：现有标准扫描协议已用，拟开发完整多模态影像流程；未披露样本/比较结果、审批或资本金额。Siemens一方未找到同文；web正文可读，直接HTTP403保留。"
-        },
-        "validFrom": "2026-10-19",
-        "validTo": null,
-        "recordedAt": "2026-10-20",
-        "note": "已公告合作，不等于流程完成或临床效果验证。"
+        }
       },
       {
         "id": "job1020_pi_environment",
         "from": "co:pi",
         "to": "task:research-set-ops",
-        "relation": "招聘任务",
         "kind": "fact",
+        "relation": "招聘任务",
+        "note": "采购、库存、场景交付。",
+        "recordedAt": "2026-10-20",
+        "validFrom": "2026-10-20",
+        "validTo": null,
         "source": {
           "id": "pi_environment_coordinator_1020",
           "title": "Environment Coordinator",
@@ -4566,43 +4690,112 @@
           "checkedAt": "2026-10-20",
           "scope": "官方公开招聘API isListed=true；全文核职责、2年以上现场运营、40磅搬运及现场地点；未申请。UTC10/19、上海10/20。",
           "type": "官方招聘证据"
-        },
-        "validFrom": "2026-10-20",
+        }
+      },
+      {
+        "id": "cfs_helion_chips_loi_20261022",
+        "from": "co:cfs",
+        "to": "co:helion",
+        "kind": "fact",
+        "relation": "CHIPS研发意向共同入选",
+        "note": "同一政府研发计划分别入选：CFS最高8500万美元、Helion最高1.75亿美元，均附少数股权条件；并非两家公司合作或资金已到账。",
+        "recordedAt": "2026-10-25",
+        "validFrom": "2026-10-22",
         "validTo": null,
-        "recordedAt": "2026-10-20",
-        "note": "采购、库存、场景交付。"
-      }
-    ],
-    "sources": [
-      {
-        "id": "ilo_exposure_2025",
-        "title": "How might generative AI impact different occupations?",
-        "url": "https://www.ilo.org/resource/article/how-might-generative-ai-impact-different-occupations",
-        "date": "2025-05-20",
-        "availableAt": "2025-05-20",
-        "checkedAt": "2026-10-16",
-        "scope": "核读任务级暴露方法、四分之一估计、暴露不等于实际影响、任务转型解释；未读140号工作论文全文。",
-        "type": "原研究机构方法说明"
+        "source": {
+          "id": "nist_chips_loi_20261022",
+          "title": "CHIPS附股权条件研发资助意向",
+          "url": "https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd",
+          "date": "2026-10-22",
+          "availableAt": "2026-10-22",
+          "checkedAt": "2026-10-25",
+          "type": "政府原始公告",
+          "scope": "NIST正文L118–131；四份LOI合计最高3.89亿美元，Helion最高1.75亿、CFS最高8500万；award附少数/无控制/无投票权股权条件，比例未列。未核到最终协议/拨付。"
+        }
       },
       {
-        "id": "bls_ep_2024_2034",
-        "title": "Employment Projections — 2024–2034",
-        "url": "https://www.bls.gov/news.release/archives/ecopro_08282025.pdf",
-        "date": "2025-08-28",
-        "availableAt": "2025-08-28",
-        "checkedAt": "2026-10-16",
-        "scope": "9页PDF可读，核读p1、p3-6产业/岗位投影及不确定性提示；采用固定历史版本，未把现行滚动表混入。",
-        "type": "官方原始劳动统计投影"
+        "id": "job1030_snap_l4_company",
+        "from": "co:snap",
+        "to": "task:product-growth-analytics",
+        "kind": "fact",
+        "relation": "Growth招聘任务",
+        "note": "本轮恢复核实的Growth数据科学岗位；非SPECS眼镜团队。",
+        "recordedAt": "2026-10-30",
+        "validFrom": "2026-10-30",
+        "validTo": null,
+        "source": {
+          "id": "snap_l4_1030",
+          "title": "Data Scientist, Level 4 · Growth",
+          "url": "https://careers.snap.com/job?id=Q426DSA4",
+          "date": null,
+          "availableAt": "2026-10-30",
+          "checkedAt": "2026-10-30",
+          "scope": "完整职责、资历、SQL/Python/R优先要求、4天办公室及当前目录；实际复开日未知，10/21旧目录已列，本轮纠正漏更。",
+          "type": "官方招聘证据"
+        }
       },
       {
-        "id": "google_wearos_pm",
-        "title": "Group Product Manager, Wearables Platform, Wear OS",
-        "url": "https://www.google.com/about/careers/applications/jobs/results/86029336917746374-group-product-manager-wearables-platform-wear-os",
-        "date": null,
-        "availableAt": "2026-10-16",
-        "checkedAt": "2026-10-16",
-        "scope": "核读正文、最低/优先要求、职责、地点及Apply入口；未实际提交申请，未独立确认名额。",
-        "type": "当前官方具体JD"
+        "id": "job1030_snap_l4_stats",
+        "from": "task:product-growth-analytics",
+        "to": "skill:stats",
+        "kind": "fact",
+        "relation": "JD优先要求",
+        "note": "本轮恢复核实的Growth数据科学岗位；非SPECS眼镜团队。",
+        "recordedAt": "2026-10-30",
+        "validFrom": "2026-10-30",
+        "validTo": null,
+        "source": {
+          "id": "snap_l4_1030",
+          "title": "Data Scientist, Level 4 · Growth",
+          "url": "https://careers.snap.com/job?id=Q426DSA4",
+          "date": null,
+          "availableAt": "2026-10-30",
+          "checkedAt": "2026-10-30",
+          "scope": "完整职责、资历、SQL/Python/R优先要求、4天办公室及当前目录；实际复开日未知，10/21旧目录已列，本轮纠正漏更。",
+          "type": "官方招聘证据"
+        }
+      },
+      {
+        "id": "job1030_snap_l4_sql",
+        "from": "task:product-growth-analytics",
+        "to": "skill:sql-python",
+        "kind": "fact",
+        "relation": "JD优先要求",
+        "note": "本轮恢复核实的Growth数据科学岗位；非SPECS眼镜团队。",
+        "recordedAt": "2026-10-30",
+        "validFrom": "2026-10-30",
+        "validTo": null,
+        "source": {
+          "id": "snap_l4_1030",
+          "title": "Data Scientist, Level 4 · Growth",
+          "url": "https://careers.snap.com/job?id=Q426DSA4",
+          "date": null,
+          "availableAt": "2026-10-30",
+          "checkedAt": "2026-10-30",
+          "scope": "完整职责、资历、SQL/Python/R优先要求、4天办公室及当前目录；实际复开日未知，10/21旧目录已列，本轮纠正漏更。",
+          "type": "官方招聘证据"
+        }
+      },
+      {
+        "id": "job1030_snap_l4_data",
+        "from": "task:product-growth-analytics",
+        "to": "skill:data",
+        "kind": "fact",
+        "relation": "JD职责",
+        "note": "本轮恢复核实的Growth数据科学岗位；非SPECS眼镜团队。",
+        "recordedAt": "2026-10-30",
+        "validFrom": "2026-10-30",
+        "validTo": null,
+        "source": {
+          "id": "snap_l4_1030",
+          "title": "Data Scientist, Level 4 · Growth",
+          "url": "https://careers.snap.com/job?id=Q426DSA4",
+          "date": null,
+          "availableAt": "2026-10-30",
+          "checkedAt": "2026-10-30",
+          "scope": "完整职责、资历、SQL/Python/R优先要求、4天办公室及当前目录；实际复开日未知，10/21旧目录已列，本轮纠正漏更。",
+          "type": "官方招聘证据"
+        }
       }
     ]
   },
@@ -5238,6 +5431,37 @@
       "checkedAt": "2026-10-21",
       "type": "预印本·长程生成",
       "scope": "定向核读§4实验/基线、表2/3、96段DROID人工视频检查与§6局限；MiniWorld-1B、两域各32段评估。DROID参考为回放，评估片段曾参与预训练；无真实机器人闭环验证。未独立复现。10/19提交，10/21延迟发现。"
+    },
+    {
+      "id": "xaira_xscientist_20261021",
+      "title": "X-Scientist: A Recursive Self-Improving Agentic AI Platform for Drug Discovery",
+      "url": "https://www.xaira.com/news/x-scientist-recursive-self-improving-agentic-ai-platform",
+      "date": "2026-10-21",
+      "availableAt": "2026-10-21",
+      "checkedAt": "2026-10-22",
+      "type": "企业原始研究披露",
+      "scope": "官方正文§1–5、图2/3/4图注与未来工作；HepG2的TGF-β条件，AI/人工/随机381/321/433项扰动，各≥30细胞。未取原始表达矩阵、完整方法或独立复现。提名时间与湿实验时间分开；反馈与自动执行仍为后续。"
+    },
+    {
+      "id": "fred_20261021",
+      "title": "Self-Distilling Future Video Representations for World Action Models",
+      "url": "https://arxiv.org/abs/2610.30320",
+      "date": "2026-10-21",
+      "publishedAt": "2026-10-21T18:33:13Z",
+      "availableAt": "2026-10-21",
+      "checkedAt": "2026-10-25",
+      "type": "预印本·实机迁移研究",
+      "scope": "代理核§4及附录B/C/F/G，root核表2/12、B.1/B.2计分和原始日期；Franka8任务、OpenArm7任务各12试次。部分完成给分，50.0%为平均任务得分。未运行代码/观看原视频或独立复现；UTC10/21、上海10/22，本轮10/25延迟核读。"
+    },
+    {
+      "id": "nist_chips_loi_20261022",
+      "title": "CHIPS附股权条件研发资助意向",
+      "url": "https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd",
+      "date": "2026-10-22",
+      "availableAt": "2026-10-22",
+      "checkedAt": "2026-10-25",
+      "type": "政府原始公告",
+      "scope": "NIST正文L118–131；四份LOI合计最高3.89亿美元，Helion最高1.75亿、CFS最高8500万；award附少数/无控制/无投票权股权条件，比例未列。未核到最终协议/拨付。"
     }
   ],
   "settlement": {

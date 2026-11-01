@@ -1,6 +1,7 @@
 {
   "schema": 1,
-  "checkedAt": "2026-10-21",
+  "checkedAt": "2026-11-01",
+  "profileCheckedAt": "2026-10-16",
   "companies": [
     {
       "id": "world_labs",
@@ -140,7 +141,8 @@
           "url": "https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership",
           "title": "Nscale战略投资"
         }
-      ]
+      ],
+      "profileCheckedAt": "2026-10-17"
     },
     {
       "id": "meta",
@@ -155,16 +157,37 @@
       "founderSource": "https://investor.atmeta.com/leadership-and-governance/default.aspx",
       "capital": {
         "status": "上市",
-        "event": "上市公司",
-        "date": null,
-        "amount": "Nasdaq: META",
-        "investors": "公开市场股东",
-        "detail": "成熟社交广告、AI与Reality Labs并行；眼镜团队经费和岗位归属需另核。",
-        "url": "https://investor.atmeta.com/home/default.aspx"
+        "event": "强制可转优先股已交割",
+        "title": "强制可转优先股交割及普通股远期安排",
+        "date": "2026-10-29",
+        "amount": "125亿美元基础发行",
+        "investors": "持有人未披露；摩根士丹利、高盛承销",
+        "detail": "SEC 8-K确认优先股存托股发行于10/29完成交割；基础发行规模125亿美元，净所得及超额配售行使情况待核。另250亿美元普通股远期：卖方借入并售出4000万股，Meta初始无所得，约定不晚于2027/11/19结算。",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm",
+        "checkedAt": "2026-11-01",
+        "readScope": "代理与root核SEC 8-K L93–114，交割L97、远期无初始所得/日期L112、署名10/29。报告最早事件10/26，交割事件取10/29，本轮11/1补证，未读所有合同附件。"
       },
       "product": "AI眼镜、VR与成熟社交广告平台",
       "productUrl": "https://about.fb.com/news/2026/09/introducing-ray-ban-meta-audio-glasses-new-styles-plus-muse/",
       "watch": "硬件持续使用与应用生态；已宣布和已交付产品分开。",
+      "sources": [
+        {
+          "label": "10/27 Muse新加坡开放",
+          "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/"
+        },
+        {
+          "label": "10/27证券发行定价",
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-Pricing-of-Offering-of-Depositary-Shares-Representing-Series-A-Mandatory-Convertible-Preferred-Stock-and-Offering-of-Class-A-Common-Stock-in-Connection-with-Forward-Sale-Agreements/default.aspx"
+        },
+        {
+          "label": "10/29 CNIB合作",
+          "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/"
+        },
+        {
+          "label": "10/29 SEC 8-K：交割与远期安排",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm"
+        }
+      ],
       "valuation": {
         "amount": "市值未接入",
         "basis": "上市公司",
@@ -172,7 +195,52 @@
         "status": "上市",
         "detail": "市值随股价变化，当前未接入行情。",
         "url": "https://investor.atmeta.com/home/default.aspx"
-      }
+      },
+      "financing": [
+        {
+          "status": "上市",
+          "event": "证券发行定价",
+          "title": "强制可转优先股与远期普通股",
+          "date": "2026-10-27",
+          "amount": "125亿美元＋250亿美元",
+          "investors": "公开承销；持有人未披露",
+          "detail": "页面10/27、正文10/26的定价公告：125亿美元强制可转优先股存托股，250亿美元普通股远期安排；当时预计10/29交割。远期初始无所得，预计不晚于2027/11/19结算。",
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Announces-Pricing-of-Offering-of-Depositary-Shares-Representing-Series-A-Mandatory-Convertible-Preferred-Stock-and-Offering-of-Class-A-Common-Stock-in-Connection-with-Forward-Sale-Agreements/default.aspx",
+          "checkedAt": "2026-10-30"
+        },
+        {
+          "status": "上市",
+          "event": "强制可转优先股已交割",
+          "title": "强制可转优先股交割及普通股远期安排",
+          "date": "2026-10-29",
+          "amount": "125亿美元基础发行",
+          "investors": "持有人未披露；摩根士丹利、高盛承销",
+          "detail": "SEC 8-K确认优先股存托股发行于10/29完成交割；基础发行规模125亿美元，净所得及超额配售行使情况待核。另250亿美元普通股远期：卖方借入并售出4000万股，Meta初始无所得，约定不晚于2027/11/19结算。",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm",
+          "checkedAt": "2026-11-01",
+          "readScope": "代理与root核SEC 8-K L93–114，交割L97、远期无初始所得/日期L112、署名10/29。报告最早事件10/26，交割事件取10/29，本轮11/1补证，未读所有合同附件。"
+        }
+      ],
+      "cases": [
+        {
+          "title": "Muse在新加坡开放",
+          "use": "通过手机与网页处理日常任务。",
+          "mechanism": "连接当地购物、出行和旅行服务，功能逐步上线。",
+          "evidence": "Meta10/27公告iOS、Android和网页可用。",
+          "limit": "部分连接器体验在发布后提供，眼镜版仍待推出；公告未披露留存、任务成功率或付费数据。",
+          "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+          "checkedAt": "2026-10-28"
+        },
+        {
+          "title": "CNIB眼镜培训与产品反馈合作",
+          "use": "支持加拿大盲人、盲聋及低视力群体体验可穿戴辅助。",
+          "mechanism": "Meta提供资金与眼镜，CNIB组织社区演示、培训和产品反馈。",
+          "evidence": "10/29官方公告合作及Come to Work项目捐赠。",
+          "limit": "资金、设备数量、已培训人数、持续使用及效果未披露。",
+          "url": "https://about.fb.com/news/2026/10/the-future-is-for-everyone-meta-and-cnib-partner-to-support-canadians-who-are-blind-deafblind-or-have-low-vision/",
+          "checkedAt": "2026-10-30"
+        }
+      ]
     },
     {
       "id": "snap",
@@ -260,7 +328,7 @@
       },
       "product": "Connexus植入式沟通接口 · 早期临床",
       "productUrl": "https://paradromics.com/news/paradromics-achieves-real-time-speech-connexus-brain-computer-interface/",
-      "watch": "人体长期沟通与安全；新增临床影像流程合作，完整方案及效果待验证。",
+      "watch": "长期人体安全与沟通；招募地域放宽后的入组、到院和远距离随访执行。",
       "sources": [
         {
           "label": "动物耐久性数据 · 2026-10-08",
@@ -269,6 +337,10 @@
         {
           "label": "影像流程合作公告",
           "url": "https://paradromics.com/news/paradromics-siemens-healthineers-launch-strategic-initiative-build-advanced-imaging-foundation-for-the-future-of-brain-computer-interfaces/"
+        },
+        {
+          "label": "10/26招募方案修订公告",
+          "url": "https://paradromics.com/news/paradromics-receives-fda-approval-to-expand-connexus-brain-computer-interface-clinical-study-recruitment-nationwide/"
         }
       ],
       "valuation": {
@@ -288,8 +360,18 @@
           "limit": "端到端优化包仍待开发；没有披露病例效果比较、样本、审批或资本金额。",
           "url": "https://paradromics.com/news/paradromics-siemens-healthineers-launch-strategic-initiative-build-advanced-imaging-foundation-for-the-future-of-brain-computer-interfaces/",
           "checkedAt": "2026-10-20"
+        },
+        {
+          "title": "Connect-One招募地域放宽",
+          "use": "让距离研究中心较远的美国合格候选者可被考虑入组。",
+          "mechanism": "移除四小时车程要求，仍需到院活动及照护协调。",
+          "evidence": "公司10/26披露FDA批准方案修订，三家临床中心参与。",
+          "limit": "远距离支持流程仍与研究者/IRB建立，其他条件保持；无新疗效/长期安全数据，FDA原函未取得。",
+          "url": "https://paradromics.com/news/paradromics-receives-fda-approval-to-expand-connexus-brain-computer-interface-clinical-study-recruitment-nationwide/",
+          "checkedAt": "2026-10-27"
         }
-      ]
+      ],
+      "profileCheckedAt": "2026-10-20"
     },
     {
       "id": "periodic",
@@ -345,11 +427,15 @@
       },
       "product": "碱基编辑疗法 · 临床阶段",
       "productUrl": "https://investors.beamtx.com/",
-      "watch": "临床有效性、安全与给药；未确认获批商业产品。",
+      "watch": "BEAM-301禁食改善、输注安全及60mg调整方案后的随访；商业化批准路径待核。",
       "sources": [
         {
           "label": "2026年Q2 10-Q",
           "url": "https://investors.beamtx.com/node/10941/ixbrl-viewer"
+        },
+        {
+          "label": "10/27 BEAM-301初步临床数据",
+          "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-reports-initial-clinical-data-phase-12-trial"
         }
       ],
       "valuation": {
@@ -359,7 +445,18 @@
         "status": "上市",
         "detail": "市值随股价变化，当前未接入行情。",
         "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-announces-pricing-underwritten-offering"
-      }
+      },
+      "cases": [
+        {
+          "title": "BEAM-301首批临床数据",
+          "use": "改善GSDIa患者低血糖和频繁淀粉补充的疾病管理。",
+          "mechanism": "肝靶向LNP递送碱基编辑试剂，针对R83C变异。",
+          "evidence": "截至8/17共6人；40mg组2/3达到15小时禁食，最新评估无需淀粉补充。",
+          "limit": "6人均有治疗相关不良事件，4人有相关严重事件，含3例3级输注反应；方案已调整。小样本、无对照，中位随访7.6月，60mg及长期结果待核。",
+          "url": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-reports-initial-clinical-data-phase-12-trial",
+          "checkedAt": "2026-10-28"
+        }
+      ]
     },
     {
       "id": "egenesis",
@@ -370,7 +467,7 @@
       "domain": "生命科学",
       "hq": "美国 · Cambridge, MA",
       "founders": "George Church、Luhan Yang",
-      "founderContext": "2015年创立，基因编辑与异种移植研究背景；现任CEO为Mike Curtis。",
+      "founderContext": "2015年创立，基因编辑与异种移植研究背景；现任CEO为Mike Curtis。 Daniel Leblanc任制造与供应负责人，任命公告正文日期2026-10-21。",
       "founderSource": "https://otd.harvard.edu/news/pig-organs-for-human-patients-a-challenge-fit-for-crispr/",
       "capital": {
         "status": "非上市",
@@ -384,6 +481,12 @@
       "product": "基因工程猪肾 · 临床与Expanded Access研究",
       "productUrl": "https://egenesisbio.com/news-media/press-releases",
       "watch": "移植物存活、感染、排异与长期人体结果；目前不是常规器官供应业务。",
+      "sources": [
+        {
+          "label": "Daniel Leblanc任命公告（页面10/22，正文10/21）",
+          "url": "https://egenesisbio.com/news-media/press-releases/egenesis-appoints-daniel-leblanc-as-chief-manufacturing-and-supply-officer"
+        }
+      ],
       "valuation": {
         "amount": "未披露",
         "basis": "所核资本披露",
@@ -391,7 +494,17 @@
         "status": "未披露",
         "detail": "当前所核来源未列估值。",
         "url": "https://egenesisbio.com/news-media/press-releases/egenesis-raises-191-million-series-d-financing-to-advance-lead-program-for-kidney-transplant"
-      }
+      },
+      "teamEvents": [
+        {
+          "date": "2026-10-21",
+          "pageDate": "2026-10-22",
+          "checkedAt": "2026-10-25",
+          "title": "Daniel Leblanc任Chief Manufacturing and Supply Officer",
+          "url": "https://egenesisbio.com/news-media/press-releases/egenesis-appoints-daniel-leblanc-as-chief-manufacturing-and-supply-officer",
+          "scope": "企业任命正文；经营团队，非创始人或新临床/资本结果。"
+        }
+      ]
     },
     {
       "id": "oxford_pv",
@@ -447,11 +560,15 @@
       },
       "product": "100小时铁空气电池 · 制造与商业部署",
       "productUrl": "https://formenergy.com/",
-      "watch": "补核企业并网与100小时测试自报；客户GRE规划尚待模块并预计2026年底COD，下一步核实际投运、可用率和全成本。",
+      "watch": "GRE预计2026年底COD；CEC Redwood Valley缩容后预计2027投运。核实际运行、充电约束、可用率和全成本。",
       "sources": [
         {
           "label": "独立信贷安排",
           "url": "https://formenergy.com/form-energy-announces-closing-of-270m-credit-facility/"
+        },
+        {
+          "label": "CEC Redwood Valley项目调整",
+          "url": "https://www.energy.ca.gov/programs-and-topics/programs/long-duration-energy-storage-program"
         }
       ],
       "valuation": {
@@ -477,8 +594,18 @@
               "url": "https://greatriverenergy.com/wp-content/uploads/2026/05/2026-2040-GRE-IRP-FINAL-4-24-2026.pdf"
             }
           ]
+        },
+        {
+          "title": "Redwood Valley缩容",
+          "use": "在PG&E变电站部署100小时铁空气储能。",
+          "mechanism": "配合变电站充电限制调整项目容量。",
+          "evidence": "CEC记载2025年由5MW/500MWh改为1.5MW/150MWh；资助额度3000万降至2500万美元，Form配套2500万美元。",
+          "limit": "调整仅有2025年份，具体日未披露；预计2027投运尚为目标。项目资助/配套不计公司融资，与GRE Cambridge项目分开。",
+          "url": "https://www.energy.ca.gov/programs-and-topics/programs/long-duration-energy-storage-program",
+          "checkedAt": "2026-10-27"
         }
-      ]
+      ],
+      "profileCheckedAt": "2026-10-17"
     },
     {
       "id": "cfs",
@@ -492,13 +619,15 @@
       "founderContext": "MIT聚变团队衍生；Bob Mumgaard任CEO。",
       "founderSource": "https://ilp.mit.edu/sites/default/files/2020-01/Engine.2018.RD_.pdf",
       "capital": {
-        "status": "非上市",
-        "event": "10亿美元融资 · 参投披露",
-        "date": "2026-09-10",
-        "amount": "10亿美元",
-        "investors": "现代汽车集团（本轮已确认）；其他具体机构待核",
-        "detail": "7月30日公布10亿美元融资，9月10日确认现代汽车参投；单家金额未披露，属于原轮次。累计资本40亿美元。电力购买协议另计，商业供电仍在计划中。",
-        "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-hyundai-motor-group/"
+        "status": "LOI · 拟议",
+        "event": "CHIPS研发资助 · LOI",
+        "title": "CHIPS研发资助意向（附股权条件）",
+        "date": "2026-10-22",
+        "amount": "最高8500万美元",
+        "investors": "美国商务部（拟；附股权条件）",
+        "detail": "10/22 NIST宣布已签CHIPS研发资助意向；拟授资助附美国商务部取得少数、无控制权、无投票权股权的条件，比例未披露。尚未核到最终award协议或拨付，不计累计实收，也不据此推算新估值。 公司页头为10/21，正文dateline10/22；本记录采用政府10/22公告。",
+        "url": "https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd",
+        "checkedAt": "2026-10-25"
       },
       "product": "SPARC示范装置、ARC商业电站计划",
       "productUrl": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/",
@@ -507,6 +636,10 @@
         {
           "label": "2026-07-30原融资公告",
           "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-raises-another-1-billion-bringing-total-capital-raised-to-4-billion/"
+        },
+        {
+          "label": "10/22 NIST研发资助意向及股权条件",
+          "url": "https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd"
         }
       ],
       "valuation": {
@@ -516,7 +649,30 @@
         "status": "未披露",
         "detail": "当前所核来源未列估值。",
         "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-hyundai-motor-group/"
-      }
+      },
+      "financing": [
+        {
+          "status": "非上市",
+          "event": "10亿美元融资 · 参投披露",
+          "date": "2026-09-10",
+          "amount": "10亿美元",
+          "investors": "现代汽车集团（本轮已确认）；其他具体机构待核",
+          "detail": "7月30日公布10亿美元融资，9月10日确认现代汽车参投；单家金额未披露，属于原轮次。累计资本40亿美元。电力购买协议另计，商业供电仍在计划中。",
+          "url": "https://cfs.energy/news-and-media/commonwealth-fusion-systems-announces-equity-investment-by-hyundai-motor-group/",
+          "title": "10亿美元融资 · 参投披露"
+        },
+        {
+          "status": "LOI · 拟议",
+          "event": "CHIPS研发资助 · LOI",
+          "title": "CHIPS研发资助意向（附股权条件）",
+          "date": "2026-10-22",
+          "amount": "最高8500万美元",
+          "investors": "美国商务部（拟；附股权条件）",
+          "detail": "10/22 NIST宣布已签CHIPS研发资助意向；拟授资助附美国商务部取得少数、无控制权、无投票权股权的条件，比例未披露。尚未核到最终award协议或拨付，不计累计实收，也不据此推算新估值。 公司页头为10/21，正文dateline10/22；本记录采用政府10/22公告。",
+          "url": "https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd",
+          "checkedAt": "2026-10-25"
+        }
+      ]
     },
     {
       "id": "helion",
@@ -530,17 +686,25 @@
       "founderContext": "官网2013时间线列上述四人；领导页另将Anthony Pancotti列为Co-founder，口径保留。Kirtley任CEO。",
       "founderSource": "https://www.helionenergy.com/about",
       "capital": {
-        "status": "非上市",
-        "event": "Series G · 9月追加完成",
-        "date": "2026-06-04",
-        "amount": "最终5亿美元",
-        "investors": "Thrive领投；Alta Park、Lux、Peak XV、Lightspeed等",
-        "detail": "本轮6月初始4.65亿美元，9月追加后合计5亿美元。初始投后估值155亿美元；追加后估值与具体完成日未披露。",
-        "url": "https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power"
+        "status": "LOI · 拟议",
+        "event": "CHIPS研发资助 · LOI",
+        "title": "CHIPS研发资助意向（附股权条件）",
+        "date": "2026-10-22",
+        "amount": "最高1.75亿美元",
+        "investors": "美国商务部（拟；附股权条件）",
+        "detail": "10/22 NIST宣布已签CHIPS研发资助意向；拟授资助附美国商务部取得少数、无控制权、无投票权股权的条件，比例未披露。尚未核到最终award协议或拨付，不计累计实收，也不据此推算新估值。",
+        "url": "https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd",
+        "checkedAt": "2026-10-25"
       },
       "product": "Polaris原型实验、Orion电站建设",
       "productUrl": "https://www.helionenergy.com/",
       "watch": "Omega电容线制造与全厂净电分别核查：约2模块/小时为配置目标，持续产能、寿命和电网收支待验证。",
+      "sources": [
+        {
+          "label": "10/22 NIST研发资助意向及股权条件",
+          "url": "https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd"
+        }
+      ],
       "valuation": {
         "amount": "155亿美元",
         "basis": "初始交割投后",
@@ -548,13 +712,37 @@
         "status": "公司披露",
         "detail": "6月初始交割口径；9月追加后估值未披露。",
         "url": "https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power"
-      }
+      },
+      "financing": [
+        {
+          "status": "非上市",
+          "event": "Series G · 9月追加完成",
+          "date": "2026-06-04",
+          "amount": "最终5亿美元",
+          "investors": "Thrive领投；Alta Park、Lux、Peak XV、Lightspeed等",
+          "detail": "本轮6月初始4.65亿美元，9月追加后合计5亿美元。初始投后估值155亿美元；追加后估值与具体完成日未披露。",
+          "url": "https://www.helionenergy.com/newsroom/helion-raises-465-million-series-g-funding-round-to-meet-surging-global-demand-for-power",
+          "title": "Series G · 9月追加完成"
+        },
+        {
+          "status": "LOI · 拟议",
+          "event": "CHIPS研发资助 · LOI",
+          "title": "CHIPS研发资助意向（附股权条件）",
+          "date": "2026-10-22",
+          "amount": "最高1.75亿美元",
+          "investors": "美国商务部（拟；附股权条件）",
+          "detail": "10/22 NIST宣布已签CHIPS研发资助意向；拟授资助附美国商务部取得少数、无控制权、无投票权股权的条件，比例未披露。尚未核到最终award协议或拨付，不计累计实收，也不据此推算新估值。",
+          "url": "https://www.nist.gov/news-events/news/2026/10/department-commerce-announces-letters-intent-4-companies-389-million-rd",
+          "checkedAt": "2026-10-25"
+        }
+      ],
+      "profileCheckedAt": "2026-10-17"
     },
     {
       "id": "qwen",
       "name": "阿里巴巴 · 千问",
       "directions": [],
-      "domain": "当前职业参照",
+      "domain": "AI模型与应用",
       "hq": "中国 · 团队地点待核",
       "founders": "马云等18位联合创始人（阿里集团）",
       "founderContext": "集团1999年创立；千问为集团内部业务。",
@@ -570,7 +758,7 @@
       },
       "product": "模型、云服务与面向消费者的AI产品",
       "productUrl": "https://www.alibabagroup.com/en-US/about-alibaba",
-      "watch": "用户增长能否转为持续使用与付费；数据团队是否直接参与产品实验。",
+      "watch": "用户增长能否转为持续使用与付费。",
       "sources": [
         {
           "label": "淘宝／天猫购物助手官方公告",
@@ -595,7 +783,8 @@
           "url": "https://home.alibabagroup.com/en-US/document-2047546975867371520",
           "checkedAt": "2026-10-19"
         }
-      ]
+      ],
+      "profileCheckedAt": "2026-10-19"
     },
     {
       "id": "unitree",
@@ -682,7 +871,8 @@
           "url": "https://www.bilibili.com/video/BV1wwJ96gEy8",
           "checkedAt": "2026-10-18"
         }
-      ]
+      ],
+      "profileCheckedAt": "2026-10-18"
     },
     {
       "id": "brainco",
