@@ -311,4 +311,11 @@ document.addEventListener('change',e=>{if(e.target.id==='bet-theme'){hierarchySt
 $('#count').textContent=DATA.directions.length;$('#priority-count').textContent=DATA.directions.filter(d=>display(d).priority).length;$('#sources').textContent=new Set(DATA.directions.flatMap(d=>[...d.signals,...d.papers].map(s=>s.url))).size;$('#paper-count').textContent=DATA.directions.reduce((n,d)=>n+d.papers.length,0);$('#checked').textContent='核查 '+DATA.checkedAt;$('#schedule').textContent=DATA.schedule;$('#coverage').textContent='证据截至 '+DATA.asOf;route();
 const allSources=DATA.directions.flatMap(d=>[...d.signals,...d.papers].map(s=>s.url)).concat(COMPANIES.flatMap(c=>[c.founderSource,c.capital.url,c.productUrl,c.valuation.url,...(c.investors||[]).map(i=>i.url),...(c.financing||[]).map(f=>f.url),...(c.cases||[]).flatMap(x=>[x.url,...(x.sources||[]).map(s=>s.url)]),...(c.sources||[]).map(s=>s.url)]),SYS.sources.map(s=>s.url));$('#sources').textContent=new Set(allSources).size;
 </script>
+<div id="site-analytics-controls" hidden style="max-width:1240px;margin:20px auto;padding:12px 24px;display:none;gap:18px;align-items:center;font:12px system-ui;color:inherit"><a href="/">个人网站 ↗</a><a href="/privacy/">访问统计</a><button id="analytics-toggle" type="button" style="font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer">关闭统计</button></div>
+<script>
+if(location.hostname==='alubanana.github.io'&&location.protocol==='https:'){
+ const controls=document.getElementById('site-analytics-controls');controls.hidden=false;controls.style.display='flex';
+ const tracker=document.createElement('script');tracker.src='/site-assets/analytics.js';tracker.dataset.endpoint='https://annan-site-analytics.regalpig32.chatgpt.site/api/collect';document.head.append(tracker);
+}
+</script>
 </body></html>
